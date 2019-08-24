@@ -45,7 +45,6 @@ public class binary_word_4 {
 				return binarySearch(list,start,end+1,N);
 		}else
 			return -1;
-	
-	
+		
 	}
 }
