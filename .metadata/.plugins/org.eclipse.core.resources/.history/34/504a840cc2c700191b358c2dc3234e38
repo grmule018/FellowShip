@@ -1,0 +1,228 @@
+package com.bridglabz.functional;
+/**import java.util.Scanner;
+public class Tic_Tac_Toe_game   {
+	
+		public static void main(String[] args) {
+			
+			TicTacToe t = new TicTacToe();
+			Scanner sc = new Scanner(System.in);
+			int x=0,y=0;
+			do
+			{
+				System.out.println(t.player==t.X?"Player X turn":"Player O turn");
+				System.out.println("Enter x and y places");
+				x=sc.nextInt();
+				y=sc.nextInt();
+				
+				t.putSign(x, y);
+				System.out.println(t.toString());
+				System.out.println("_____________________________");
+				t.displayWinner();
+				
+			}while(t.isEmpty);
+		}
+	}
+
+	class TicTacToe
+	{
+		public static final int X = 1, O = -1;
+		public static final int EMPTY = 0;
+		
+		public int player = X;
+		private int[][] board = new int[3][3];
+		public boolean isEmpty = false;
+		
+		public void putSign(int x, int y)
+		{
+			if(x<0 || x>2 || y<0 || y>2)
+			{
+				System.out.println("Invalid board position");
+				return;
+			}
+			if(board[x][y] != EMPTY)
+			{
+				System.out.println("Board position occupied");
+				return;
+			}
+			board[x][y] = player;
+			player = -player;
+		}
+		
+		public boolean isWin(int player)
+		{
+			return ((board[0][0] + board[0][1] + board[0][2] == player*3) ||
+					(board[1][0] + board[1][1] + board[1][2] == player*3) ||
+					(board[2][0] + board[2][1] + board[2][2] == player*3) ||
+					(board[0][0] + board[1][0] + board[2][0] == player*3) ||
+					(board[0][1] + board[1][1] + board[2][1] == player*3) ||
+					(board[0][2] + board[1][2] + board[2][2] == player*3) ||
+					(board[0][0] + board[1][1] + board[2][2] == player*3) ||
+					(board[2][0] + board[1][1] + board[0][2] == player*3));
+		}
+		
+		public void displayWinner()
+		{
+			if(isWin(X))
+			{
+				System.out.println("\n X wins...!!");
+				isEmpty=false;
+			}
+			else if(isWin(O))
+			{
+				System.out.println("\n O wins...!!");
+				isEmpty=false;
+			}
+			else
+			{
+				if(!isEmpty)
+				{
+					System.out.println("its a tie");
+				}
+				
+			}
+		}
+		
+		public String toString()
+		{
+			StringBuilder s = new StringBuilder();
+			isEmpty = false;
+			for(int i=0;i<3;i++)
+			{
+				for(int j=0;j<3;j++)
+				{
+					switch(board[i][j])
+					{
+					case X: 
+						s.append(" X ");
+						break;
+					case O: 
+						s.append(" O ");
+						break;
+					case EMPTY: 
+						s.append("   ");
+						isEmpty=true;
+						break;
+					}
+					if(j<2)
+					{
+						s.append("|");
+					}
+					
+				}
+				if(i<2)
+				{
+					s.append("\n-----------\n");
+				}
+			}
+			return s.toString();
+		}
+	}
+**/
+import java.util.Scanner;
+public class Tic_Tac_Toe_game {
+
+	static int player = 0;
+	static int[][] BOARD = new int[3][3];
+	static boolean isEmpty = true;
+
+	static void initBoard() {
+		System.out.println("TIC TAC TOE GAME \n Computer is X \n Player  is O ");
+		for (int i = 0; i < BOARD.length; i++) {
+			for (int j = 0; j < BOARD[i].length; j++) {
+				BOARD[i][j] = -10;
+			}
+		}
+		System.out.println("Board is this :");
+		dispBoard();
+	}
+
+	static void dispBoard() {
+		int count = 0;
+		for (int i = 0; i < BOARD.length; i++) {
+			System.out.println("---------------");
+			System.out.print("||");
+			for (int j = 0; j < BOARD[i].length; j++) {
+				if (BOARD[i][j] == 0) {
+					count++;
+					System.out.print(" o |");
+				} else if (BOARD[i][j] == 1) {
+					count++;
+					System.out.print(" x |");
+				} else
+					System.out.print("   |");
+			}
+			System.out.println("|");
+		}
+		if (count == 9) {
+			isEmpty = false;
+		}
+		System.out.println("---------------");
+	}
+	/*
+	 * static void putVal(int i, int j, int player) { if if (player % 2 == 0) {
+	 * BOARD[i][j] = 0; } else BOARD[i][j] = 1; }
+	 */
+
+	static void putVal() {
+		int i;
+		int j;
+		if (player % 2 == 1) {
+			i = (int) (Math.random() * 10) % 3;
+			j = (int) (Math.random() * 10) % 3;
+		} else {
+			Scanner sc = new Scanner(System.in);
+			System.out.println("enter value of x and y by space");
+			i = sc.nextInt();
+			j = sc.nextInt();
+		}
+		if (BOARD[i][j] == -10) {
+			if (player % 2 == 0) {
+				BOARD[i][j] = 0;
+			} else {
+				BOARD[i][j] = 1;
+				System.out.println("Coumputer Choosing " + i + " " + j);
+			}
+		} else
+			putVal();
+
+	}
+
+	static boolean win() {
+		return    ((BOARD[0][0] + BOARD[0][1] + BOARD[0][2] == player * 3)
+				|| (BOARD[1][0] + BOARD[1][1] + BOARD[1][2] == player * 3)
+				|| (BOARD[2][0] + BOARD[2][1] + BOARD[2][2] == player * 3)
+				|| (BOARD[0][0] + BOARD[1][0] + BOARD[2][0] == player * 3)
+				|| (BOARD[0][1] + BOARD[1][1] + BOARD[2][1] == player * 3)
+				|| (BOARD[0][2] + BOARD[1][2] + BOARD[2][2] == player * 3)
+				|| (BOARD[0][0] + BOARD[1][1] + BOARD[2][2] == player * 3)
+				|| (BOARD[2][0] + BOARD[1][1] + BOARD[0][2] == player * 3));
+	}
+
+	static void play() {
+		initBoard();
+		while (isEmpty) {
+			System.out.println("Players turn");
+			putVal();
+			dispBoard();
+			if (win()) {
+				System.out.println("Player won");
+				return;
+			}
+			player = 1;
+			System.out.println("Computers turn");
+			putVal();
+			dispBoard();
+			if (win()) {
+				System.out.println("Computer won");
+				return;
+			}
+			player = 0;
+		}
+	}
+
+	public static void main(String[] args) {
+
+		play();
+	}
+}
+

@@ -1,0 +1,59 @@
+package com.bridglabz.functional;
+
+public class MergeSort {
+	int [] array;
+	int [] TempMergeArr;
+	int [] length;
+	public static void main(String []args) {
+		int []inputArr= {42,45,64,23,75,22,1,33,3,4};
+		MergeSort ms= new MergeSort();
+		ms.sort(inputArr);
+		
+		for (int i:inputArr);
+		{System.out.println([i]+",");}
+		
+	}
+public void sort(int[] inputArr) {
+	this.array=inputArr;
+	this.length=inputArr.length;
+	this.TempMergeArr=new int (length);
+	devideArray(0 ,length-1);}
+
+
+public void devideArray(int lowerIndex, int higherIndex) {
+	if (lowerIndex>higherIndex) {
+		int middle = lowerIndex+(higherIndex-lowerIndex)/2;
+		
+		devideArray (lowerIndex,middle);
+		
+		devideArray (middle+1, higherIndex);
+		
+		MergeArray(lowerIndex,middle,higherIndex);
+	} 
+public void MergeArray(int lowerIndex, int middle, int higherIndex) { 		
+		
+	for (int i=lowerIndex;i<=higherIndex;i++)
+	{
+		TempMergeArr[i]=Array[j];
+	}
+	int i=lowerIndex;
+	int j=middle+1;
+	int k= lowerIndex;
+	
+	while(i<=middle&&j<=higherIndex) {
+		if(TempMergeArr[i]<=TempMergeArr[j]) {
+			array[k]=TempMergeArr[i];
+			i++;
+		}
+		else {array[k]=TempMergeArr[j];
+			j++;
+			}
+		k++;
+		}
+	while(i<=middle) {
+		array[k]=TempMergeArr[i];
+		k++;
+		i++;
+	}
+}
+}
