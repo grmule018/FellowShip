@@ -593,15 +593,12 @@ public static void Coupon_8(int range, int n) {
 		if(collected == n) {
 			System.out.print(collected+" ");
 			fcoupon++;
-			System.out.println(" ");
 			System.out.println("Value is find at "+fcoupon);
 			break;
 		}
 	}
 }
 }
-
-
 	static int collect(int n,int range){
 		
 		Random rand = new Random();

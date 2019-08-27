@@ -12,7 +12,7 @@ public class Prime_no_Range_2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Enter the number :");
+		System.out.print("Enter the range of prime  number :");
 		int N = sc.nextInt();
 		
 		int[] prime =new int[N];

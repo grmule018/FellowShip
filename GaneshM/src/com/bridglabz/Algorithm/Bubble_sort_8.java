@@ -24,14 +24,8 @@ public class Bubble_sort_8 {
 		
 		int N = list.length;
 	
-		bubble(list,N);
-	
 		sc.close();
-		
-	}
-	
-	static void bubble(int list[],int N)
-	{
+			
 		for(int i=0;i<N-1;i++) {
 			
 			for(int j=0;j<N-i-1;j++)

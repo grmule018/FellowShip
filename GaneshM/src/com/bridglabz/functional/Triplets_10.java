@@ -15,9 +15,9 @@ public class Triplets_10 {
 	public static void main(String[] args)
 	{
 		
-		int arr[] = new int[50];
+		int arr[] = new int[10];
 		
-		System.out.print("Enter the N value :");
+		System.out.print("Enter the length of value  N =");
 		int N= Utility.integerInput();
 		
 		System.out.print("Enter The integers :");

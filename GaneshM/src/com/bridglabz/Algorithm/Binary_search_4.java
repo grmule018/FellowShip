@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class Binary_search_4 {
 	public static void main(String[] args) {
-		int list[] = {0,1,2,3,4,5,6,7,8,9,10};
+		int list[] = {0,5,4,6,8,7,1,9,2,3};
 		
 		Scanner sc= new Scanner(System.in);
 		
