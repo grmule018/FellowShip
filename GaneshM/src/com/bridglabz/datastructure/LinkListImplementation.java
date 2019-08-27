@@ -3,49 +3,81 @@ package com.bridglabz.datastructure;
 public class LinkListImplementation {
 
 	public static void main(String[] args) throws java.lang.Exception {
+		//Object creating for linklist
 		LinkedListT A = new LinkedListT();
+		
+		//Push into stack at begining
 		A.addAtBegin(1);
 		A.addAtBegin(2);
+		
+		//Push into stack at Eng
 		A.addAtEnd(20);
 		A.addAtEnd(31);
+		
+		//Delete node at begin
 		A.deleteAtBegin();
+		
+		//Delete note at End
 		A.deleteAtEnd();
+		
+		//Adding Node At index
 		A.addAtIndex(10, 2);
+		
+		//Adding Node at End
 		A.addAtEnd(15);
+		
+		//Display Data of Linklist
 		A.display();
+		
+		// Print the size of stack
 		System.out.println("\n Size of the list is: " + A.size);
+		
+		//Print the second postion of element
 		System.out.println(" Element at 2nd position : " + A.elementAt(5));
+		
+		//Print search element
 		System.out.println(" Searching element 20, location : " + A.search(15));
 	}
 }
+
+// creating node
  class Node {
 	public int data;
 	public Node next;
 
+	// Assign value to node
 	public Node(int data) {
 		this.data = data;
 		this.next = null;
 	}
 }
 
+ // creating class for linklist
  class LinkedListT {
+	 
 	public Node head;
 	public int size;
 	public LinkedListT() {
 		head = null;
 	}
+	//Method for ADD atg begin
 	public void addAtBegin(int data) {
+		//object create for Node
 		Node n = new Node(data);
 		n.next = head;
 		head = n;
 		size++;
 	}
+	
+	//Method for Delete Node At Begin
 	public int deleteAtBegin() {
 		int tmp = head.data;
 		head = head.next;
 		size--;
 		return tmp;
 	}
+	
+	//Method for Delete At End
 	public void deleteAtEnd() {
 		Node currNode = head;
 		if (head.next == null) {
@@ -59,6 +91,8 @@ public class LinkListImplementation {
 			size--;
 		}
 	}
+	
+	//Method for Add At End
 	public void addAtEnd(int data) {
 		if (head == null) {
 			addAtBegin(data);
@@ -72,6 +106,8 @@ public class LinkListImplementation {
 			size++;
 		}
 	}
+	
+	//Method for Element Positon
 	public int elementAt(int index){
 		if(index>size){
 			return -1;
@@ -83,9 +119,13 @@ public class LinkListImplementation {
 		}
 		return n.data;
 	}
+	
+	// return size
 	public int getSize(){
 		return size;
 	}
+	
+	// for searching the Node
 	public int search(int data){
 		Node n = head;
 		int count = 1;
@@ -99,6 +139,8 @@ public class LinkListImplementation {
 		}
 		return -1;
 	}
+	
+	// Method at Add at Index position
 	public void addAtIndex(int data, int position){
 		if(position == 1){
 			addAtBegin(data);
@@ -123,6 +165,8 @@ public class LinkListImplementation {
 			size++;
 		}
 	}
+	
+	//Display the stack
 	public void display() {
 		System.out.println("");
 		Node currNode = head;
