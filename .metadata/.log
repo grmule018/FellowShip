@@ -1649,3 +1649,63 @@ Caused by: org.eclipse.core.runtime.CoreException: Cannot determine URI for '/Ga
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-27 17:38:02.059
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.sRZnMhst => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-27 17:49:14.078
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-27 17:49:14.079
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@72e9c0a0[org.springframework.tooling.boot.ls:1.10.0.201908130624(id=617)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-27 17:49:14.080
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-27 17:49:18.197
+!MESSAGE Boot LS startup time from start to initialized: 4116ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-27 17:49:18.274
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.bNOyJChKisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-27 17:49:18.274
+!MESSAGE subscribing to classpath changes: sts4.classpath.bNOyJChK isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-27 17:49:18.275
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-27 17:49:18.275
+!MESSAGE subsribers = {sts4.classpath.bNOyJChK=Send Classpath Notifications(38710)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-27 17:49:18.275
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-27 17:49:18.277
+!MESSAGE project GaneshM ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-27 17:49:18.278
+!MESSAGE Preparing classpath changed notification GaneshM
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-27 17:49:18.278
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-27 17:49:18.279
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-27 17:49:18.279
+!MESSAGE buffering callback sts4.classpath.bNOyJChK GaneshM false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-27 17:49:18.280
+!MESSAGE executing callback sts4.classpath.bNOyJChK 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-27 17:49:18.288
+!MESSAGE project GaneshMain ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-27 17:49:18.288
+!MESSAGE project GaneshMain SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-27 17:49:18.288
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-27 17:49:18.288
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.bNOyJChK => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-08-27 17:49:18.343
+!MESSAGE executing callback sts4.classpath.bNOyJChK SUCCESS [done]
