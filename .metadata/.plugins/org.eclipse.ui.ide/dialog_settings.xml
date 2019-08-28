@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="/home/user/Downloads/RELEASE/GaneshM"/>
+		<item value="/home/user/Downloads/RELEASE/GaneshMain"/>
 		<item value="/home/admin1/Documents/workspace-spring-tool-suite-4-4.3.2.RELEASE/Ganesh"/>
 		<item value="/home/admin1/Downloads/sts-4.3.2.RELEASE/Ganesh"/>
 		<item value="/home/admin1/Downloads/Ganesh"/>
@@ -55,10 +57,13 @@
 		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/user/Downloads/RELEASE/GaneshMain"/>
 			<item value="/home/user/Downloads/RELEASE/GaneshM"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
 		</list>
+	</section>
+	<section name="BasicNewProjectResourceWizard">
 	</section>
 </section>
