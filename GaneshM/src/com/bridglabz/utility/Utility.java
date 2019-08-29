@@ -143,37 +143,7 @@ public class Utility {
 		
 	}
 
-/**************************************************Windchill********************
- * @param temp      : User input value(in Fahrenheit)
- * @param wind_speed: User input value(in miles per hour)
- * @return defines the effective temperature (the wind chill) 
- * @implNote Note : the formula is not valid if t is larger than 50 in 
- * absolute value or if v is larger than 120 or less than 3 (you may assume that the values you get are in that range).
- ********************************************************************************/
 
-	public static void Windchill(double temp, double wind_speed) {
-		double Wind_chill=35.74+0.6215*temp+((0.4275*temp)-35.75)*Math.pow(wind_speed, 0.16);
-		System.out.println("windchill is="+Wind_chill);
-	}
-
-/********************************************IntegerInput**************************************
- * @param a: This is first number
- * @param b: This second number
- * @param c: This is third number
- * @return Math function
- ***********************************************************************************************/
-	
-	public static void IntOpt(int a, int b, int c) {
-		int W = a + b *c;
-		int X = a * b + c;
-		int Y = c + a / b;
-		int Z = a % b + c;
-		
-		System.out.println(a + "+" + b + "*" +c + "=" + W);
-		System.out.println(a + "*" + b + "+"+ c +"=" + X);
-		System.out.println(c + "+" + a + "/"+ b +"=" + Y);
-		System.out.println(a + "%" + b + "+" +c + "=" +Z);
-	}
 
 /*******************************Leap year******************
  * @param year: User Input Year
@@ -209,38 +179,7 @@ public class Utility {
 }
 	
 
-/**************************************Spring Season********************
- * @param m: User Input Month
- * @param d: User Input day
- * @return : Given date come inSpring Season or Not
- *********************************************************************/
-	public static void SpringSeason(int m, int d) {
-		 boolean isSS =  (m == 3 && d >= 20 && d <= 31)
-				 || (m == 4 && d >=  1 && d <= 30)
-                 || (m == 5 && d >=  1 && d <= 31)
-                 || (m == 6 && d >=  1 && d <= 20);
-		 System.out.println(isSS);
-		}
-	
-/***************************************Double opt*********************************
- * @param a: first user input
- * @param b: second user input
- * @param c: third user input
- * @return : math function
- *************************************************************************/
 
-	public static void Double(Double a, Double b, Double c) {
-		Double W = a + b *c;
-		Double X = a * b + c;
-		Double Y = c + a / b;
-		Double Z = a % b + c;
-			
-		System.out.println(a + "+" + b + "*" +c + "=" + W);
-		System.out.println(a + "*" + b + "+"+ c +"=" + X);
-		System.out.println(c + "+" + a + "/"+ b +"=" + Y);
-		System.out.println(a + "%" + b + "+" +c + "=" +Z);
-			
-		}
 
 /********************************Day of Week***************************
  * @param d : User input  Day.
@@ -300,29 +239,7 @@ public class Utility {
 	    System.out.println("Total interest   = " + interest);
 	}
 			
-/*******************************************Trigonometry****************************
- * @param degrees: User input Angle
- * @return Firstly reads in an
- *	angle (in degrees), converts to radians, and then performs various trigonometric
- *	calculations.
- *********************************************************************/
 
-	public static void Trigonometry(double degrees) {
-		double radians = Math.toRadians(degrees);
-		double s =Math.sin(radians);
-		System.out.println("sine("+ degrees +")="+s);
-				
-		double c = Math.cos(radians);
-		System.out.println("cos(" + degrees + ") = " + c);
-
-		double t = Math.tan(radians);
-		System.out.println("tan(" + degrees + ") = " + t);
-		        
-		System.out.println(s + " / " + c + " = " + s / c); //tangent
-        double r = s*s + c*c;
-        System.out.println(s*s + " + " + c*c + " = " + r);
-				
-		}
 /*******************************Power of Twos***********************
  * @param n takes command line argument
  * @return prints a table of the powers of 2 that are less 
@@ -461,106 +378,8 @@ public static void IntegerToBinary(int n) {
     System.out.println();
 }
 
-/*****************************IntegerToBinaryAndNibbelSwap************
- *  @param n
- *  @return Swapping of nibbles
- **********************************************************************/
-public static int IntegerToBinaryAndNibbleSwap(int x) {
-	return((x & 0x0F)<<4|(x & 0xF0)>>4);
-	}
 
-/************************************Sin**************************************
- * @param x User input
- **********************************************************************/
-public static void Sin(double x) {
-	
-	x = x % (2*Math.PI);
-	float value = 1;
-	float sum = 0;
-	
-	for (int i = 1; value!=0.0; i++) {
-		value*=(x/i); 
-		if(i%4==1)sum+=value;
-		if(i%4==3)sum-=value;
-	}
-	System.out.println(sum);
-	}
-/*******************************Cos*************************
- * @param x user input
- ***********************************************************/
-public static void Cos(double x) {
-	x =x%(2*Math.PI);
-	double value = 1;
-	double sum = 0;
-	
-	for (int i= 2; value!=0; i++) {
-		value=value*(x/i);
-		if (i%4==0)sum+=value;
-		if (i%4==2)sum-=value;
-}
-	System.out.println(sum);
-}
-/******************************RollDie************************************
- * @param Die Side
- **********************************************************************/
-public static void RollDie(int times) {
-	
-int die=6;
-int a=1,b=2,c=3,d=4,e=5;
-int count_1=0,count_2=0,count_3=0,count_4=0,count_5=0,count_6=0;
-for(int i=0;i<times;i++)
-{
-	int number= 1+(int)(Math.random()*6);
-	if(a==number)count_1++;
-	else if(b==number)count_2++;
-	else if(c==number)count_3++;
-	else if(d==number)count_4++;
-    else if(e==number)count_5++;
-	else if(die==number)count_6++;
-}
-int max=Math.max(count_1, Math.max(count_2, Math.max(count_3, Math.max(count_4, Math.max(count_5, count_6)))));
-if(max==count_1)System.out.println(" fall maximum number of times is.="+1);
-else if(max==count_2)System.out.println(" fall maximum number of times is.="+2);
-else if(max==count_3)System.out.println(" fall maximum number of times is.="+3);
-else if(max==count_4)System.out.println(" fall maximum number of times is.="+4);
-else if(max==count_5)System.out.println(" fall maximum number of times is.="+5);
-else if(max==count_6)System.out.println(" fall maximum number of times is.="+6);
 
-}
-	
-/*******************Second Largest*************************************
- * @param arr
- ******************************************************************/
-public static void SecondLargest(int[] arr) {
-	int first,second;
-	first=second=Integer.MIN_VALUE;
-	for (int i=0; i<arr.length; i++){
-		if (arr[i] > first) {
-			second = first;
-			first=arr[i];
-			}
-		else if (arr [i]>second && arr[i] != first)
-			second = arr[i];
-	}	
-	System.out.println("The second largest element is ="+ second);
-}
-/********************************Second Smallest*****************
- * @param arr
- ***************************************************************/
-public static void SecondSmallest(int[] arr) {
-	int first,second;
-	first=second=Integer.MAX_VALUE;
-	for(int i=0; i<arr.length;i++)
-	if(arr[i]< first) {
-		second =first;
-		first=arr[i];}
-	else if(arr[i]<second && arr[i]!= first) {
-		second=arr[i];
-	}
-	System.out.println("the second smallest element is="+ second);
-	
-	
-}
 /*********************************Prime_no_Factorization**************
  * 
  * @param number

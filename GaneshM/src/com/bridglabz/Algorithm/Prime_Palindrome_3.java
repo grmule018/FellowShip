@@ -24,7 +24,6 @@ public class Prime_Palindrome_3 {
 					if(i%k== 0)
 					{
 						count++;
-							
 					}
 				}
 				if(count == 2)
@@ -57,4 +56,3 @@ public class Prime_Palindrome_3 {
 				sc.close();
 	}
 }
-
