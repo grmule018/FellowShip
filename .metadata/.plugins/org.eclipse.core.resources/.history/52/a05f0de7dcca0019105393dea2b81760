@@ -1,0 +1,30 @@
+/******************************************************************************
+ *  Purpose: To perform opeartions on a stack to check if equation is balanced  
+ *           or not. 
+ *           
+ *  @author  MarkF
+ *  @version 1.0
+ *  @since   29-08-2019
+ *
+ ******************************************************************************/
+package com.bridgelabz.dataStructures;
+
+import com.bridgelabz.Utility.Utility2;
+
+public class SimpleBalanceParanthesis {
+
+	public static <T> void main(String[] args) {
+		Stack<T> stack = new Stack<T>();
+		
+		System.out.println("Enter an expression with only opening and closing parenthesis.");
+		String tempString = Utility2.getString();
+		// (5+6)∗(7+8)/(4+3)(5+6)∗(7+8)/(4+3))
+		
+		System.out.println("Passing the string for checking if it's balanced or not.");
+		stack.paranthesisPusherAndPopper(tempString);
+		
+		System.out.println("Are entered parenthesis balanced ? "+stack.areParenthesisBalanced());
+
+	}
+
+}

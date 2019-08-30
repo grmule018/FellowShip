@@ -1,0 +1,84 @@
+package com.bridgelabz.dataStructures;
+
+public class Queue<T> {
+	Object[] queue =new Object[5];
+	int size = 0;
+	int front = 0;
+	int rear = 0;
+	
+	public void enQueue(Object item)
+	{
+		if(size >= queue.length)
+		{
+			System.out.println("Queue is full already.");
+		}
+		else
+		{
+			queue[rear] = item;
+			rear++;
+			size++;
+		}
+	}
+	
+	public Object deQueue()
+	{
+		Object temp;
+		if(size == 0)
+		{
+			return -1;
+		}
+		else
+		{
+			temp = queue[front];
+			front++;
+			size--;
+			
+			return temp;
+		}
+	}
+	
+	public void display()
+	{
+		for(int i=0; i<size; i++)
+		{
+			System.out.print(queue[i]+" ");
+		}
+		System.out.println();
+	}
+	
+	public boolean isEmpty()
+	{
+		return size == 0;
+	}
+	
+	public int size()
+	{
+		return size;
+	}
+
+	public static <T> void main(String[] args) {
+		Queue<T> queue = new Queue<T>();
+
+		System.out.println(queue.isEmpty());
+		queue.enQueue(25);
+		queue.display();
+		queue.enQueue(35);
+		queue.display();
+
+		queue.enQueue(45);
+		queue.display();
+		System.out.println(queue.isEmpty());
+		System.out.println(queue.deQueue());
+		queue.display();
+		queue.deQueue();
+		queue.display();
+		queue.deQueue();
+		queue.display();
+		queue.deQueue();
+		queue.display();
+		
+		
+		
+	}
+
+}

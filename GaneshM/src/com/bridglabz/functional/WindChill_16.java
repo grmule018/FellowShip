@@ -11,8 +11,10 @@ import com.bridglabz.utility.Utility;
 public class WindChill_16 {
 
 	public static void main(String[] args) {
-		double temp=Double.parseDouble(args[0]);
-		double wind_speed=Double.parseDouble(args[1]);
+		System.out.println("Enter Temprature");
+		double temp=Utility.integerInput();
+		System.out.println("Enter wind speed");
+		double wind_speed=Utility.integerInput();
 		Utility.Windchill(temp,wind_speed);
 		
 }}

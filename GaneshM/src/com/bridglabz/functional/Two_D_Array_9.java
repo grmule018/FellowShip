@@ -5,7 +5,7 @@
  * I/P -> M rows, N Cols, and M * N inputs for 2D Array. Use Java Scanner Class
  * Logic -> create 2 dimensional array in memory to read in M rows and N cols 
  * O/P -> Print function to print 2 Dimensional Array. 
- * In Java use PrintWriter with OutputStreamWriter to print the output to the screen.
+ * In Java use PrintWriter with Output Stream Writer to print the output to the screen.
  */
 package com.bridglabz.functional;
 import java.util.Scanner;

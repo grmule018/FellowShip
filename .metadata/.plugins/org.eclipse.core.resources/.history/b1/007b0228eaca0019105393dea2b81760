@@ -1,0 +1,156 @@
+package com.bridglabz.datastructures3;
+
+import com.bridglabz.datastructures3.LinkedList1.Node;
+
+// creating class for linklist
+public class LinkedList<T> {
+	 
+	Node<T> head;
+	int size=5;
+	
+	//Method for ADD at begin
+	public  void addAtBegin(Object data) {
+		//object create for Node
+		Node <T> n = new Node<T> (data);
+		n.next = head;
+		head = n;
+		size++;
+	}
+	
+	//Method for Delete Node At Begin
+	public  Object deleteAtBegin() {
+		
+		Object tmp = head.data;
+		head = head.next;
+		size--;
+		return tmp;
+	}
+	
+	//Method for Delete At End
+	public void deleteAtEnd() {
+		Node<T> currNode = head;
+		if (head.next == null) {
+			head = null;
+		} else {
+			while (currNode.next.next != null) {
+				currNode = currNode.next;
+			}
+			Object temp = currNode.next.data;
+			currNode.next = null;
+			size--;
+		}
+	}
+	public void delete() {
+		Node <T> currNode = head;
+	
+		String string1ToCompare = Object+"";
+		String string2ToCompare = n.data+"";
+		if(head == null)
+		{
+		System.out.println("list is empty.");
+		return;
+		}
+		else if(string2ToCompare.equals(string1ToCompare))
+		{
+		head = head.next;
+		n.next = n.next.next;
+	}
+	else 
+	{
+		while(true)
+		{
+			while(node.next.data.equals(string1ToCompare))
+			{
+				node.next = node.next.next;
+				return;
+			}
+			node = node.next;
+		}		
+		
+	}
+	//Method for Add At End
+	public void addAtEnd(Object data) {
+		if (head == null) {
+			addAtBegin(data);
+		} 
+		else {
+			Node<T> n = new Node<T>(data);
+			Node<T> currNode = head;
+			while (currNode.next != null) {
+				currNode = currNode.next;
+			}
+			currNode.next = n;
+			size++;
+		}
+	}
+	
+	//Method for Element Position
+	public Object elementAt(int index){
+		if(index>size){
+			return -1;
+		}
+		Node<T> n = head;
+		while(index-1!=0){
+			n=n.next;
+			index--;
+		}
+		return n.data;
+	}
+	
+	// return size
+	public int getSize(){
+		return size;
+	}
+	
+	// for searching the Node
+	public Object search(Object data){
+		Node<T> n = head;
+		int count = 1;
+		while(n!=null){
+			if(n.data==data){
+				return count;
+			}else{
+				n = n.next;
+				count++;
+			}
+		}
+		return -1;
+	}
+	
+	// Method at Add at Index position
+	public void addAtIndex(Object data, int position){
+		if(position == 1){
+			addAtBegin(data);
+		}
+		int len = size;
+		if (position>len+1 || position <1){
+			System.out.println("\nINVALID POSITION");
+		}
+		if(position==len+1){
+			addAtEnd(data);
+		}
+		if(position<=len && position >1){
+			Node<T> n = new Node<T>(data);
+			Node <T>currNode = head; //so index is already 1
+			while((position-2)>0){
+				System.out.println(currNode.data);
+				currNode=currNode.next;
+				position--;
+			}
+			n.next = currNode.next;
+			currNode.next = n;
+			size++;
+		}
+	}
+	
+	//Display the stack
+	public void display() {
+		System.out.println("LinkList");
+		Node <T>currNode = head;
+		while (currNode != null) {
+			System.out.print(" " + currNode.data);
+			currNode = currNode.next;
+		}
+	}
+
+}

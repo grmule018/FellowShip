@@ -1,0 +1,32 @@
+/******************************************************************************
+ *  Purpose: Read texts from a file and store in a linked list if number present  
+ *           then remove it else add it to the linked list in appropriate position 
+ *           and save the list in a file.      
+ *  @author  MarkF
+ *  @version 1.0
+ *  @since   29-08-2019
+ *
+ ******************************************************************************/
+package com.bridgelabz.dataStructures;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class OrderedList {
+
+	public static void main(String[] args) {
+		System.out.println("Reading data from the file");
+		try (BufferedReader bufferedReader = new BufferedReader(new FileReader("test.txt"))) 
+		{
+			int fileValue;
+			//while(fileValue = bufferedReader.read())
+			
+		}	
+		catch (Exception e) 
+		{
+			System.out.println(e);
+		}
+
+	}
+
+}

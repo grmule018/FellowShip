@@ -1,0 +1,16 @@
+package com.bridglabz.datastructures3;
+
+
+
+// creating node
+public class Node<T> {
+
+		public Object data;
+		public Node<T> next;
+
+		// Assign value to node
+		public Node(Object newdata) {
+			data = newdata;
+			next = null;
+		}
+}

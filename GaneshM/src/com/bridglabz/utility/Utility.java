@@ -632,5 +632,18 @@ public static void Coupon_8(int range, int n) {
 
 	return ramdom_number;
  	}
-}
 
+
+/**************************************************Windchill********************
+* @param temp      : User input value(in Fahrenheit)
+* @param wind_speed: User input value(in miles per hour)
+* @return defines the effective temperature (the wind chill) 
+* @implNote Note : the formula is not valid if t is larger than 50 in 
+* absolute value or if v is larger than 120 or less than 3 (you may assume that the values you get are in that range).
+********************************************************************************/
+
+	public static void Windchill(double temp, double wind_speed) {
+		double Wind_chill=35.74+0.6215*temp+((0.4275*temp)-35.75)*Math.pow(wind_speed, 0.16);
+		System.out.println("windchill is="+Wind_chill);
+	}
+	}

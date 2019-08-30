@@ -1,0 +1,106 @@
+package com.bridgelabz.dataStructures;
+
+public class Stack<T> {
+	int top = 0;
+	int count = 0;
+	int balanceCount = 0;
+	int maxSizeOfStack = 20;
+	Object[] stack= new Object[maxSizeOfStack];
+	
+	public char[] stack()
+	{
+		char[] stack= new char[maxSizeOfStack];
+		return stack;
+	}
+	
+	public void push(Object data)
+	{
+		if(!isFull())
+		{
+			balanceCount++;
+			count++;
+			top++;
+			stack[top] = data;
+		}
+		else
+		{
+			System.out.println("The stack is already full.");
+		}
+	}
+	
+	public Object pop() 
+	{
+		if(isEmpty())
+		{
+			System.out.println("The stack is empty");
+			if(balanceCount == 0)
+			{
+				balanceCount = -5;
+			}
+			return -1;
+		}
+		else
+		{
+			Object temp = stack[top];
+			top--;
+			balanceCount--;
+			count--;
+			return temp;
+		}
+	}
+
+	public Object peek() 
+	{
+		if(isEmpty())
+		{
+			System.out.println("The stack is empty");
+			return -1;
+		}
+		else
+		{
+			Object temp = stack[top];
+			return temp;
+		}
+	}
+	
+	public boolean isEmpty() 
+	{
+		return count == 0;
+	}
+	
+	public int size() 
+	{
+		return top;
+	}
+
+	public boolean isFull()
+	{
+		return count == maxSizeOfStack;
+	}
+
+	public void paranthesisPusherAndPopper(String tempString)
+	{
+		char[] charArray = tempString.toCharArray();
+		for(int i=0; i<tempString.length(); i++)
+		{
+			if(charArray[i] == '(')
+			{
+				push(charArray[i]);
+			}
+			else if (charArray[i] == ')')
+			{
+				pop();
+			}
+		}
+	}
+	
+	public boolean areParenthesisBalanced() 
+	{		
+		return balanceCount == 0;
+	}
+	
+}
+
+
+
+

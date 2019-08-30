@@ -1,0 +1,84 @@
+
+package com.bridglabz.datastructures3;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+import com.bridglabz.utility.*;;
+
+public class UnOrderedList 
+{
+
+	public static <T> void main(String args[]) throws IOException 
+	{
+		System.out.println("Reading file data.");
+		try(BufferedReader bufferedReader = new BufferedReader(new FileReader
+				("/home/user/Downloads/RELEASE/GaneshM/src/com/bridglabz/datastructures3"))) 
+		{
+			String stringWithFileData = "";
+			String line = bufferedReader.readLine();
+			while(line != null)
+			{
+				stringWithFileData+=line+" ";
+				line = bufferedReader.readLine();
+			}
+			
+			// Data receieved & storing it into sring array.
+			String[] array = stringWithFileData.trim().split("\\s+"); 
+			LinkedList1<T> linkedList = new LinkedList1<T>();
+			for(int i=0; i<array.length; i++)
+			{
+				linkedList.add(array[i]);
+				//System.out.println(array[i]);
+			}
+			
+			// Searching for the string if present or not.
+			System.out.println("Enter an input to search for a text.");
+			//Object object = "String";
+			String searchString = Utility.StringInput();
+			boolean isStringPresent = linkedList.search(searchString);
+			if(isStringPresent)
+			{
+				System.out.println("Sring is found & deleted .");
+				linkedList.remove(searchString);
+				linkedList.display();
+				linkedList.writeDataToFile();
+//				linkedList.append(searchString);
+//				linkedList.printList();
+			}
+			else
+			{
+				System.out.println("string is not found & added");
+				linkedList.add(searchString);
+				linkedList.display();
+				linkedList.writeDataToFile();
+				linkedList.remove(searchString);
+				linkedList.display();
+			}
+			
+		}
+		catch
+		(Exception e) 
+		{
+			System.out.println(e);
+		}
+	
+		 
+//		LinkedList1<T> linkedList = new LinkedList1<T>();
+//		linkedList.append("cat");
+//		linkedList.insertAtStart("mat");
+//		linkedList.insertAtStart("sat");
+//		linkedList.append("fat");
+//		linkedList.append("bat");
+//		
+//		System.out.println("is bat present "+linkedList.search("bat"));
+//		linkedList.printList();
+//		linkedList.remove("mat");
+//		linkedList.printList();
+//		linkedList.remove("bat");
+//		linkedList.printList();
+//		linkedList.remove("sat");
+//		linkedList.printList();
+	}
+}    

@@ -1,0 +1,239 @@
+package com.bridglabz.datastructures3;
+
+
+import java.io.PrintWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+//import java.util.Comparator;
+
+public class LinkedList1<T> {
+	Node<T> head;
+	
+	class Node<T>
+	{
+		Object data;
+		Node<T> next;
+		
+		public Node(Object newData)
+		{
+			data = newData;
+			next = null;
+		}
+		
+		public Node(Object newData, Node<T> newNode)
+		{
+			data = newData;
+			next = newNode;
+		}
+	}
+
+	// Adds at the end of the list
+	public void add(Object item)
+	{
+		Node<T> node = new Node<T>(item);
+		
+		if(head==null)
+		{
+			head = node;
+		}
+		else
+		{
+			Node<T> tempNode = head;
+			
+			while(tempNode.next != null)
+			{
+				tempNode = tempNode.next;
+				
+			}
+			tempNode.next = node;
+		}
+ 	}
+	
+	// Adds at the start of the list
+	public void insertAtStart(Object item)
+	{
+		Node<T> node = new Node<T>(item);
+		if(head==null)
+		{
+			head = node;
+		}
+		else 
+		{
+			node.next = head;
+			head = node;
+		}
+	}
+	
+	// Work in progress.
+	public boolean search(Object object) 
+	{
+		Node<T> node = head;
+		while(node != null)
+		{
+			String tempString = node.data+""; 
+			if (tempString.equals(object))
+			{
+				return true;
+			}
+			node = node.next;
+		}
+		return false;
+	}
+	
+	public void remove(Object item) 
+	{
+		Node<T> node = head;
+		
+		// Converting to string so that we can compare any objects passed.
+		String string1ToCompare = item+"";
+		String string2ToCompare = node.data+"";
+		if(head == null)
+		{
+			System.out.println("list is empty.");
+			return;
+		}
+		else if(string2ToCompare.equals(string1ToCompare))
+		{
+			head = head.next;
+			node.next = node.next.next;
+		}
+		else 
+		{
+			while(true)
+			{
+				while(node.next.data.equals(string1ToCompare))
+				{
+					//System.out.println("Hiiii "+node.next.data);
+					node.next = node.next.next;
+					return;
+				}
+				node = node.next;
+			}		
+			
+		}
+	}
+	
+	public Object pop() 
+	{
+		Object object;
+		Node<T> node = head;
+		if(head == null)
+			return "Nothing to pop";
+		else 
+		{
+			while(node.next.next != null)
+			{
+				node = node.next;
+				
+			}
+			object = node.next.data;
+			node.next = null;
+			return object;
+		}
+	}
+	public int index(Object data)
+	{
+		Node<T> node = head;
+		int count = 0;
+		if(head == null)
+			return count;
+		else
+		{
+			while(node!=null)
+			{
+				count++;
+				if(node.data==data)
+				{
+					return count;
+				}
+				else if(node.next==null || node.data!=data)
+				{
+					return -1;
+				}
+				node = node.next;
+			}
+			return count;
+		}
+	}
+	
+	public boolean isEmpty()
+	{
+		return head == null;
+	}
+	
+	public int size() 
+	{
+		int count = 0;
+		Node<T> node = head;
+		
+		if(head == null)
+			return 0;
+		else
+		{
+			while(node.next!=null)
+			{
+				count++;
+				node = node.next;
+			}			
+		}		
+		// once it next reaches null it will stop counting so added 1.
+		return count+1;      
+	}
+
+	public void printList() 
+	{
+		Node<T> node = head;
+		
+		if(head == null)
+		{
+			System.out.println("The list is empty.");
+		}
+		else
+		{
+			System.out.print("Linked list = [");
+			
+			// Traverse through the linked list
+			while(node!=null)
+			{
+				// Print data at current node
+				if(node.next==null)
+				{
+					System.out.print(node.data+"]");
+				}
+				else 
+				{
+					System.out.print(node.data+", ");
+				}
+				
+				node = node.next;
+			}
+			System.out.println();
+		}
+	}
+	
+	public void writeDataToFile() throws IOException
+	{
+		FileWriter fileWriter = new FileWriter("/home/admin1/Desktop/Mark Fellowship-2/"
+				+ "Fellowship-2/Test_data_for_reading.txt");
+		try (PrintWriter printWriter = new PrintWriter(fileWriter)) 
+		{
+			String tempString = "";
+			Node<T> node = head;
+			while(node != null)
+			{
+				tempString = tempString + node.data + " ";
+				node = node.next;
+			}
+			tempString = tempString.trim();
+			//System.out.println(tempString);
+			printWriter.write(tempString);
+		}
+		catch (Exception e)
+		{
+			System.out.println(e);
+		}
+	}
+	
+	
+}
