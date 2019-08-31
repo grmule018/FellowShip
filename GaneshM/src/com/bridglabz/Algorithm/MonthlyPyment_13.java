@@ -14,10 +14,13 @@ import com.bridglabz.utility.Utility;
 
 public class MonthlyPyment_13 {
 	public static void main(String[]args) {
-	double principal = Double.parseDouble(args[0]);
-	double year = Double.parseDouble(args[1]);
-	double rate = Double.parseDouble(args[2]);
-	Utility.CarLoan(principal,year,rate);
+		System.out.println("Enter principal amount");
+	double principal = Utility.doubleInput();
+		System.out.println("Enter year");
+	double year = Utility.doubleInput();
+		System.out.println("Enter rate"); 
+	double rate = Utility.doubleInput();
+	Utility.MonthlyPyment_13(principal,year,rate);
 		
 	}
 }

@@ -14,12 +14,9 @@ public class Utility_3 {
 				return binarySearch_i(list,start,end-1,N);
 			else
 				return binarySearch_i(list,start,end+1,N);
-		
 		}
 		else
 			return -1;
-	
-	
 	}
 	
 	// For binary word
@@ -52,16 +49,8 @@ public class Utility_3 {
 			}
 			list_i[j+1]=prev;
 		}
-		
-		System.out.println("Sorted list is :");
-		
-		for(int i=0;i<N;i++) {
-			System.out.print(list_i[i]+" ");
-			
-		}
-		
+				
 	}
-	
 	
 	// insertion for word
 	
@@ -77,17 +66,9 @@ public class Utility_3 {
 			list_i_w[j+1]=prev;
 		}
 		
-		System.out.print("Sorted list is :");
-		
-		for(int i=0;i<N_i_w;i++) {
-			System.out.print(list_i_w[i]+" ");
-			
-		}
-		
 	}
 	
 	// bubble sort for integer
-	
 	
 	public static void bubble_i(int list[],int N)
 	{
@@ -102,13 +83,6 @@ public class Utility_3 {
 					list[j+1] = temp;
 				}
 			}
-		}
-		
-	System.out.println("Sorted list is :");
-		
-		for(int i=0;i<N;i++) {
-			System.out.print(list[i]+" ");
-			
 		}
 	}
 	
@@ -129,13 +103,7 @@ public class Utility_3 {
 				}
 			}
 		}
-		
-		System.out.println("Sorted list is :");
-		
-		for(int i=0;i<N;i++) {
-			System.out.print(list[i]+" ");
-			
-		}
+	
 	}
 
 }

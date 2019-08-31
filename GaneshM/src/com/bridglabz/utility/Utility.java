@@ -228,7 +228,7 @@ public class Utility {
  * @return Calculates the monthly payments you would have to make over Y years to
  *	pay off a P principal loan amount at R per cent interest
  *******************************************************************************/
-	public static void CarLoan(double principal, double year, double rate) {
+	public static void MonthlyPyment_13(double principal, double year, double rate) {
 		double r = (rate/100)*12;   // monthly interest rate
 		double n = year*12 ;        // months
 			
@@ -385,6 +385,7 @@ public static void IntegerToBinary(int n) {
  * @param number
  **********************************************************************/
 public static void Prime_no_Factorization(long number) {
+	
 	for (int i=2; i*i<=Long.MAX_VALUE; i++) 
 		{
 		while (number%i ==0) 
@@ -393,19 +394,19 @@ public static void Prime_no_Factorization(long number) {
 			number/=i;
 		}
 	}
-	
-	if(number>2)
+		if(number>2)
 		System.out.println(number);
 	}
 /************************************Repeat element****************************
- * 
  * @param arr
  * @param size
  ************************************************************************/
-public static void Repeat_element(int arr[], int size) 
-{
-	int i, j; 
+public static void Repeat_element(int arr[], int size) {
+	
+	int i, j;
+	
     System.out.println("Repeated Elements are :"); 
+    
     for (i = 0; i < size; i++)  
     { 
         for (j = i + 1; j < size; j++)  
@@ -436,7 +437,7 @@ public static void Factorial(int num) {
  * 
  * @param arr
  ****************************************************/
-
+//largest no from array
 public static void Largest(int[] arr) {
 	int first;
 	first=Integer.MIN_VALUE;
@@ -452,6 +453,7 @@ public static void Largest(int[] arr) {
 /******************************Smallest*********************
  * @param arr
  **********************************************************/
+//Smallest no form array
 public static void Smallest(int[] arr) {
 	int first;
 	first=Integer.MAX_VALUE;
@@ -470,6 +472,8 @@ public static void Smallest(int[] arr) {
  * @param year
  * @param rate
  ****************************************************************/
+//future values
+
 public static void FutureValues(double investC, double year, double rate) {
 					
 		double futurevalue = investC*  Math.pow(1+(rate/100), year);
@@ -482,6 +486,8 @@ public static void FutureValues(double investC, double year, double rate) {
  * @param year
  * @param rate
  ********************************************************************************/
+//present value
+
 public static void PresentValues(double investC, double year, double rate) {
 	double PresentValues = investC/  Math.pow(1+(rate/100), year);
     
@@ -492,7 +498,7 @@ public static void PresentValues(double investC, double year, double rate) {
  * @param str2 user input
  * @return   true or false
  *****************************************************************/
-
+//string anagram
 public static void Anagram(String String1, String String2) {
 	
 	char[] ch1=String1.toLowerCase().toCharArray(); 
@@ -519,6 +525,7 @@ public static void Anagram(String String1, String String2) {
  * @param element
  * @param arr
  ***************************************************/
+//binary search
 public static void BinarySearchForIntger(int element, int[] arr) {
 	
 	int li= 0;
@@ -552,6 +559,7 @@ public static void BinarySearchForIntger(int element, int[] arr) {
  * @param Change
  * @return Note
  ********************************************************/
+//vending machine or atm 
 public static void Vender_machine_10(int change, int[] note) {
 	
 	for(int i=0;i<note.length;i++) {
@@ -579,6 +587,7 @@ public static void Vender_machine_10(int change, int[] note) {
  * @param range
  * @param n
  ******************************/
+
 public static void Coupon_8(int range, int n) {
 	if(n>range) {
 		System.out.print("Please Enter less than "+range+" and try again");
@@ -587,12 +596,10 @@ public static void Coupon_8(int range, int n) {
 	int count=0; 
 	int ch[] = new int[range]; 
 	int check=1;
-	
 	int fcoupon = 0,c=0;
-	
+	//checking numbers for collection
 	while(c<range)
 	{
-		
 		int collected = collect(n,range);
 		for(int k=0;k<range;k++)
 		{
@@ -622,8 +629,7 @@ public static void Coupon_8(int range, int n) {
 	
 	}
 }
-
-
+ //created method for random number generation
 	static int collect(int n,int range){
 		
 		Random rand = new Random();
@@ -641,7 +647,7 @@ public static void Coupon_8(int range, int n) {
 * @implNote Note : the formula is not valid if t is larger than 50 in 
 * absolute value or if v is larger than 120 or less than 3 (you may assume that the values you get are in that range).
 ********************************************************************************/
-
+	//windchill
 	public static void Windchill(double temp, double wind_speed) {
 		double Wind_chill=35.74+0.6215*temp+((0.4275*temp)-35.75)*Math.pow(wind_speed, 0.16);
 		System.out.println("windchill is="+Wind_chill);

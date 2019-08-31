@@ -1,6 +1,0 @@
-package datastructures3;
-
-public class Linkedlist {
-	node head;
-
-}

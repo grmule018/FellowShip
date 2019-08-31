@@ -1,0 +1,14 @@
+package com.bridglabz.datastructures2;
+
+public class NodeA {
+	//creating node
+	
+	public int data;
+	public NodeInt next;
+	
+	//assign value for node
+	public NodeA(int data) {
+		this.data=data;
+		this.next=null;
+	}
+}

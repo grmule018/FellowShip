@@ -1,0 +1,15 @@
+package com.bridglabz.datastructures2;
+
+public class LinkListImpA {
+
+	public static void main(String[] args) throws java.lang.Exception {
+		
+		LinkedListA A =new LinkedListA();
+		
+		A.addAtBegin(10);
+		A.addAtBegin(20);
+		A.display();
+		System.out.println("size "+A.size);
+	}
+
+}

@@ -18,14 +18,24 @@ public class Bubble_sort_8 {
 		int list[] = new int[NL];
 		
 		System.out.print("Enter The Elements For bubble Sort :");
-		
+		//user input
 		for(int i=0;i<NL;i++)
 			list[i] = sc.nextInt();
 		
 		int N = list.length;
 	
 		sc.close();
+	
+		//obtainig sorted list
+		System.out.println("Sorted list is :");
 			
+			for(int i=0;i<N;i++) {
+					
+			System.out.print(list[i]+" ");
+					
+		}
+		
+		//sorting	of the element
 		for(int i=0;i<N-1;i++) {
 			
 			for(int j=0;j<N-i-1;j++)
@@ -39,11 +49,5 @@ public class Bubble_sort_8 {
 			}
 		}
 		
-		System.out.println("Sorted list is :");
-		
-		for(int i=0;i<N;i++) {
-			System.out.print(list[i]+" ");
-			
-		}
 	}
 }

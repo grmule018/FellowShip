@@ -1,0 +1,62 @@
+package com.bridglabz.datastructure;
+
+import java.util.Scanner;
+
+public class as {
+
+	public static void main(String args[]) {
+		Stack mystack1 = new Stack();
+		Stack mystack2 = new Stack();
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.print("Enter Length of parenthesis :");
+		int NL= sc.nextInt();
+		
+		int list[] = new int[NL];
+		
+		System.out.print("Enter paranthesis");
+		
+		for(int i=0;i<NL;i++)
+			list[i] = sc.nextInt();
+		
+		int N = list.length;
+		// push some numbers onto the stack
+		for(int i=0; i<N; i++) 
+			mystack1.push(i);
+		//for(int i=10; i<20; i++) mystack2.push(i);
+		// pop those numbers off the stack
+		//System.out.println("Stack in mystack1:");
+		for(int i=0; i<N; i++)
+		System.out.println(mystack1.pop());
+		//System.out.println("Stack in mystack2:");
+		//for(int i=0; i<10; i++)
+	//	System.out.println(mystack2.pop());
+		}
+		}
+			
+			
+	
+class Stack<T> (int N){
+	int stck[] = new int[N];
+	int tos;
+	// Initialize top-of-stack
+	Stack() {
+		tos = -1;
+		}
+	// Push an item onto the stack
+	void push(int item) {
+		if(tos==9)
+			System.out.println("balanced paranthesis");
+		else
+			stck[++tos] = item;
+	}
+	// Pop an item from the stack
+	int pop() {
+		if(tos < 0) {
+			System.out.println("Unbalanced paranthesis");
+			return 0;
+			}
+		else
+			return stck[tos--];
+}
+}

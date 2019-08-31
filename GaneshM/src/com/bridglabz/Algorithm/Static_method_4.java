@@ -70,9 +70,14 @@ public class Static_method_4 {
 		list_i[i] = sc.nextInt();
 	
 	int N_i = list_i.length;
-
+	
 	com.bridglabz.utility.Utility_3.insertion_i(list_i,N_i);
 	
+	System.out.println("Sorted list is :");
+	
+	for(int i=0;i<N;i++) {
+		System.out.print(list_i[i]+" ");
+	}
 	
 	// for insertion sort for word
 	
@@ -91,6 +96,13 @@ public class Static_method_4 {
 
 	com.bridglabz.utility.Utility_3.insertion(list_i_w,N_i_w);
 	
+	System.out.print("Sorted list is :");
+	
+	for(int i=0;i<N_i_w;i++) {
+		System.out.print(list_i_w[i]+" ");
+		
+	}
+	
 	//bubble sort integer
 	
 	System.out.println("Bubble Int Enter Length of list :");
@@ -107,6 +119,12 @@ public class Static_method_4 {
 
 	com.bridglabz.utility.Utility_3.bubble_i(list_b_i,N_b_i);
 	
+	System.out.println("Sorted list is :");
+	
+	for(int i=0;i<N;i++) {
+		System.out.print(list[i]+" ");
+		
+	}
 	//bubble sort for word
 	
 	System.out.println("Bubble Word Enter Length of list :");
@@ -123,6 +141,12 @@ public class Static_method_4 {
 
 	com.bridglabz.utility.Utility_3.bubble_w(list_b_w,N_b_w);
 	
+	System.out.println("Sorted list is :");
+	
+	for(int i=0;i<N;i++) {
+		System.out.print(list[i]+" ");
+		
+	}
 	sc.close();
 }
 }
