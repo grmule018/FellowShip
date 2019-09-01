@@ -2,16 +2,16 @@
 
 package com.bridglabz.datastructures2;
 
-import com.bridglabz.utility.LinkedList_Data;
+import com.bridglabz.utility.LinkedList_Data_W;
 
 public class LinkedList_Dataword <T>
 {
 	public static <T>void main(String[] args) 
 	{
-		LinkedList_Data <T> list = new LinkedList_Data<T>();
-		list.insert("hii");
-		list.insert("hello");
-		list.insert("how");
+		LinkedList_Data_W <T> list = new LinkedList_Data_W<T>();
+		list.insertAtFirst("hii");
+		list.insertAtFirst("hello");
+		list.insertAtPos(2, "how");
 		
 //		list.displayNodes();
 //		list.insertAtFirst(10);
@@ -22,6 +22,6 @@ public class LinkedList_Dataword <T>
 //		list.displayNodes();
 		
 		int count = list.countNodes();
-		System.out.println("Count"+count);
+		System.out.println("Count: "+count);
 	}
 }
