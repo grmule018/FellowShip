@@ -86,8 +86,7 @@ public class QueueUtility<T>
 	{
 		int balance = cashAvailable ;
 		System.out.println("Your available balance is:"+balance);
-	
-		
+			
 		return balance;
 	}
 }

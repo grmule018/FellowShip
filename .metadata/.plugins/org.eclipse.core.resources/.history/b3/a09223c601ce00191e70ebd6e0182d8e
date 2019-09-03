@@ -1,0 +1,93 @@
+/******************************************************************************
+ *  Purpose: Read texts from a file and store in a linked list if word present  
+ *           then remove it else add it to the linked list and save the list
+ *           in a file.      
+ *  @author  MarkF
+ *  @version 1.0
+ *  @since   26-08-2019
+ *
+ ******************************************************************************/
+package com.bridglabz.datastructures1;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+import com.bridglabz.Utility.Utility2;
+import com.bridglabz.utility.Utility;
+
+public class UnorderedList 
+{
+
+	public static <T> void main(String args[]) throws IOException 
+	{
+		System.out.println("Reading the data from the file.");
+		try(BufferedReader bufferedReader = new BufferedReader(new FileReader
+				(""))) 
+		{
+			String stringWithFileData = "";
+			String line = bufferedReader.readLine();
+			while(line != null)
+			{
+				stringWithFileData+=line+" ";
+				line = bufferedReader.readLine();
+			}
+			
+			// Data receieved, now storing it into sring array.
+			String[] array = stringWithFileData.trim().split("\\s+"); 
+			LinkedList1<T> linkedList = new LinkedList1<T>();
+			for(int i=0; i<array.length; i++)
+			{
+				linkedList.append(array[i]);
+				//System.out.println(array[i]);
+			}
+			
+			// Searching for the string if present or not.
+			System.out.println("Enter an input to search for a text.");
+			//Object object = "String";
+			String searchString = Utility.StringInput();
+			boolean isStringPresent = linkedList.search(searchString);
+			if(isStringPresent)
+			{
+				System.out.println("The string you entered is present, so removing it.");
+				linkedList.remove(searchString);
+				linkedList.printList();
+				linkedList.writeDataToFile();
+//				linkedList.append(searchString);
+//				linkedList.printList();
+			}
+			else
+			{
+				System.out.println("The string you entered is absent, so adding it.");
+				linkedList.append(searchString);
+				linkedList.printList();
+				linkedList.writeDataToFile();
+//				linkedList.remove(searchString);
+//				linkedList.printList();
+			}
+			
+		}
+		catch
+		(Exception e) 
+		{
+			System.out.println(e);
+		}
+	
+		//		 Code for testing
+		LinkedList1<T> linkedList = new LinkedList1<T>();
+		linkedList.append("cat");
+		linkedList.insertAtStart("mat");
+		linkedList.insertAtStart("sat");
+		linkedList.append("fat");
+		linkedList.append("bat");
+		
+		System.out.println("is bat present "+linkedList.search("bat"));
+		linkedList.printList();
+		linkedList.remove("mat");
+		linkedList.printList();
+		linkedList.remove("bat");
+		linkedList.printList();
+		linkedList.remove("sat");
+		linkedList.printList();
+	}
+}    

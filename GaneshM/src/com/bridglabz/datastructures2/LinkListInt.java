@@ -1,5 +1,7 @@
 package com.bridglabz.datastructures2;
 
+import com.bridglabz.utility.LinkedListInt;
+
 public class LinkListInt {
 
 	public static void main(String[] args) throws java.lang.Exception {
@@ -15,17 +17,18 @@ public class LinkListInt {
 //		A.addAtPos(5, 3);
 //		A.display();
 //		A.isEmpty();
-//		A.addAtPos(9, 4 );
-//		A.deleteAtBegin();
-//		A.deleteAtEnd();
+		A.addAtPos(9, 4 );
+		A.deleteAtBegin();
+		A.deleteAtEnd();
 		A.deleteAtPos(3);
+		A.display();
 		
-		System.out.println(" Element at 2nd position : " + A.elementAt(2));
+		System.out.println("Element at 2nd position : " + A.elementAt(2));
 		
 		//Print search element
-		System.out.println(" Searching element location : " + A.search(15));
+		System.out.println("Searching element location : " + A.search(15));
 		
-		A.display();
+		//A.display();
 		
 		System.out.println("size "+A.size);
 	}

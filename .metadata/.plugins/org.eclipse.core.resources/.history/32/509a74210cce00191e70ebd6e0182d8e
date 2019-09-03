@@ -1,0 +1,18 @@
+package com.bridglabz.datastructures1;
+
+import com.bridglabz.datastructures1.WorkO;
+
+public class WorkO2 {
+	
+	public static void main(String[]args) {
+		
+		WorkO ll=new WorkO();
+	{
+		ll.add(20);
+		
+	
+	}
+		
+}
+
+}

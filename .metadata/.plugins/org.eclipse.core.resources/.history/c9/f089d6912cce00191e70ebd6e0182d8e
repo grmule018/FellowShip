@@ -1,0 +1,13 @@
+package com.bridglabz.datastructures1;
+import com.bridglabz.utility.LinkedList_Data_W;
+import com.bridglabz.utility.Node;
+public class Hashing <T>{
+	Node <T> head;
+	public static<T> void main(String[] args) {
+		LinkedList_Data_W<T> list = new LinkedList_Data_W<T>();
+		 int[] arr=new int[11];
+		
+		 for (int i=0;i<arr.length;i++) {
+	    arr[i]=head;
+	}
+}

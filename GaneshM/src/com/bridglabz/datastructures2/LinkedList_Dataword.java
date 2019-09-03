@@ -14,7 +14,7 @@ public class LinkedList_Dataword <T>
 		list.insertAtPos(2, "how");
 		
 //		list.displayNodes();
-//		list.insertAtFirst(10);
+//		list.insertAtFirst(10)
 		list.displayNodes();
 //		
 
