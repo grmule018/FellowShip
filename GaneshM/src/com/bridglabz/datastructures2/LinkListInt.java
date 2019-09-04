@@ -1,3 +1,10 @@
+/**
+ * purpose: Binary search for Integers.
+ * 
+ * @author Ganesh Mule
+ * @version 1.0
+ * @since 01-09-2019
+ **/
 package com.bridglabz.datastructures2;
 
 import com.bridglabz.utility.LinkedListInt;

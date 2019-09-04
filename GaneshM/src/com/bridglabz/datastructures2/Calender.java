@@ -1,8 +1,17 @@
+/**
+ * purpose: Binary search for Integers.
+ * 
+ * @author Ganesh Mule
+ * @version 1.0
+ * @since 03-09-2019
+ **/
+
+
 package com.bridglabz.datastructures2;
 import com.bridglabz.utility.*;
 public class Calender { 
 
-		    
+		    //find the day 
     public static int day(int month, int day, int year) {
         int y = year - (14 - month) / 12;
         int x = y + y/4 - y/100 + y/400;

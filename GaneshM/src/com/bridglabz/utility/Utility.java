@@ -652,4 +652,33 @@ public static void Coupon_8(int range, int n) {
 		double Wind_chill=35.74+0.6215*temp+((0.4275*temp)-35.75)*Math.pow(wind_speed, 0.16);
 		System.out.println("windchill is="+Wind_chill);
 	}
+
+/**
+ * 
+ * 
+ * 
+ * 
+ **/
+public static boolean StringAnagram(String str1,String str2)
+{
+	
+	boolean flag=true;
+	
+	if(str1.length()!=str2.length())
+	{
+		flag=false;
 	}
+	else
+	{
+		char[] s1= str1.toLowerCase().toCharArray();
+		char[] s2= str2.toLowerCase().toCharArray();
+	
+		Arrays.sort(s1);
+		Arrays.sort(s2);
+		
+		flag=Arrays.equals(s1, s2);
+		
+
+	}
+	return flag;
+}}

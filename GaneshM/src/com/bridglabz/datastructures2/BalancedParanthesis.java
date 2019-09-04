@@ -1,3 +1,10 @@
+/**
+ * purpose: Balanced parenthesis.
+ * 
+ * @author Ganesh Mule
+ * @version 1.0
+ * @since 2-09-2019
+ **/
 package com.bridglabz.datastructures2;
 
 import com.bridglabz.utility.*;
@@ -23,10 +30,10 @@ public class BalancedParanthesis
 			}
 			
 			else if(expressionArray[i]==')')
-			{
+			{	top--;
 				if(top==0)
 				{
-					top=-1;
+					//top--;
 					break;
 				}
 				stack.pop();

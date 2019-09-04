@@ -1,3 +1,10 @@
+/**
+ * purpose: Queue.
+ * 
+ * @author Ganesh Mule
+ * @version 1.0
+ * @since 4-09-2019
+ **/
 package com.bridglabz.datastructures2;
 
 import com.bridglabz.utility.QueueUtility;

@@ -1,3 +1,10 @@
+/**
+ * purpose: To find mid element of array
+ * 
+ * @author Ganesh Mule
+ * @version 1.0
+ * @since 04-09-2019
+ **/
 package com.bridglabz.Algorithm;
 //import java.util.Scanner;
 public class MidElementOfArray {

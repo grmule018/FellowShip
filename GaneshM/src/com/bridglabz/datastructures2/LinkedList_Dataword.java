@@ -1,4 +1,10 @@
-
+/**
+ * purpose: Linked list for word
+ * 
+ * @author Ganesh Mule
+ * @version 1.0
+ * @since 3-09-2019
+ **/
 
 package com.bridglabz.datastructures2;
 

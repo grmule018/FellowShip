@@ -1,0 +1,39 @@
+package com.bridglabz.datastructures2;
+
+
+class Node{
+	int data;
+	Node left;
+	Node right;
+	
+class Binary_tree{
+	 
+	private Node creatNewNode(int val) {
+		Node n=new Node();
+		n.data=val;
+		n.left=null;
+		n.right=null;
+		return n;
+	}
+
+
+	public Node insert(Node node, int val){
+		if (node==null) {
+			return creatNewNode(val); 
+		}
+		if(val<node.data) {
+		node.left=insert(node.left, val);
+		}
+		else if(val>node.data) {
+			node.right=insert(node.right, val);
+		}
+		return node;
+	}
+
+}
+public class BsT {
+	
+}
+	
+
+}

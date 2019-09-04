@@ -1,4 +1,10 @@
-
+/**
+ * Purpose: Unordered list
+ * 
+ * @author Ganesh Mule
+ * @version 1.0
+ * @since 03-09-2019
+ **/
 package com.bridglabz.datastructures2;
 
 import java.io.BufferedReader;
