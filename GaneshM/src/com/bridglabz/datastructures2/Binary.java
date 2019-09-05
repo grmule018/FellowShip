@@ -11,7 +11,7 @@ class Node{
 	Node left;
 	Node right;
 }
-class Binary{
+class BinaryTree{
 	 
 	public Node creatNewNode(int k) {
 		Node n=new Node();
@@ -37,7 +37,7 @@ class Binary{
 
 	public static void main (String[]args) {
 
-		Binary a = new Binary();
+		BinaryTree a = new BinaryTree();
 		
 		Node root=null;
 		 

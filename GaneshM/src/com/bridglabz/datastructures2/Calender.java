@@ -1,5 +1,5 @@
 /**
- * purpose: Binary search for Integers.
+ * purpose: Year & month for calendar output
  * 
  * @author Ganesh Mule
  * @version 1.0
@@ -63,9 +63,8 @@ public class Calender {
 		        	System.out.printf("%2d ", i);
 		            if (((i + d) % 7 == 0) || (i == days[month])) 
 		            	System.out.println();
-		        }
-		        		
-		    }
+	        }
+	        		
+	  }
 }
 	
-
