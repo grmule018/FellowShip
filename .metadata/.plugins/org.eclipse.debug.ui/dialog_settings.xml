@@ -18,4 +18,16 @@
 		<item key="DIALOG_HEIGHT" value="438"/>
 		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
 	</section>
+	<section name="org.eclipse.debug.ui.sourcelookup.SourceLookupDialog">
+		<item key="DIALOG_X_ORIGIN" value="346"/>
+		<item key="DIALOG_Y_ORIGIN" value="63"/>
+		<item key="DIALOG_WIDTH" value="613"/>
+		<item key="DIALOG_HEIGHT" value="455"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
+	</section>
+	<section name="org.eclipse.jdt.debug.ui.PROJECT_SELECTION_DIALOG_SECTION">
+		<item key="DIALOG_WIDTH" value="345"/>
+		<item key="DIALOG_HEIGHT" value="413"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
+	</section>
 </section>

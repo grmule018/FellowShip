@@ -8,6 +8,14 @@
 
 package com.bridglabz.utility;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 public class Utility {
@@ -177,10 +185,6 @@ public class Utility {
             System.out.println("Year "+year+" is not a Leap Year");
         }
 }
-	
-
-
-
 /********************************Day of Week***************************
  * @param d : User input  Day.
  * @param m : User input Month.
@@ -377,8 +381,6 @@ public static void IntegerToBinary(int n) {
     }
     System.out.println();
 }
-
-
 
 /*********************************Prime_no_Factorization**************
  * 
@@ -654,11 +656,9 @@ public static void Coupon_8(int range, int n) {
 	}
 
 /**
- * 
- * 
- * 
- * 
+ * Purpose to find string anagram
  **/
+	
 public static boolean StringAnagram(String str1,String str2)
 {
 	
@@ -681,4 +681,59 @@ public static boolean StringAnagram(String str1,String str2)
 
 	}
 	return flag;
-}}
+}
+	//format date object in this format 
+	public static String getFormatedDate(Date date){
+	LocalDate ld=LocalDate.now();
+	DateTimeFormatter dtf=DateTimeFormatter.ofPattern("dd/MM/yyyy");
+	String formated =ld.format(dtf);
+	return formated;
+	}
+	static BufferedReader br;
+			
+	//constructor to initialize bufferedReader
+	public Utility(){
+		br = new BufferedReader(new InputStreamReader(System.in));
+		}
+	//Take file name as input and return string of file text
+
+	public static String getFileText(String fileName){
+		try{
+			br=new BufferedReader(new FileReader(fileName));
+			StringBuilder sb=new StringBuilder();
+			String line=br.readLine();
+			while(line!=null){
+				sb.append(line);
+				sb.append(System.lineSeparator());
+				line=br.readLine();
+			}
+			return sb.toString();
+			 }
+			catch(Exception e){
+				return null;
+			}
+			finally{
+			try{
+				br.close();
+			}
+			catch(IOException ioe){
+				}	
+			}
+		}
+		
+		//this function take two parameter 
+		// 1 what data to write.
+		// 2 file name
+		public void writeToFile(String data,String fileName)throws Exception{
+			File file = new File(fileName);
+			if (!file.exists()) {
+				file.createNewFile();
+			}
+			FileWriter writer = new FileWriter(file); 
+			// Writes the content to the file
+			writer.write(data); 
+			writer.flush();
+			writer.close();
+		}
+	}
+

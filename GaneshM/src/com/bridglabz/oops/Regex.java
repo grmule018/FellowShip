@@ -1,33 +1,81 @@
+/**
+ * 
+ */
 package com.bridglabz.oops;
+import com.bridglabz.utility.Utility;
 
-import java.util.Date;
-import com.bridglabz.oops.UserDetails;
-import com.bridglabz.oops.Utility;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.regex.Pattern;
 
+	
 public class Regex
 {
-	public static void main(String args[])
-	{
-		Utility u=new Utility();
+	private String firstName;
+	private String lastName;
+	private String fullName;
+	
+	public String getFirstName() {
+		return firstName;
+	}
 
-		UserDetails user=new UserDetails();
-		System.out.println();
-	
-		//asking user to enter his data
-		System.out.println("Enter FirstName:");
-		user.setfName(u.inputString());
-		System.out.println();
-	
-		System.out.println("Enter LastName:");
-		user.setlName(u.inputString());
-		System.out.println();
-	
-		System.out.println("Enter Mobile Number:");
-		user.setmobileNo(u.inputString());
-		System.out.println();	
+
+	public void setFirstName(String fName) {
+		this.firstName = fName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lName) {
+		this.lastName = lName;
+	}
+
+
+	public String getFullName() {
+		return fullName;
+	}
+
+
+	public void setFullName(String fName) {
+		this.fullName = fName;
+	}
+
+		@SuppressWarnings("static-access")
+		public static void main(String[] args) 
+		{
+
+		String string = "Hello <<name>>, We have your full name as <<full name>> in our system. \n"
+					+ " * your contact number is 91-xxxxxxxxxx. Please,let us know in case of any querry."
+					+ " Thank you BridgeLabz \n"
+					+ " * 12/12/2019";
+
+		System.out.println("Enter your first name");
+		String fName = Utility.StringInput();
+		System.out.println("Enter your last name");
+		String lName = Utility.StringInput();
+
+		String fullname = fName + " " + lName;
+
+		Pattern r = Pattern.compile("[a-zA-Z]+");
+
+		if (r.matches("[a-zA-z]+", fName))
+		{
+			string = string.replaceAll("<<name>>", fName);
+			string = string.replaceAll("<<full name>>", fullname);
+		}
+		System.out.println("Enter 10 digit mobile number");
+		String MbNo = Utility.StringInput();
 		
-		//Setting current date
-		user.setdate(u.getFormatedDate(new Date()));
-		System.out.println(u.convertString(user,u.getFileText("/home/user/Downloads/RELEASE/GaneshM/src/com/bridglabz/oops/newfile.txt")));	
+		if (Pattern.matches("[6789][0-9]{9}", MbNo))
+		{
+			string = string.replaceAll("x{10}", MbNo);
+		}
+
+		LocalDate localDate = LocalDate.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		String formattedString = localDate.format(formatter);
+		string = string.replaceAll("12/12/2019", formattedString);
+		System.out.println(string);
 	}
 }

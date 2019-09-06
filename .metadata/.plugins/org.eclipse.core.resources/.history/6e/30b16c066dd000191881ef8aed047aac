@@ -1,0 +1,31 @@
+package com.bridglabz.oops;
+
+import java.util.Date;
+import com.bridglabz.oops.UserDetails;
+
+import com.bridglabz.utility.Utility;
+public class Regex
+{
+	public static void main(String args[])
+	{
+		
+		UserDetails user=new UserDetails();
+		
+		//asking user to enter his data
+		System.out.println("Enter FirstName:");
+		user.setfName(Utility.StringInput());
+		System.out.println();
+	
+		System.out.println("Enter LastName:");
+		user.setlName(Utility.StringInput());
+		System.out.println();
+	
+		System.out.println("Enter 10 digit Mobile Number:");
+		user.setmobileNo(com.bridglabz.utility.Utility.StringInput());
+		System.out.println();	
+		
+		//Setting current date
+		user.setdate(com.bridglabz.utility.Utility.getFormatedDate(new Date()));
+		System.out.println(Utility.convertString(user,Utility.getFileText("/home/user/Downloads/RELEASE/GaneshM/src/com/bridglabz/oops/newfile.txt")));	
+	}
+}
