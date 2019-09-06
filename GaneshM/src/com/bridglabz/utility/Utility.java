@@ -735,5 +735,7 @@ public static boolean StringAnagram(String str1,String str2)
 			writer.flush();
 			writer.close();
 		}
+		
+	
 	}
 

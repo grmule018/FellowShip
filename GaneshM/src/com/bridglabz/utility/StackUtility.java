@@ -83,4 +83,30 @@ public class StackUtility <T>
 		System.out.println(" ");
 	}
 	
+	public int viewStackAnagram() 
+	{
+		Node <T> tempNode = new Node<T>();
+		tempNode = head;
+		int iCnt = 0;
+		while(tempNode!=null)
+		{
+			if(iCnt<2)
+			{
+				System.out.println(tempNode.data+" ");
+				iCnt++;
+			}
+			else
+			{
+				System.out.println();
+				iCnt = 0;
+			}
+			
+			tempNode = tempNode.next;
+		}
+		System.out.println(" ");
+		return iCnt;
+	}
+	
+
 }
+

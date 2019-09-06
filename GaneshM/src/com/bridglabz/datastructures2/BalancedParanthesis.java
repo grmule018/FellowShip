@@ -23,24 +23,25 @@ public class BalancedParanthesis
 		
 		for(int i = 0; i<expressionArray.length; i++)
 		{
-			if(expressionArray[i]=='(')
+			if(expressionArray[i]=='('||expressionArray[i]=='['||expressionArray[i]=='{')
 			{
 				top++;
 				stack.push(expressionArray[i]);
 			}
 			
-			else if(expressionArray[i]==')')
-			{	top--;
+			else if(expressionArray[i]==')'||expressionArray[i]==']'||expressionArray[i]=='}')
+			{	
 				if(top==0)
 				{
-					//top--;
+					top=-1;
 					break;
 				}
+				top--;
 				stack.pop();
 			}
 		}
 		
-		if(!(stack.isEmpty())&&(top==0))
+		if((stack.isEmpty())&&(top==0))
 		{
 			System.out.println("Expression has balanced paranthesis");
 		}
@@ -50,30 +51,5 @@ public class BalancedParanthesis
 		}
 		
 	}
-
-	@Override
-	protected Object clone() throws CloneNotSupportedException {
-		return super.clone();
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		return super.equals(obj);
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-		super.finalize();
-	}
-
-	@Override
-	public int hashCode() {
-		return super.hashCode();
-	}
-
-	@Override
-	public String toString() {
-
-		return super.toString();
-	}
+	
 }
