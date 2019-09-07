@@ -1,0 +1,7 @@
+package com.bridglabz.utility;
+
+import org.codehaus.jackson.map.ObjectMapper;
+
+public class JsonUtility {
+	private static ObjectMapper mapper;
+}

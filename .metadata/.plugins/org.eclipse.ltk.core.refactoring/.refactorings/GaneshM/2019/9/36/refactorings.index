@@ -44,3 +44,13 @@
 1567754327939	Delete element
 1567754330067	Delete element
 1567758952838	Infer generic type arguments
+1567829703682	Delete element
+1567829775136	Delete element
+1567837621077	Rename package 'com.bridglabz.Algorithm'
+1567861018042	Copy file
+1567861450993	Rename resource 'inventorymain1.json'
+1567861458517	Rename resource 'inventory.json'
+1567861472588	Rename resource 'inventory1.json'
+1567862268206	Rename type 'InventoryManagement'
+1567862289380	Rename type 'InventoryList'
+1567862308292	Rename type 'Inventory'

@@ -3,7 +3,6 @@
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="java.io.CharArrayWriter"/>
-    <fullyQualifiedTypeName name="com.bridglabz.utility.Utility"/>
     <fullyQualifiedTypeName name="com.bridglabz.utility.LinkedListInt"/>
     <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
@@ -11,4 +10,9 @@
     <fullyQualifiedTypeName name="T"/>
     <fullyQualifiedTypeName name="com.bridglabz.datastructures2.Node"/>
     <fullyQualifiedTypeName name="com.bridgelabz.task.UserDetails"/>
+    <fullyQualifiedTypeName name="com.bridglabz.utility.Utility"/>
+    <fullyQualifiedTypeName name="com.bridglabz.oops.Utility"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="java.util.Stack"/>
 </qualifiedTypeNameHistroy>

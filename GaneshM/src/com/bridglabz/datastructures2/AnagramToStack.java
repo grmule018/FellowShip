@@ -10,13 +10,14 @@ package com.bridglabz.datastructures2;
 
 import java.util.Arrays;
 
+import com.bridglabz.utility.StackUtility;
 import com.bridglabz.utility.Utility;
 
 public class AnagramToStack {
 
 	public static void main(String[] args) {
 
-
+		StackUtility stack=new StackUtility();
 		int y = 0;
 
 		int[] arr = new int[170];
@@ -76,11 +77,14 @@ public class AnagramToStack {
 			if(flag==true)
 				{
 				s1[k][l]=str[k]+" "+str[l];
-				System.out.println(s1[k][l]);
+				//System.out.println(s1[k][l]);
+				stack.push(s1[k][l]);
 				}
 			
 			}
 		}
+		stack.viewStack();
+		
 	}	
 	
 }

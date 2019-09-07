@@ -1,0 +1,25 @@
+
+package com.bridglabz.oops;
+import com.bridglabz.oops.Json;
+import com.bridglabz.utility.JsonUtility;;
+
+
+public class JsonTest {
+
+	public static void main(String[] args) {
+		JsonEmp emp=new JsonEmp();
+		emp.setEmpNo(420);
+		emp.setName("Amar");
+		emp.setSalary(20000);
+		
+		String jsonEmp=JsonUtility.convertJavaToJson(emp);
+
+	System.out.println((jsonEmp));
+	System.out.println("=========================");
+	}
+		
+	Json emp1=JsonUtility.convertJsonToJava(jsonEmp,json.class);
+	
+}
+
+
