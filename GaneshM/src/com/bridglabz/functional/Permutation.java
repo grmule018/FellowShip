@@ -1,10 +1,13 @@
+/**
+ * Purpose : Permutation of string
+ **/
+
 package com.bridglabz.functional;
 
 import java.util.Scanner;
 
 public class Permutation 
 {
-	
 		private static void swap(char[] ch,int i,int j)
 		{
 			char temp=ch[i];

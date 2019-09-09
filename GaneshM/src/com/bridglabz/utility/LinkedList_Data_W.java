@@ -1,15 +1,14 @@
+/**
+ * Purpose :  linked list for word
+ */
 package com.bridglabz.utility;
-
-//import com.bridglabz.datastructures2.NodeInt;
 
 public class LinkedList_Data_W <T>
 {
 	Node <T> head;
 	
-	/**
-	 * purpose 		inserts element at first position
-	 * @param data	data to be inserted in linked list
-	 */
+	// purpose :inserts element at first position 
+	 
 	public void insertAtFirst(Object data)
 	{
 		Node <T> node = new Node<T>();
@@ -23,13 +22,10 @@ public class LinkedList_Data_W <T>
 			node.next = head;
 			head = node;
 		}
-		
 	}
+		
+	// purpose inserts the element at last position
 	
-	/**
-	 * purpose 		inserts the element at last position
-	 * @param data	data to be inserted in linked list
-	 */
 	public void insertLast(Object data)
 	{
 		Node <T> node = new Node<T>();
@@ -53,12 +49,8 @@ public class LinkedList_Data_W <T>
 		}
 		
 	}
-	
-	
-	/**
-	 * purpose 	insert element in the linked list at the end
-	 * @param 	string	data of the node	
-	 */
+		//purpose 	insert element in the linked list at the end
+	 
 	public  void insertAtPos(int pos,Object string)
 	{
 		
@@ -82,10 +74,8 @@ public class LinkedList_Data_W <T>
 		
 	}
 
-	/**
-	 * Purpose	to count the elements from the linked list
-	 * @return	nodeCount 	count of nodes
-	 */
+	// Purpose	to count the elements from the linked list
+	 
 	public int countNodes()
 	{
 		Node<T> node = new Node<T>();
@@ -99,9 +89,8 @@ public class LinkedList_Data_W <T>
 		return nodeCount;
 	}
 	
-	/**
-	 * Purpose 	displays all nodes of linked list
-	 */
+	// Purpose 	displays all nodes of linked list
+	 
 	public void displayNodes()
 	{
 		Node<T> node = new Node<T>();
@@ -115,12 +104,11 @@ public class LinkedList_Data_W <T>
 		
 	}
 	
-	/**
-	 * Purpose 	search the element in the linked list
-	 * @param  	word	 the element which should be searched in linked list	 
-	 * @param   length 	 total number of nodes in linked list 
-	 * @return	position the position of the searched element
-	 */
+	// Purpose 	search the element in the linked list
+	// param  	word	 the element which should be searched in linked list	 
+	// param   length 	 total number of nodes in linked list 
+	// return	position the position of the searched element
+	 
 	public int search(Object word, int length)
 	{
 		Node<T> node = new Node<T>();
@@ -145,10 +133,9 @@ public class LinkedList_Data_W <T>
 		}
 	}
 
-	/**
-	 * Purpose 	delete the element of particular position
-	 * @param position	the position from which the element should be deleted
-	 */
+	// Purpose 	delete the element of particular position
+	 	
+	
 	public void deletAtPosition(int position) 
 	{
 		int count = 1;
@@ -175,11 +162,8 @@ public class LinkedList_Data_W <T>
 		
 	}
 	
-	/**
-	 * Purpose 	converts linked list elements to a string array
-	 * @param 	length	 total numbers of nodes from linked list
-	 * @return	strArray is array of elements from linked list
-	 */
+	//Purpose 	converts linked list elements to a string array
+	 
 	public String[] convertToStringArray(int length)
 	{
 		int i = 0;
@@ -192,7 +176,6 @@ public class LinkedList_Data_W <T>
 			newNode = newNode.next;
 			i++;
 		}
-		
 		//newNode = newNode.next;
 		strArray[i] = (String) newNode.data; 
 		return strArray;

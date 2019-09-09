@@ -76,7 +76,7 @@ public class InventoryMain1 {
 			System.out.println();
 		}
 		System.out.println("TOTAL "+item+" PRICE = "+total);
-		System.out.println("----------------------------------");
+		System.out.println("----------------------------------");	
 		
 		} 
 			catch (IOException e) 

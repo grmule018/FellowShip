@@ -7,12 +7,13 @@
 package com.bridglabz.datastructures2;
 
 class Node{
+	//Creating node for bianary tree
 	int data;
 	Node left;
 	Node right;
 }
 class BinaryTree{
-	 
+	 //creating new node
 	public Node creatNewNode(int k) {
 		Node n=new Node();
 		n.data=k;
@@ -20,8 +21,7 @@ class BinaryTree{
 		n.right=null;
 		return n;
 	}
-
-
+	//creating function for inserting value
 	public Node insert(Node root, int val){
 		if (root==null) {
 			return creatNewNode(val); 
@@ -34,7 +34,7 @@ class BinaryTree{
 		}
 		return root;
 	}
-
+	//creating main function
 	public static void main (String[]args) {
 
 		BinaryTree a = new BinaryTree();

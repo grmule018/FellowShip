@@ -1,3 +1,7 @@
+/**
+ * Purpose : creating getter setter for inventory
+ */
+
 package com.bridglabz.oops;
 
 import java.util.ArrayList;
@@ -6,6 +10,9 @@ import java.util.List;
 
 
 public class InventoryList4{
+	
+	//creating inventory getter setter methods
+	
 	private String inventoryName;
 	
 	private List <Inventory4> listofInventories= new ArrayList<Inventory4>();
@@ -25,7 +32,4 @@ public class InventoryList4{
 	public void setListofInventories(List<Inventory4> listofInventories) {
 		this.listofInventories = listofInventories;
 	}
-
 }	
-
-

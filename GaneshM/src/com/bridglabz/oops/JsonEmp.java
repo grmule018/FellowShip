@@ -1,5 +1,7 @@
+/**
+ * Purpose : creating simple example
+ */
 package com.bridglabz.oops;
-
 
 import java.io.Serializable;
 

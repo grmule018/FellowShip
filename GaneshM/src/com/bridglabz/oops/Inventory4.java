@@ -1,3 +1,6 @@
+/**
+ * Purpose : creating inventory management getter setter methods
+ */
 package com.bridglabz.oops;
 
 public class Inventory4 {
@@ -5,6 +8,8 @@ public class Inventory4 {
 	private String name;
 	private float weight;
 	private double price;
+	
+	//creating getter setter methods
 	
 	public String getName() {
 		return name;

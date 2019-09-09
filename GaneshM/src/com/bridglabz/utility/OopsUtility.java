@@ -1,8 +1,5 @@
 /******************************************************************************
- *  
- *  Purpose: Contains all the functions for the .java files in 
- *  		 com.bridgelabz.oops package
- 
+ * Purpose: Contains all the functions for the .java files in 	
  ******************************************************************************/
 
 package com.bridglabz.utility;

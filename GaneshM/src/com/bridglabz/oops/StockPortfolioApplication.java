@@ -7,10 +7,10 @@ import java.io.IOException;
 
 import com.bridglabz.utility.*;;
 
-/*
+/**
 * The main function is written to take input from the user and
 * calls various methods that manages the stocks
-*/
+**/
 public class StockPortfolioApplication {
 	public static void main(String[] args) throws IOException {
 		int flag=0;
@@ -24,19 +24,16 @@ public class StockPortfolioApplication {
 				
 				break;
 			case 2:
-				
-				
+							
 				StockPortfolio.valueOfEachShare();
 				
 				break;
 			case 3:
-				
-				
+					
 				StockPortfolio.valueOfTotalStocks();
 				
 				break;
 			case 4:
-				
 				
 				StockPortfolio.displayStockDetails();
 			

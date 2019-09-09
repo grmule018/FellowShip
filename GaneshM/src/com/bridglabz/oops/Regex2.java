@@ -1,5 +1,5 @@
 /**
- * 
+ * Purpose : Regular Expression
  */
 package com.bridglabz.oops;
 import java.time.LocalDate;
@@ -15,14 +15,16 @@ public class Regex2
 	private String lastName;
 	private String fullName;
 	
+	//Creating getter setter
+	
 	public String getFirstName() {
 		return firstName;
 	}
 
-
 	public void setFirstName(String fName) {
 		this.firstName = fName;
 	}
+	
 	public String getLastName() {
 		return lastName;
 	}
@@ -31,21 +33,20 @@ public class Regex2
 		this.lastName = lName;
 	}
 
-
 	public String getFullName() {
 		return fullName;
 	}
 
-
 	public void setFullName(String fName) {
 		this.fullName = fName;
 	}
-
 		
-		public static void main(String[] args) 
+	//Main function for regular expressions
+	
+	public static void main(String[] args) 
 		{
-
-		String string = "Hello <<name>>, We have your full name as <<full name>> in our system. \n"
+		//regex string
+		String str = "Hello <<name>>, We have your full name as <<full name>> in our system. \n"
 					+ " * your contact number is 91-xxxxxxxxxx. Please,let us know in case of any clearification"
 					+ " Thank you BridgeLabz \n"
 					+ " * 12/12/2019";
@@ -57,25 +58,26 @@ public class Regex2
 
 		String fullname = fName + " " + lName;
 
-		Pattern r = Pattern.compile("[a-zA-Z]+");
+		Pattern p = Pattern.compile("[a-zA-Z]+");
 
-		if (r.matches("[a-zA-z]+", fName))
+		if (p.matches("[a-zA-z]+", fName))
 		{
-			string = string.replaceAll("<<name>>", fName);
-			string = string.replaceAll("<<full name>>", fullname);
+			str = str.replaceAll("<<name>>", fName);
+			str = str.replaceAll("<<full name>>", fullname);
 		}
+		//taking user input for mobile number
 		System.out.println("Enter 10 digit mobile number");
 		String MbNo = Utility.StringInput();
 		
 		if (Pattern.matches("[6789][0-9]{9}", MbNo))
 		{
-			string = string.replaceAll("x{10}", MbNo);
+			str = str.replaceAll("x{10}", MbNo);
 		}
-
+		//taking current date 
 		LocalDate localDate = LocalDate.now();
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		String formattedString = localDate.format(formatter);
-		string = string.replaceAll("12/12/2019", formattedString);
-		System.out.println(string);
+		str = str.replaceAll("12/12/2019", formattedString);
+		System.out.println(str);
 	}
 }
