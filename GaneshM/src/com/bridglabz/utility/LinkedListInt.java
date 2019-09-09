@@ -1,3 +1,10 @@
+/**	
+ * Purpose: Linked list for 
+ *  
+ * @author Ganesh Mule
+ * @version 1.0
+ * @since 05-09-2019
+ **/
 package com.bridglabz.utility;
 
 import java.io.FileWriter;

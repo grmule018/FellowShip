@@ -1,7 +1,10 @@
-/******************************************************************************
- * Purpose: Contains all the functions for the .java files in 	
- ******************************************************************************/
-
+/**
+ * Purpose: Contains all the functions for the .java files in 
+ * 
+ * @author Ganesh Mule
+ * @version 1.0
+ * @since 07-09-2019
+ **/
 package com.bridglabz.utility;
 
 import java.io.BufferedReader;
@@ -24,26 +27,24 @@ import com.bridglabz.oops.InventoryList4;
 public class OopsUtility {
 
 	private static ObjectMapper objectMapper = new ObjectMapper();
-	/**
-	 * Static Function to map the json string to the list of objects
-	 */
+	
+	// Static Function to map the json string to the list of objects
+	
 	public static <T> List<T> userReadValue(String str, Class<?> cls)
 			throws JsonParseException, JsonMappingException, IOException {
 		CollectionType colletion = objectMapper.getTypeFactory().constructCollectionType(ArrayList.class, cls);
 		return objectMapper.readValue(str, colletion);
 	}
-
-	/**
-	 * Static Function to map the list to json string
-	 */
+		
+	// Static Function to map the list to json string
+	 
 	public static <T> String userWriteValueAsString(List<T> list)
 			throws JsonGenerationException, JsonMappingException, IOException {
 		return objectMapper.writeValueAsString(list);
 	}
-
-	/**
-	 * Function to read the json file
-	 */
+	
+	// Function to read the json file
+	 
 	public static String readJsonFile(String filename) throws IOException {
 		FileReader fr = new FileReader(filename);
 		BufferedReader br = new BufferedReader(fr);
@@ -55,24 +56,23 @@ public class OopsUtility {
 		br.close();
 		return str;
 	}
-	
-	/**
-	 * Function to write on to file
-	 */
+		
+	// Function to write on to file
+	 
 	public static void writeFile(String json, String filename) throws IOException {
 		FileWriter fw = new FileWriter(filename);
 		BufferedWriter bw = new BufferedWriter(fw);
 		bw.write(json);
 		bw.close();
 	}
-	
+	//  Generic Function to write file
 	public static <T> void writeToFile(String filename,List<T> list) throws JsonGenerationException, JsonMappingException, IOException {
 		String jsonString = userWriteValueAsString(list);
 		writeFile(jsonString, filename);
 	}
-	 /** Function to insert data in inventory 
-	 * @return Inventory the object of Inventory class
-	 **/
+	 
+	// Function to insert data in inventory 
+	
 	public static Inventory4 insertData() {
 		Inventory4 inventory = new Inventory4();
 		System.out.println("Enter the name:");
@@ -84,11 +84,8 @@ public class OopsUtility {
 		return inventory;
 	}
 
-	/**
-	 * Function to calculate the price of each inventory
-	 *  
-	 * @param list the list of inventories
-	 */
+	// Function to calculate the price of each inventory
+	 	 
 	public static void calulatePrice(List<InventoryList4> list) {
 		double eachInventoryValue;
 		for (int i = 0; i < list.size(); i++) {

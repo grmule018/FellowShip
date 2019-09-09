@@ -1,5 +1,5 @@
 /**
- * purpose: pallindrome Checking
+ * Purpose: pallindrome Checking
  * 
  * @author Ganesh Mule
  * @version 1.0

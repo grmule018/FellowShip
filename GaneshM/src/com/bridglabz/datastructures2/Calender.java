@@ -3,7 +3,7 @@
  * 
  * @author Ganesh Mule
  * @version 1.0
- * @since 03-09-2019
+ * @since 05-09-2019
  **/
 
 
@@ -11,7 +11,7 @@ package com.bridglabz.datastructures2;
 import com.bridglabz.utility.*;
 public class Calender { 
 
-		    //find the day 
+		 //find the day 
     public static int day(int month, int day, int year) {
         int y = year - (14 - month) / 12;
         int x = y + y/4 - y/100 + y/400;
@@ -27,7 +27,7 @@ public class Calender {
 	     return false;
 	    }
 
-	 public static void main(String[] args) {
+	public static void main(String[] args) {
 		 System.out.println("Enter the month number Exp.month (Jan = 1, Dec = 12)");
 	     int month = Utility.integerInput();    // month (Jan = 1, Dec = 12)
 	     System.out.println("Enter the year in the Integer");
@@ -47,7 +47,6 @@ public class Calender {
 
 		        // check for leap year
 		        if (month == 2 && isLeapYear(year)) days[month] = 29;
-
 
 		        // print calendar header
 		        System.out.println("   " + months[month] + " " + year);

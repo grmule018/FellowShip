@@ -1,5 +1,5 @@
 /**
- * purpose: Queue.
+ * Purpose: Queue.
  * 
  * @author Ganesh Mule
  * @version 1.0

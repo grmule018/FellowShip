@@ -1,8 +1,17 @@
-package com.bridglabz.utility;
+/**
+ * Purpose: Stack utility 
+ * 
+ * @author Ganesh Mule
+ * @version 1.0
+ * @since 03-09-2019
+ **/package com.bridglabz.utility;
 
 public class StackUtility <T>
-{
+{	//creating node
+	
 	Node <T> head;
+	
+	//function for push item in stack
 	
 	public  void push(Object item)
 	{
@@ -20,6 +29,8 @@ public class StackUtility <T>
 		}
 	}
 	
+	//function for pop item in stack
+	
 	public boolean pop()
 	{
 		Node <T> tempNode = head;
@@ -35,8 +46,9 @@ public class StackUtility <T>
 			tempNode = null;
 			return true;
 		}
-	
 	}
+	
+	//function for peek item from the stack
 	
 	public Object peek()
 	{
@@ -57,6 +69,9 @@ public class StackUtility <T>
 			return true;
 		}
 	}
+	
+	//function for getting size of stack
+	
 	public int size()
 	{
 		int top=0;
@@ -70,6 +85,8 @@ public class StackUtility <T>
 		return top;
 	}
 	
+	//function for view stack
+	
 	public void viewStack()
 	{
 		Node <T> tempNode = new Node<T>();
@@ -82,6 +99,8 @@ public class StackUtility <T>
 		}
 		System.out.println(" ");
 	}
+	
+	//function for  view stack anagram
 	
 	public int viewStackAnagram() 
 	{
@@ -106,7 +125,5 @@ public class StackUtility <T>
 		System.out.println(" ");
 		return iCnt;
 	}
-	
 
 }
-

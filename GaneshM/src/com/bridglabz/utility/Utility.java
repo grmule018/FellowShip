@@ -1,6 +1,6 @@
 /********************************************************************************* 
  * Purpose =  It is Utility Class where logic of all other programs written.
- * 			  This is done so much of the code can be reused.
+ * 			  
  * 	@author  Ganesh Mule
  * 	@version 1.0
  * 	@since   31-07-2019
@@ -721,10 +721,12 @@ public static boolean StringAnagram(String str1,String str2)
 			}
 		}
 		
-		//this function take two parameter 
-		// 1 what data to write.
-		// 2 file name
-		public void writeToFile(String data,String fileName)throws Exception{
+/**this function take two parameter 
+1 what data to write.
+2 file name
+**/
+
+	public void writeToFile(String data,String fileName)throws Exception{
 			File file = new File(fileName);
 			if (!file.exists()) {
 				file.createNewFile();
@@ -735,7 +737,5 @@ public static boolean StringAnagram(String str1,String str2)
 			writer.flush();
 			writer.close();
 		}
-		
-	
 	}
 

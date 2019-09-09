@@ -1,6 +1,10 @@
 /**
- * Purpose : Deck of cards for playing .
- */
+ * Purpose: deck
+ * 
+ * @author Ganesh Mule
+ * @version 1.0
+ * @since 09-09-2019
+ **/
 package com.bridglabz.oops;
 
 import java.util.Random;
@@ -13,7 +17,7 @@ public class Deck {
 		String[] rank = {"2", "3", "4", "5","6", "7", "8", "9","10", "Jack", "Queen", "King", "Ace"};
 		
 		String[] deck = new String[52];
-		//making deck of cards
+		
 		int count = 0;
 		for(int i=0; i<suit.length; i++)
 		{
@@ -38,13 +42,12 @@ public class Deck {
 		}
 		System.out.println();
 		
-		//distributing cards
-		
+				
 		int count1 = 0;
 		for (int i = 1; i<=4; i++) 
 		{
 			System.out.print("\nPlayer "+i+" has recieved : ");
-			for (int j = 0; j < 13; j++) 
+			for (int j = 0; j < 9; j++) 
 			{
 				System.out.print(shuffledDeck[count1]+" ");
 				count1++;
@@ -53,7 +56,6 @@ public class Deck {
 		}
 	}
 	
-	//Shuffling of cards
 	private static String[] shuffleTheCards(String[] deck) {
 		Random random = new Random();
 		for(int i=0; i<deck.length-1; i++)

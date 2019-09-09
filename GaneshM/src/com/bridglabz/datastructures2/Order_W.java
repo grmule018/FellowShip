@@ -1,5 +1,5 @@
 /**
- * purpose: Sorting.
+ * purpose: Sorting using linked list.
  * 
  * @author Ganesh Mule
  * @version 1.0

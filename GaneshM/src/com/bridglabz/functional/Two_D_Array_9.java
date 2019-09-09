@@ -22,7 +22,6 @@ public class Two_D_Array_9 {
 	
 	writer.write("Enter The Number of rows :");
 	writer.flush();
-	
 	row= sc.nextInt();
 	
 	writer.write("\nEnter The Number of columns :");

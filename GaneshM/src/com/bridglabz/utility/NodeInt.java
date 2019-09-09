@@ -1,3 +1,10 @@
+/**
+ * Purpose: Node for integer linked list
+ * 
+ * @author Ganesh Mule
+ * @version 1.0
+ * @since 06-09-2019
+ **/
 package com.bridglabz.utility;
 
 public class NodeInt {

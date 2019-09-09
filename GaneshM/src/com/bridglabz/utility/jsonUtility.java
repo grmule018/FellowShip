@@ -1,3 +1,10 @@
+/**
+ * Purpose: json utility for read and write value .
+ * 
+ * @author Ganesh Mule
+ * @version 1.0
+ * @since 06-09-2019
+ **/
 package com.bridglabz.utility;
 
 import java.io.IOException;
@@ -12,33 +19,44 @@ public class jsonUtility {
 	static {
 		mapper=new ObjectMapper();
 	}
+//Converting java into json
+	
 public static String convertJavaToJson( Object object) {
 	String jsonResult="";
 	try {
 		jsonResult=mapper.writeValueAsString(object);
-	} catch (JsonGenerationException e) {
+	} 
+	catch (JsonGenerationException e) {
 		
 		System.out.println("Excepetion ocuured while converting java object into json"+e.getMessage());
 		
-	} catch (JsonMappingException e) {
+	}
+	catch (JsonMappingException e) {
+	
 		System.out.println("Excepetion ocuured while converting java object into json"+e.getMessage());
 		
-	} catch (IOException e) {
+	}
+	catch (IOException e) {
 		
 		System.out.println("Excepetion ocuured while converting java object into json"+e.getMessage());	
 	}
 return jsonResult;
 }
+//converting json to java
+
 public static <T> T convertJsonToJava(String jsonString,Class<T>cls) {
 	T result=null;
 	try {
 		result=mapper.readValue(jsonString,cls);
-	} catch (JsonParseException e) {
+	}
+	catch (JsonParseException e) {
 		System.out.println("exception Occured while converting json into java"+e.getMessage());
 		
-	} catch (JsonMappingException e) {
+	} 
+	catch (JsonMappingException e) {
 		System.out.println("exception Occured while converting json into java"+e.getMessage());	
-	} catch (IOException e) {
+	}
+	catch (IOException e) {
 		System.out.println("exception Occured while converting json into java"+e.getMessage());
 	}
 	return result;

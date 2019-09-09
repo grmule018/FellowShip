@@ -1,6 +1,9 @@
 /**
  * Purpose : creating inventory management getter setter methods
- */
+ * @author Ganesh Mule
+ * @version 1.0
+ * @since 09-09-2019
+ **/
 package com.bridglabz.oops;
 
 public class Inventory4 {

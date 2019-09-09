@@ -1,4 +1,10 @@
-package com.bridglabz.utility;
+/**
+ * Purpose: Deque utility
+ * 
+ * @author Ganesh Mule
+ * @version 1.0
+ * @since 09-09-2019
+ **/package com.bridglabz.utility;
 
 public class DequeUtility <T>
 {

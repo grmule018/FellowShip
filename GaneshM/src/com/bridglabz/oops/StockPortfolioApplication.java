@@ -1,16 +1,20 @@
-/******************************************************************************
- *  Purpose: This application is to manage stocks
- ******************************************************************************/
+/**
+ * Purpose: This application is to manage stocks
+ *  
+ * @author Ganesh Mule
+ * @version 1.0
+ * @since 09-09-2019
+ **/
 package com.bridglabz.oops;
 
 import java.io.IOException;
 
 import com.bridglabz.utility.*;;
 
-/**
-* The main function is written to take input from the user and
-* calls various methods that manages the stocks
-**/
+
+// The main function is written to take input from the user and
+// calls various methods that manages the stocks
+
 public class StockPortfolioApplication {
 	public static void main(String[] args) throws IOException {
 		int flag=0;

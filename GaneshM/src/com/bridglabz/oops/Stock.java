@@ -1,8 +1,12 @@
-/******************************************************************************
+/**
  * Purpose: Creates a plain old java object to achieve encapsulation and for
  *  		 reuse ability of the code 
- ******************************************************************************/
-
+ * 
+ * @author Ganesh Mule
+ * @version 1.0
+ * @since 09-09-2019
+ **/
+ 
 package com.bridglabz.oops;
 
 public class Stock {

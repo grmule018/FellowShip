@@ -21,7 +21,7 @@ public class CashCounter {
 		cashCounterQueue.enqueue(3);
 		cashCounterQueue.enqueue(4);
 		cashCounterQueue.enqueue(5);
-		//cashCounterQueue.enqueue(0);
+		cashCounterQueue.enqueue(0);
 		cashCounterQueue.viewQueue();
 		int choice = 0;
 		while(true)

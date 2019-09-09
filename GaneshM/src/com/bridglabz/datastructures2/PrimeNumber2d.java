@@ -1,5 +1,5 @@
 /**
- * purpose: prime numbers in 2d array
+ * Purpose: prime numbers in 2d array
  * 
  * @author Ganesh Mule
  * @version 1.0

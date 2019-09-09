@@ -4,8 +4,7 @@
  * I/P -> N number of integer, and N integer input array
  * Logic -> Find distinct triples (i, j, k) such that a[i] + a[j] + a[k] = 0
  * O/P -> One Output is number of distinct triplets as well as the second output is to print the distinct triplets.
- * 
- */
+ **/
 
 package com.bridglabz.functional;
 

@@ -1,10 +1,21 @@
+/**
+ * Purpose: Queue Utility for queue 
+ * 
+ * @author Ganesh Mule
+ * @version 1.0
+ * @since 03-09-2019
+ **/
 package com.bridglabz.utility;
 
 public class QueueUtility<T> 
-{
+{ 
+	//Creating node 
+	
 	Node <T> front;
 	Node <T> rear;
 	public int size=0;
+	
+	//function for enqueue in list
 	
 	public void enqueue(Object item)
 	{
@@ -22,6 +33,7 @@ public class QueueUtility<T>
 			rear = rear.next;
 		}
 	}
+	//function for dequeue in list
 	
 	public Object dequeue()
 	{
@@ -42,6 +54,8 @@ public class QueueUtility<T>
 		}
 	}
 	
+	//function for view the queue
+	
 	public void viewQueue()
 	{
 		Node<T> tempNode = new Node<T>();
@@ -55,6 +69,7 @@ public class QueueUtility<T>
 		System.out.println("");
 	}
 	
+	//function checking queue is empty or not
 	
 	public boolean isEmpty()
 	{
@@ -67,6 +82,9 @@ public class QueueUtility<T>
 			return false;
 		}
 	}
+	
+	//function for deposit cash in bank
+	
 	public static int deposit(int cashAvailble) 
 	{
 		System.out.println("Enter The Amount to Deposite");
@@ -74,7 +92,9 @@ public class QueueUtility<T>
 		cashAvailble = cashAvailble+amountToDeposit;
 		return cashAvailble;
 	}
-
+	
+	// function for withdraw cash from bank
+	
 	public static int withdraw(int cashAvailable) 
 	{
 		System.out.println("Enter The Amount to Withdraw");
@@ -82,6 +102,9 @@ public class QueueUtility<T>
 		cashAvailable = cashAvailable - amountToWithdraw;
 		return cashAvailable;
 	}
+	
+	// function for checking balance
+	
 	public static int balance (int cashAvailable)
 	{
 		int balance = cashAvailable ;
@@ -89,6 +112,4 @@ public class QueueUtility<T>
 			
 		return balance;
 	}
-
-	
 }

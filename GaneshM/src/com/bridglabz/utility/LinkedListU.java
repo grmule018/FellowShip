@@ -1,10 +1,17 @@
+/**
+ * Purpose: Linked list for generics
+ * 
+ * @author Ganesh Mule
+ * @version 1.0
+ * @since 04-09-2019
+ **/
 package com.bridglabz.utility;
 
 import java.io.PrintWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
-//import java.util.Comparator;
+
 
 public class LinkedListU<T> {
 	Node<T> head;

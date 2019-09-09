@@ -1,6 +1,11 @@
 /**
  * Purpose :  linked list for word
- */
+ *  
+ * @author Ganesh Mule
+ * @version 1.0
+ * @since 03-09-2019
+ **/
+
 package com.bridglabz.utility;
 
 public class LinkedList_Data_W <T>

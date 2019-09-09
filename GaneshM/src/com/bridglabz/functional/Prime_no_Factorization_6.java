@@ -1,8 +1,8 @@
 /*******************************************************************
- * Purpose
+ * Purpose: To find prime factorization given no 
  * @author Ganesh Mule
  * @version 1.0
- * @since  09-08-2019
+ * @since  
  *****************************************************************************/
 package com.bridglabz.functional;
 

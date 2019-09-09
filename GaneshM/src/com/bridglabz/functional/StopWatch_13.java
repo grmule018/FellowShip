@@ -1,8 +1,10 @@
-package com.bridglabz.functional;
-/*
+/**
 * Purpose:This stopwatch program is for measuring the time that elapses between the start and end Time. ­
-* Date:
+* @author Ganesh Mule
+* @version 1.0
+* 
 **/
+package com.bridglabz.functional;
 
 public class StopWatch_13 
 {
