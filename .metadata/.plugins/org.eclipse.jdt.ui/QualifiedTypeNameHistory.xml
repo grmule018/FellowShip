@@ -22,4 +22,5 @@
     <fullyQualifiedTypeName name="com.bridglabz.oops.InventoryList"/>
     <fullyQualifiedTypeName name="com.bridglabz.utility.StackUtility"/>
     <fullyQualifiedTypeName name="com.bridglabz.utility.QueueUtility"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.utility.OopsUtility"/>
 </qualifiedTypeNameHistroy>
