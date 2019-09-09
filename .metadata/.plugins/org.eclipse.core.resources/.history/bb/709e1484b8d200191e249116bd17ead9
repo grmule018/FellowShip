@@ -1,8 +1,14 @@
 /******************************************************************************
+ *  Compilation:  javac -d bin OopsUtility.java
+ *  Execution:    java -cp bin com.bridgelabz.util.OopsUtility
  *  
  *  Purpose: Contains all the functions for the .java files in 
  *  		 com.bridgelabz.oops package
- 
+ *
+ *  @author  Nikitha Mundargi
+ *  @version 1.0
+ *  @since   09-12-2018
+ *
  ******************************************************************************/
 
 package com.bridglabz.utility;
