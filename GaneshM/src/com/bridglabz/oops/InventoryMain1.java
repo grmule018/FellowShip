@@ -67,7 +67,7 @@ public class InventoryMain1 {
 		break;
 		}
 			JsonNode inventory = jsonNode.findPath(item);
-			System.out.println("-----------"+item+"-------------");
+			System.out.println("-----------"+item.toUpperCase()+"-------------");
 			System.out.println();
 		int total = 0;
 		for(JsonNode node : inventory)

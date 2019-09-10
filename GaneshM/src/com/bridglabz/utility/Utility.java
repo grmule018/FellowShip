@@ -15,6 +15,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
@@ -682,13 +683,9 @@ public static boolean StringAnagram(String str1,String str2)
 	}
 	return flag;
 }
-	//format date object in this format 
-	public static String getFormatedDate(Date date){
-	LocalDate ld=LocalDate.now();
-	DateTimeFormatter dtf=DateTimeFormatter.ofPattern("dd/MM/yyyy");
-	String formated =ld.format(dtf);
-	return formated;
-	}
+	
+	//bufferedReader
+
 	static BufferedReader br;
 			
 	//constructor to initialize bufferedReader
@@ -722,8 +719,8 @@ public static boolean StringAnagram(String str1,String str2)
 		}
 		
 /**this function take two parameter 
-1 what data to write.
-2 file name
+*	1 what data to write.
+* 	2 file name
 **/
 
 	public void writeToFile(String data,String fileName)throws Exception{
@@ -737,5 +734,14 @@ public static boolean StringAnagram(String str1,String str2)
 			writer.flush();
 			writer.close();
 		}
-	}
+	
+/**Function for getting date and time
 
+	**/
+	public static String getDate() {
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+		LocalDateTime now = LocalDateTime.now();
+		String date = dtf.format(now);
+		return date;
+	}
+}

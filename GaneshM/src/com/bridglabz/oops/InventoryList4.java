@@ -33,3 +33,4 @@ public class InventoryList4{
 		this.listofInventories = listofInventories;
 	}
 }	
+	

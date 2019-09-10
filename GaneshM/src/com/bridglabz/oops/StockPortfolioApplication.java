@@ -19,7 +19,7 @@ public class StockPortfolioApplication {
 	public static void main(String[] args) throws IOException {
 		int flag=0;
 		do {
-			System.out.println("Enter\n1:Add Stock\n2:Calculate each stock value\n3:Calculate value of total stocks\n4:Display\n5:Quit");
+			System.out.println("Enter\n1:Add Stock\n2:Calculate each stock value\n3:Calculate value of total stocks\n4:Display");
 			int choice = Utility.integerInput();
 			switch (choice) {
 			case 1:
@@ -42,6 +42,7 @@ public class StockPortfolioApplication {
 				StockPortfolio.displayStockDetails();
 			
 				break;
+			
 			default:
 				System.out.println("Invalid choice");
 				break;

@@ -18,4 +18,16 @@ public class Node <T>{
 		this.data = null;
 		this.next = null;
 	}
+	public Object getData() {
+		return data;
+	}
+	public void setData(Object data) {
+		this.data = data;
+	}
+	public Node<T> getNext() {
+		return next;
+	}
+	public void setNext(Node<T> next) {
+		this.next = next;
+	}
 }

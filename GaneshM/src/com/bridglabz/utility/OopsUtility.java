@@ -9,9 +9,12 @@ package com.bridglabz.utility;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -96,8 +99,23 @@ public class OopsUtility {
 						* (inList.getListofInventories().get(j).getWeight());
 				System.out.println("total price:" + eachInventoryValue);
 			}
-			System.out.println("---------------------------------------------");
+			System.out.println("--------------------***-------------------------");
 		}
 	}
-	
+		public static void writeObjectToJson(List list, String fileName)
+		{
+			Object[] arr = list.toArray();
+
+			ObjectMapper mapper = new ObjectMapper();
+			try
+			{
+				mapper.writeValue(new File(fileName), arr);
+			}
+			catch(Exception e) 
+			{
+				e.printStackTrace();
+			}
+		}
+
+
 }
