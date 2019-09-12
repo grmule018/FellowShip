@@ -10,10 +10,8 @@
     <fullyQualifiedTypeName name="T"/>
     <fullyQualifiedTypeName name="com.bridglabz.datastructures2.Node"/>
     <fullyQualifiedTypeName name="com.bridgelabz.task.UserDetails"/>
-    <fullyQualifiedTypeName name="com.bridglabz.utility.Utility"/>
     <fullyQualifiedTypeName name="com.bridglabz.oops.Utility"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
-    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
     <fullyQualifiedTypeName name="java.util.Stack"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="com.bridglabz.utility.JsonUtility"/>
@@ -23,4 +21,12 @@
     <fullyQualifiedTypeName name="com.bridglabz.utility.StackUtility"/>
     <fullyQualifiedTypeName name="com.bridglabz.utility.QueueUtility"/>
     <fullyQualifiedTypeName name="com.bridgelabz.utility.OopsUtility"/>
+    <fullyQualifiedTypeName name="java.util.Queue"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="com.bridglabz.utility.OopsUtility"/>
+    <fullyQualifiedTypeName name="com.bridglabz.utility.Utility"/>
+    <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

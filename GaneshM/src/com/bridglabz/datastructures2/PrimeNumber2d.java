@@ -40,11 +40,7 @@ public class PrimeNumber2d {
 			}
 			
 		}
-		//System.out.println(count);
-		/*
-		 * for(int p=0;p<arr.length;p++) { System.out.println(arr[p]); }
-		 */
-		
+	
 		
 		  int[][] primeNum= new int[10][167];
 		  

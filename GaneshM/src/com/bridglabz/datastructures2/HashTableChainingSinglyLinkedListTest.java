@@ -15,7 +15,7 @@ public class HashTableChainingSinglyLinkedListTest
         HashTableChainingSinglyLinkedList htcsll = new HashTableChainingSinglyLinkedList(scan.nextInt() );
  
         char ch;
-        //  Perform HashTableChainingSinglyLinkedList operat/ons  
+        //  Perform HashTableChainingSinglyLinkedList operate/ons  
         do    
         {
             System.out.println("\nHash Table Operations\n1. insert\n2. remove\n3. clear\n4. size\n5. check empty");

@@ -1,31 +1,45 @@
+/******************************************************************************
+ *  Compilation:  javac -d bin Person.java
+ *  Execution:    java -cp bin com.bridgelabz.oops.Person.java n
+ *  
+ *  Purpose: Creates a plain old java object to achieve encapsulation and for
+ *  		 reusability of the code
+ *
+ *  ******************************/
+
 package com.bridglabz.oops;
-public class Person
-{
-	private String  accountHolderName;
-	private int numberOfShares;
-	private int balance;
-	public String getAccountHolderName() {
-		return accountHolderName;
+
+public class Person {
+	private String firstName;
+	private String lastName;
+	private long contactNo;
+	private Address address;
+	
+	public Address getAddress() {
+		return address;
 	}
-	public void setAccountHolderName(String accountHolderName) {
-		this.accountHolderName = accountHolderName;
+
+	public void setAddress(Address address) {
+		this.address = address;
 	}
-	public int getNumberOfShares() {
-		return numberOfShares;
+
+	public long getContactNo() {
+		return contactNo;
 	}
-	public void setNumberOfShares(int numberOfShares) {
-		this.numberOfShares = numberOfShares;
+	public void setContactNo(long contactNo) {
+		this.contactNo = contactNo;
 	}
-	public int getBalance() {
-		return balance;
+	public String getFirstName() {
+		return firstName;
 	}
-	public void setBalance(int balance) {
-		this.balance = balance;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
-	@Override
-	public String toString() {
-		return "Person [accountHolderName=" + accountHolderName + ", numberOfShares=" + numberOfShares + ", balance="
-				+ balance + "]";
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 	
 }

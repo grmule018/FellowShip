@@ -26,7 +26,7 @@ public class InventoryMain1 {
 		String path ="/home/user/Downloads/RELEASE/GaneshM/src/com/bridglabz/oops/inventorymain1.json"        ;
 		ObjectMapper mapper = new ObjectMapper();	
 		File file = new File(path);
-			int choice = 0;
+			int choice = 0;				
 		
 		try 
 		{

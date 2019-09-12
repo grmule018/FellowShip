@@ -14,13 +14,13 @@ public class Commercial {
 
 	public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException
 	{
-		Person person = new Person();
+		Person1 person = new Person1();
 		Company company= new Company();
 		ObjectMapper mapper=new ObjectMapper();
 		File personFile=new File("/home/user/Downloads/RELEASE/GaneshM/src/com/bridglabz/oops/Person.json");
 		File companyFile=new File("/home/user/Downloads/RELEASE/GaneshM/src/com/bridglabz/oops/Company.json");
 		
-		List<Person> personList=mapper.readValue(personFile, new TypeReference <List <Person> >(){ });
+		List<Person1> personList=mapper.readValue(personFile, new TypeReference <List <Person1> >(){ });
 		
 		List<Company> companyList=mapper.readValue(companyFile, new TypeReference <List <Company> >(){ });
 		int choice=0;
@@ -99,7 +99,7 @@ public class Commercial {
 				OopsUtility.writeObjectToJson(personList, "Person.json");
 				System.out.println(personList);
 				
-				OopsUtility.writeObjectToJson(companyList, "ompany.json");
+				OopsUtility.writeObjectToJson(companyList, "Company.json");
 				System.out.println(companyList);
 				break;
 			case 4:
