@@ -10,6 +10,7 @@ package com.bridglabz.oops;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 import com.bridglabz.utility.*;
 public class InventoryManagement4 {
@@ -18,7 +19,11 @@ public class InventoryManagement4 {
 	* The main function is written to take input from the user and
 	* performs read and write operation from the json file 
 	*/
+	
 	public static void main(String[] args) throws IOException {
+	
+		 Scanner sc=new Scanner(System.in);
+		
 		List<InventoryList4> list = new ArrayList<InventoryList4>();
 		List<Inventory4> listin = new ArrayList<Inventory4>();
 		Inventory4 inventory = new Inventory4();
@@ -56,7 +61,7 @@ public class InventoryManagement4 {
 					list = OopsUtility.userReadValue(str, InventoryList4.class);
 					while (flag == 1) {
 						System.out.println("Enter the inventory name: ");
-						String inName = Utility.StringInput();
+						String inName =sc.nextLine();
 						if (!list.isEmpty()) {
 							for (InventoryList4 in : list) {
 						if (inName.equals(in.getInventoryName())) {

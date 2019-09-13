@@ -13,10 +13,9 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.JsonParseException;
@@ -28,7 +27,7 @@ import com.bridglabz.oops.Inventory4;
 import com.bridglabz.oops.InventoryList4;
 
 public class OopsUtility {
-
+	static Scanner sc=new Scanner(System.in);
 	private static ObjectMapper objectMapper = new ObjectMapper();
 	
 	// Static Function to map the json string to the list of objects
@@ -54,7 +53,7 @@ public class OopsUtility {
 		String str = "";
 		String line = "";
 		while ((line = br.readLine()) != null) {
-			str += line;
+			str =str+ line;
 		}
 		br.close();
 		return str;
@@ -79,11 +78,11 @@ public class OopsUtility {
 	public static Inventory4 insertData() {
 		Inventory4 inventory = new Inventory4();
 		System.out.println("Enter the name:");
-		inventory.setName(Utility.StringInput());
+		inventory.setName(sc.nextLine());
 		System.out.println("Enter the weight");
-		inventory.setWeight(Utility.floatInput());                  
+		inventory.setWeight(sc.nextFloat());                  
 		System.out.println("Enter the price");
-		inventory.setPrice(Utility.doubleInput());
+		inventory.setPrice(sc.nextDouble());
 		return inventory;
 	}
 
@@ -102,7 +101,9 @@ public class OopsUtility {
 			System.out.println("--------------------***-------------------------");
 		}
 	}
-		public static void writeObjectToJson(List list, String fileName)
+
+	 
+	public static void writeObjectToJson(List list, String fileName)
 		{
 			Object[] arr = list.toArray();
 
@@ -114,8 +115,6 @@ public class OopsUtility {
 			catch(Exception e) 
 			{
 				e.printStackTrace();
-			}
 		}
-
-
+	}
 }

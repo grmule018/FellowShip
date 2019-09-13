@@ -15,10 +15,9 @@ import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 
 public class jsonUtility {
-	private static ObjectMapper mapper;
-	static {
-		mapper=new ObjectMapper();
-	}
+	
+		public static  ObjectMapper mapper=new ObjectMapper();
+	
 //Converting java into json
 	
 public static String convertJavaToJson( Object object) {

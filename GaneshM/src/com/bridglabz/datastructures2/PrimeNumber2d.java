@@ -41,7 +41,7 @@ public class PrimeNumber2d {
 			
 		}
 	
-		
+		//adding prime numbers in 2d array
 		  int[][] primeNum= new int[10][167];
 		  
 		  for(int i=0;i<10;i++)
@@ -57,9 +57,5 @@ public class PrimeNumber2d {
 			  
 			  System.out.println();
 		  }
-		
-		
-
 	}
-
 }
