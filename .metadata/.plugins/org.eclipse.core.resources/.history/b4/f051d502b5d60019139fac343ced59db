@@ -59,7 +59,7 @@ public class OopsUtility {
 		return str;
 	}
 		
-	// Function to write on to json file
+	// Function to write on to file
 	 
 	public static void writeFile(String json, String filename) throws IOException {
 		FileWriter fw = new FileWriter(filename);
