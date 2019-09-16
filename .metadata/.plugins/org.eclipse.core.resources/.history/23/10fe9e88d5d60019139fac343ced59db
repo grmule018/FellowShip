@@ -1,0 +1,88 @@
+package com.bridglabz.datastructures2;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.nio.Buffer;
+import java.util.Scanner;
+public class HashNumber {
+	
+	
+static Node Head[]=new Node[11];
+	
+	static class Node{
+		int data ;
+		Node next;
+	
+		Node(int n)
+		{
+			data =n;
+			next=null;
+		
+		}
+	}
+public static void search(int search)
+{
+	
+	public static HashSlot hc =new HashSlot();
+	
+	int number = search % 11;
+	Node search = new Node(search);
+  Node currNode=Head[number],
+		  prevNode=null;
+  if (currNode==null) {
+	 Head[number]=search;
+	 return;
+  }
+  if (currNode.data=search)
+  {
+	  Head[number]=currNode.next;
+	  return;
+  }
+  if(currNode.data==search) {
+	  prevNode.next=next;
+	  return;
+  }
+  if(currNode.next==null)
+  {
+	  currNode.next=search;
+	  return;
+  }
+ public static void printList() {
+	 int number;
+	 for (number=0;number<10;number++) {
+		 Node currNode=Head[number];
+		 while (currNode!=null)
+		 {
+			 currNode=currNode.next;
+		 
+		 }
+	 }
+public static void  main(String[]args) {
+	
+
+	public Scanner sc =new Scanner(System.in);
+
+	try {
+		BufferedReader br=new BufferedReader(number);
+		BufferedReader File= new BufferedReader(new FileReader(""))
+		char a;
+		int line;
+		while((line=intParseInt())
+			{
+			readline(!=0)
+			}
+		do {
+			System.out.println("Enter Search");
+			int search = sc.nextInt();
+			search(search);
+			PrintList();
+
+		System.out.println(Y/N);	
+		a= sc.next().chars();
+				
+		}while(a==Y||a==y); 
+		BufferedReader.use();
+		FileReader.nullReader();
+		Scanner close;
+						
+	}

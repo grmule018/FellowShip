@@ -1,0 +1,99 @@
+package com.bridglabz.oops.Stock1;
+import java.util.List;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Scanner;
+import com.bridglabz.oops.Stock;
+
+public class StockPortM {
+	static Scanner sc= new Scanner(System.in);
+	static List<Stock1> listofStock=new ArrayList<>();
+	static final String stockFile="/home/user/Downloads/RELEASE/GaneshM/src/com/bridglabz/oops/Stock.json";
+	
+	public static void addStock() throws IOException {
+	
+		String string = util.readJsonFile(stockFile);
+	
+	try {
+		listofStock=util.userReadvalues(string, Stock1.class);
+		System.out.println("File is not empty!");
+	}catch(Exception e){
+		System.out.println("File is empty");
+	}
+		Stock stock1=new Stock();
+		System.out.println("Enter the stock name");
+		stock1.setStockName(sc.next());
+		System.out.println("Enter the number of stock");
+		stock1.setNoOfShares(sc.nextInt());
+		System.out.println("Enter the price per share");
+		stock1.setSharePrice(sc.nextFloat());
+		String json =util.userWriteValuesAsString(listofStock);
+		util.writeFile(json,stockFile);
+	}
+	
+
+	public static void valueOfTotalStock() throws IOException {
+		String string= util.readJsonFile(stockFile);
+		double totalStockValue=0;
+		try {
+			listofStock=util.userReadvalues(string,Stock1.class);
+			System.out.println("File is not empty");
+			for (Stock1 stock1:listofStock) {
+				totalStockValue=totalStockValue+(stock1.getNoOfShares()*stock1.getSharePrice());
+			}System.out.println("Value of Total strock"+totalStockValue);
+	}	catch(Exception e) {
+			System.out.println("File is Empty!");
+	}
+	}
+	
+	
+	public static void valueOfEachShare()throws IOException {
+		String string = util.readJsonFile(stockFile);
+		float valueOfEachShare;
+		try {
+			listofStock=util.userReadvalues(string,Stock1.class);
+			System.out.println("File is not Empty!");
+			for(Stock1 stock1: listofStock) {
+				System.out.println("Stock Name:"+stock1.getStockName());
+				valueOfEachShare= stock1.getNoOfShares()*stock1.getSharePrice();
+				System.out.println("Value of each stock"+valueOfEachShare);
+				
+			}
+		}catch(Exception e) {
+			System.out.println("File is Empty");
+		}
+	}
+	
+	public static void displayStockdetails() throws IOException {
+		String string=util.readJsonFile(stockFile);
+		try {
+			listofStock=util.userReadvalues(string,Stock1.class);
+			System.out.println("File is not empty");
+			for(Stock1 stock1:listofStock) {
+				System.out.println("Stock Name: "+ stock1.getStockName());
+				System.out.println("Number of share: " + stock1.getNoOfShares());
+				System.out.println("Share price: "+stock1.getSharePrice());
+				System.out.println("-----------------------");
+				}
+			}
+			catch(Exception e) {
+				System.out.println("File is empty!");
+			}
+		}
+	
+		public static int noOfShares()throws IOException{
+			String string= util.readJsonFile(stockFile);
+			int sum =0;
+			try {
+				listofStock=util.userReadvalues(string,Stock1.class);
+			System.out.println("File is not empty!");
+			for (Stock1 stock :listofStock) {
+				sum=sum+stock.getNoOfShares();
+			}return sum;
+		}catch(Exception e) {
+			System.out.println("File is empty!");
+			return 0;
+		}
+			
+	}
+}

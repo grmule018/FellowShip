@@ -4,8 +4,6 @@
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="java.io.CharArrayWriter"/>
     <fullyQualifiedTypeName name="com.bridglabz.utility.LinkedListInt"/>
-    <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
-    <fullyQualifiedTypeName name="java.io.FileWriter"/>
     <fullyQualifiedTypeName name="com.bridglabz.utility.LinkedList_Data_W"/>
     <fullyQualifiedTypeName name="T"/>
     <fullyQualifiedTypeName name="com.bridglabz.datastructures2.Node"/>
@@ -27,6 +25,20 @@
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="com.bridglabz.utility.OopsUtility"/>
     <fullyQualifiedTypeName name="com.bridglabz.utility.Utility"/>
+    <fullyQualifiedTypeName name="java.nio.Buffer"/>
+    <fullyQualifiedTypeName name="com.bridglabz.oops1.util"/>
+    <fullyQualifiedTypeName name="com.bridglabz.oops.Stock"/>
     <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="org.codehaus.jackson.map.ObjectMapper"/>
+    <fullyQualifiedTypeName name="org.codehaus.jackson.JsonParseException"/>
+    <fullyQualifiedTypeName name="org.codehaus.jackson.map.JsonMappingException"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="org.codehaus.jackson.map.type.CollectionType"/>
+    <fullyQualifiedTypeName name="org.codehaus.jackson.JsonGenerationException"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

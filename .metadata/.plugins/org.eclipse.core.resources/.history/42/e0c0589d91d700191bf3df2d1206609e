@@ -1,0 +1,37 @@
+package com.bridglabz.oops1;
+import java.util.List;
+import java.util.ArrayList;
+import com.bridglabz.oops.Stock;
+
+public class StockPortM {
+	
+	static List<Stock> listofStock=new ArrayList<>();
+	static final String stockFile="/home/user/Downloads/RELEASE/GaneshM/src/com/bridglabz/oops/Stock.json""
+	public static void addStock() {
+	String string = util.readJsonFile(stockFile);
+	try {
+		listofStock=util.userReadValue(string, Stock1.class);
+		System.out.println("File is not empty!");
+	}catch(Exception e){
+		System.out.println("File is empty");
+	}
+	Stock stock1=new Stock();
+	}
+	
+	
+
+	public static void valueOfTotalStock() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void displayStockdetails() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void valueOfeachShare() {
+		// TODO Auto-generated method stub
+		
+	}
+}
