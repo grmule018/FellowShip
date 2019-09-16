@@ -9,7 +9,8 @@ package com.grm.oops;
 
 import java.io.IOException;
 
-import com.grm.utility.*;;
+import com.grm.utility.*;
+import com.grm.utility.Utility;;
 
 
 // The main function is written to take input from the user and

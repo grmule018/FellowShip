@@ -45,6 +45,23 @@ public class OopsUtility {
 		return objectMapper.writeValueAsString(list);
 	}
 	
+	//  Generic Function to write file
+	
+	public static <T> void writeToFile(String filename,List<T> list) throws JsonGenerationException, JsonMappingException, IOException {
+		String jsonString = userWriteValueAsString(list);
+		writeFile(jsonString, filename);
+	
+	}
+	// Function to write on to json file
+	 
+	public static void writeFile(String json, String filename) throws IOException {
+		FileWriter fw = new FileWriter(filename);
+		BufferedWriter bw = new BufferedWriter(fw);
+		bw.write(json);
+		bw.close();
+	}
+	
+
 	// Function to read the json file
 	 
 	public static String readJsonFile(String filename) throws IOException {
@@ -59,21 +76,7 @@ public class OopsUtility {
 		return str;
 	}
 		
-	// Function to write on to json file
-	 
-	public static void writeFile(String json, String filename) throws IOException {
-		FileWriter fw = new FileWriter(filename);
-		BufferedWriter bw = new BufferedWriter(fw);
-		bw.write(json);
-		bw.close();
-	}
-	//  Generic Function to write file
-	public static <T> void writeToFile(String filename,List<T> list) throws JsonGenerationException, JsonMappingException, IOException {
-		String jsonString = userWriteValueAsString(list);
-		writeFile(jsonString, filename);
-	}
-	 
-	// Function to insert data in inventory 
+	 	// Function to insert data in inventory 
 	
 	public static Inventory4 insertData() {
 		Inventory4 inventory = new Inventory4();

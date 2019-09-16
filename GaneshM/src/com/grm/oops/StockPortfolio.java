@@ -11,12 +11,14 @@ package com.grm.oops;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 import com.grm.utility.*;;
 
 public class StockPortfolio {
+	static Scanner sc=new Scanner(System.in);
 	static List<Stock> listOfStock = new ArrayList<>();
-	static final String stockFile = "/home/user/Downloads/RELEASE/GaneshM/src/com/bridglabz/oops/Stock.json";
+	static final String stockFile = "/home/user/Downloads/RELEASE/GaneshM/src/com/grm/oops/Stock.json";
 
 	//Static function to add stock 
 	public static void addStock() throws IOException {
@@ -29,11 +31,11 @@ public class StockPortfolio {
 		}
 		Stock stock = new Stock();
 		System.out.println("Enter the stock name");
-		stock.setStockName(Utility.StringInput());
+		stock.setStockName(sc.next());
 		System.out.println("Enter the number of stock");
-		stock.setNoOfShares(Utility.integerInput());
+		stock.setNoOfShares(sc.nextInt());
 		System.out.println("Enter the price for per share");
-		stock.setSharePrice(Utility.floatInput());
+		stock.setSharePrice(sc.nextFloat());
 		listOfStock.add(stock);
 		String json = OopsUtility.userWriteValueAsString(listOfStock);
 		OopsUtility.writeFile(json, stockFile);
@@ -104,7 +106,7 @@ public class StockPortfolio {
 			listOfStock = OopsUtility.userReadValue(string, Stock.class);
 			System.out.println("File is not empty!");
 			for (Stock stock : listOfStock) {
-				sum += stock.getNoOfShares();
+				sum =sum + stock.getNoOfShares();
 			}
 			return sum;
 		} catch (Exception e) {
