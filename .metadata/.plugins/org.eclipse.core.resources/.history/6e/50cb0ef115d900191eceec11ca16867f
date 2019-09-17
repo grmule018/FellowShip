@@ -1,0 +1,25 @@
+package com.grm.oops.AddressBookdemo;
+
+
+
+public class AddressBook 
+{
+	
+
+	Person personInformation;
+		
+	public Person getPerson() 
+	{
+		return personInformation;
+	}
+	
+	public void setPerson(Person personInformation) 
+	{
+		this.personInformation = personInformation;
+	}
+	
+	@Override
+	public String toString() {
+		return "AddressBook [person=" + personInformation + "]";
+	}
+}

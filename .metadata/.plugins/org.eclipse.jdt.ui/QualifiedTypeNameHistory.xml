@@ -24,12 +24,10 @@
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="com.bridglabz.utility.OopsUtility"/>
-    <fullyQualifiedTypeName name="com.bridglabz.utility.Utility"/>
     <fullyQualifiedTypeName name="java.nio.Buffer"/>
     <fullyQualifiedTypeName name="com.bridglabz.oops1.util"/>
     <fullyQualifiedTypeName name="com.bridglabz.oops.Stock"/>
     <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="org.codehaus.jackson.map.ObjectMapper"/>
     <fullyQualifiedTypeName name="org.codehaus.jackson.JsonParseException"/>
     <fullyQualifiedTypeName name="org.codehaus.jackson.map.JsonMappingException"/>
@@ -41,4 +39,11 @@
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
     <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.bridglabz.oops.Stock1.Stock1"/>
+    <fullyQualifiedTypeName name="com.bridglabz.utility.Utility"/>
+    <fullyQualifiedTypeName name="com.bridglabz.utility.LinkedListU"/>
+    <fullyQualifiedTypeName name="com.grm.algorithm.Static_method_4"/>
+    <fullyQualifiedTypeName name="com.grm.utility.Utility"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.grm.oops.addressbook.Person"/>
 </qualifiedTypeNameHistroy>
