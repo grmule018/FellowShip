@@ -1,6 +1,7 @@
-//  Purpose: The program is to maintain an address books
+/** 
+ * Purpose: The program is to maintain an address books
 
-
+**/
 
 package com.bridgelabz.oops.addressbook;
 import java.util.Collections;
@@ -10,7 +11,7 @@ import java.util.Optional;
 
 import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.map.JsonMappingException;
-import org.codehaus.jackson.map.ObjectMapper;
+//import org.codehaus.jackson.map.ObjectMapper;
 
 import java.io.File;
 import java.io.IOException;
@@ -81,7 +82,8 @@ public class AddressBookManager {
 
 	
 	public void saveBook() {
-		
+		System.out.println("Enter AdressBook name you want to save");
+		charbook=sc.next();
 		System.out.println("Saving " + charbook + " address book");
 		File[] arrayOfFiles = getFiles();
 		for (File file : arrayOfFiles) {
@@ -202,7 +204,7 @@ public class AddressBookManager {
 	class AddressBook {
 			
 					
-		ObjectMapper objectMapper = new ObjectMapper();
+		//ObjectMapper objectMapper = new ObjectMapper();
 		
 		 	public void addPerson() throws JsonGenerationException, JsonMappingException, IOException {
 			Person person = new Person();
@@ -217,7 +219,7 @@ public class AddressBookManager {
 			
 			person.setAddress(addressDetails());
 			listOfPersons.add(person);
-			objectMapper.writeValue(new File("/home/user/Downloads/RELEASE/GaneshM/ganesh.json"), listOfPersons);
+			//objectMapper.writeValue(new File("/home/user/Downloads/RELEASE/GaneshM/ganesh.json"), listOfPersons);
 		}
 
 		public Address addressDetails() {

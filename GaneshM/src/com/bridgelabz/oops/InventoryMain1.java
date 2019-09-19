@@ -23,7 +23,7 @@ public class InventoryMain1 {
 		{
 		Scanner scanner = new Scanner(System.in);
 		// JSON FILE'S PATH
-		String path ="/home/user/Downloads/RELEASE/GaneshM/src/com/grm/oops/inventorymain1.json"        ;
+		String path ="/home/user/Downloads/RELEASE/GaneshM/src/com/bridgelabz/oops/inventorymain1.json"        ;
 		ObjectMapper mapper = new ObjectMapper();	
 		File file = new File(path);
 			int choice = 0;				

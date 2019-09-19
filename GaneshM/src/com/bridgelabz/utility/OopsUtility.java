@@ -38,7 +38,7 @@ public class OopsUtility {
 		return objectMapper.readValue(str, colletion);
 	}
 		
-	// Static Function to map the list to json string
+	// Static Function to map the list to json strings
 	 
 	public static <T> String userWriteValueAsString(List<T> list)
 			throws JsonGenerationException, JsonMappingException, IOException {
@@ -47,7 +47,8 @@ public class OopsUtility {
 	
 	//  Generic Function to write file
 	
-	public static <T> void writeToFile(String filename,List<T> list) throws JsonGenerationException, JsonMappingException, IOException {
+	public static <T> void writeToFile(String filename,List<T> list) 
+			throws JsonGenerationException, JsonMappingException, IOException {
 		System.out.println(filename);
 		String jsonString = userWriteValueAsString(list);
 		writeFile(jsonString, filename);
@@ -102,7 +103,7 @@ public class OopsUtility {
 						* (inList.getListofInventories().get(j).getWeight());
 				System.out.println("total price:" + eachInventoryValue);
 			}
-			System.out.println("--------------------***-------------------------");
+			System.out.println("------ --------------***-------------------------");
 		}
 	}
 

@@ -1,7 +1,5 @@
 /******************************************************************************
- *  Compilation:  javac -d bin Person.java
- *  Execution:    java -cp bin com.bridgelabz.oops.Person.java n
- *  
+ *   *  
  *  Purpose: Creates a plain old java object to achieve encapsulation and for
  *  		 reusability of the code
  *

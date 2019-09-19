@@ -27,7 +27,7 @@ public class InventoryManagement4 {
 		List<InventoryList4> list = new ArrayList<InventoryList4>();
 		List<Inventory4> listin = new ArrayList<Inventory4>();
 		Inventory4 inventory = new Inventory4();
-		String filename = "/home/user/Downloads/RELEASE/GaneshM/src/com/grm/oops/inventory.json";
+		String filename = "/home/user/Downloads/RELEASE/GaneshM/src/com/bridgelabz/oops/inventory4.json";
 		String str = OopsUtility.readJsonFile(filename);
 		int count = 10;
 		do {
@@ -46,6 +46,7 @@ public class InventoryManagement4 {
 							System.out.println("Name: " + inList.getListofInventories().get(j).getName());
 							System.out.println("Weight: " + inList.getListofInventories().get(j).getWeight());
 							System.out.println("Price: " + inList.getListofInventories().get(j).getPrice());
+							
 						}
 						System.out.println("---------------------------------------------------------------");
 					}

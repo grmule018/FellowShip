@@ -6,18 +6,22 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="a/cHolderName"/>
+		<item key="selection" value="listOfPersons"/>
 		<list key="findhistory">
+			<item value="listOfPersons"/>
+			<item value="charbook"/>
+			<item value="listOfPerson"/>
 			<item value="accountHolderName"/>
 			<item value="ccountHolderName"/>
 		</list>
 		<list key="replacehistory">
+			<item value="listOfPersons"/>
 			<item value="a/cHolderName"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="631"/>
-		<item key="DIALOG_Y_ORIGIN" value="147"/>
+		<item key="DIALOG_X_ORIGIN" value="844"/>
+		<item key="DIALOG_Y_ORIGIN" value="253"/>
 		<item key="DIALOG_WIDTH" value="344"/>
 		<item key="DIALOG_HEIGHT" value="426"/>
 		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>

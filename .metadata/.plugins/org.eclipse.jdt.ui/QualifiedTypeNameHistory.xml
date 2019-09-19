@@ -22,13 +22,11 @@
     <fullyQualifiedTypeName name="java.util.Queue"/>
     <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
-    <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="com.bridglabz.utility.OopsUtility"/>
     <fullyQualifiedTypeName name="java.nio.Buffer"/>
     <fullyQualifiedTypeName name="com.bridglabz.oops1.util"/>
     <fullyQualifiedTypeName name="com.bridglabz.oops.Stock"/>
     <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
-    <fullyQualifiedTypeName name="org.codehaus.jackson.map.ObjectMapper"/>
     <fullyQualifiedTypeName name="org.codehaus.jackson.JsonParseException"/>
     <fullyQualifiedTypeName name="org.codehaus.jackson.map.JsonMappingException"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
@@ -46,4 +44,7 @@
     <fullyQualifiedTypeName name="com.grm.utility.Utility"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.grm.oops.addressbook.Person"/>
+    <fullyQualifiedTypeName name="com.grm.oops.addressbook.AddressBook"/>
+    <fullyQualifiedTypeName name="org.codehaus.jackson.map.ObjectMapper"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
 </qualifiedTypeNameHistroy>

@@ -46,10 +46,8 @@ public class Two_D_Array_9 {
 			writer.write(arr[i][j]+ "  ");
 			writer.flush();  
 		}
+		//			System.out.print(arr[i][j]+ "  ");
 			
-			/*
-			System.out.print(arr[i][j]+ "  ");
-			*/
 		System.out.println(" ");
 	}
 	
