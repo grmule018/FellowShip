@@ -27,7 +27,7 @@ public class UnOrderedList
 			
 			String line = bufferedReader.readLine();
 			
-			LinkedListU<T> LinkedList = new LinkedListU<T>();
+			LinkedListUnorderd<T> LinkedList = new LinkedListUnorderd<T>();
 			String array[] = line.split(" ");
 			for(int i=0; i<array.length; i++)
 			{

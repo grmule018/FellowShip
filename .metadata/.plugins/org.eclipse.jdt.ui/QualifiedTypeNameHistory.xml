@@ -42,9 +42,9 @@
     <fullyQualifiedTypeName name="com.bridglabz.utility.LinkedListU"/>
     <fullyQualifiedTypeName name="com.grm.algorithm.Static_method_4"/>
     <fullyQualifiedTypeName name="com.grm.utility.Utility"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.grm.oops.addressbook.Person"/>
     <fullyQualifiedTypeName name="com.grm.oops.addressbook.AddressBook"/>
     <fullyQualifiedTypeName name="org.codehaus.jackson.map.ObjectMapper"/>
     <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
