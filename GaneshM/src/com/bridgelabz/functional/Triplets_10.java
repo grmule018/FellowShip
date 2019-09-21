@@ -13,11 +13,11 @@ import com.bridgelabz.utility.Utility;
 public class Triplets_10 {
 	public static void main(String[] args)
 	{
-		
-		int arr[] = new int[10];
-		
+				
 		System.out.print("Enter the length of value  N =");
 		int N= Utility.integerInput();
+		
+		int arr[] = new int[N];
 		
 		System.out.print("Enter The integers :");
 		for(int i=0; i< N;i++)
@@ -26,8 +26,8 @@ public class Triplets_10 {
 		}
 		
 		for(int i=0;i<N-2; i++)
-			for(int j=0;j<N-1;j++)
-				for(int k=0;k<N;k++)
+		{	for(int j=0;j<N-1;j++)
+		{		for(int k=0;k<N;k++)
 				{
 					if(arr[i] + arr[j] +arr[k] ==0) 
 					{
@@ -35,5 +35,6 @@ public class Triplets_10 {
 						System.out.println(+arr[i]+" "+ arr[j]+" "+arr[k]);
 					}
 				}
-	}
+	 }
 }
+}}

@@ -41,10 +41,10 @@ public class Tic_Tac_Toe_game_14 {
 		}
 		System.out.println("---------------");
 	}
-	/*
+	/**
 	 * static void putVal(int i, int j, int player) { if if (player % 2 == 0) {
 	 * BOARD[i][j] = 0; } else BOARD[i][j] = 1; }
-	 */
+	 **/
 
 	static void putVal() {
 		int i;

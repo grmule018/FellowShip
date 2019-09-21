@@ -16,13 +16,34 @@ package com.bridgelabz.functional;
 import com.bridgelabz.utility.Utility;
 public class Gambler_7 {
 
+private static void GamblerSimulator(int stake,int goal,int trails) {
+	int bets=0;
+	int wons=0;
+	
+	for (int t=0; t<trails;t++) 
+	{
+		int cash=stake;
+		while(cash>0&&cash<goal) 
+		{
+			bets++;
+			if(Math.random() < 0.5)cash++;
+			else                   cash--;
+		}if (cash==goal)wons++;
+	}
+	System.out.println( wons+" Number of Wons "+ trails   );
+	System.out.println("percentage of wons "+100*wons/trails);
+	System.out.println("percentage of loss "+1.0*bets/trails);
+	  }
 	public static void main(String[] args) {
 		// take values from argument//
-		int stake = Integer.parseInt(args[0]);
-		int goal = Integer.parseInt(args[1]);
-		int trails = Integer.parseInt(args[2]);
-		
-		Utility.GamblerSimulator( stake, goal, trails );
+		System.out.println("Enter number of stake");
+		int stake = Utility.integerInput();
+		System.out.println("Enter number of goal");
+		int goal = Utility.integerInput();
+		System.out.println("Enter number of trails");
+		int trails = Utility.integerInput();
+		GamblerSimulator(stake,goal,trails);
+		//Utility.GamblerSimulator( stake, goal, trails );
 	}
 
 }

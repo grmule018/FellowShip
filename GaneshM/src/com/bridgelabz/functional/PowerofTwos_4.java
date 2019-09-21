@@ -10,10 +10,24 @@ package com.bridgelabz.functional;
 import com.bridgelabz.utility.Utility;
 
 public class PowerofTwos_4 {
+	
+	
+private static void poweroftwos(int n) {
+	int i = 0;
+	int poweroftwos=1;
+	
+	while (i<=n) {
+		 System.out.println(i+ " "+ poweroftwos);
+		 poweroftwos=2*poweroftwos;
+		 i=i+1;
+	}
+			
+}
     public static void main(String[] args) {
-       
-        int n = Integer.parseInt(args[0]);
-        Utility.PowerofTwos(n);
+       System.out.println("Enter number");
+        int n = Utility.integerInput();
+       poweroftwos(n);
+       // Utility.PowerofTwos(n);
         
         }
    }

@@ -21,7 +21,7 @@ public class Coupon_8 {
 		System.out.print("Enter The range 0 to ");
 		int range = Utility.integerInput();
 		
-		System.out.print("Enter The find value :");
+		System.out.print("Enter The numbers of coupan:");
 		int n = Utility.integerInput();
 		
 		Utility.Coupon_8(range,n);
