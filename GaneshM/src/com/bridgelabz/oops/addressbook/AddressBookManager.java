@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import com.bridgelabz.utility.*;
+import com.bridgelabz.utility.OopsUtility;;
 
 
 public class AddressBookManager {
@@ -64,9 +64,10 @@ public class AddressBookManager {
 			String filename = file.getName();
 			if (charbook.equals(filename)) {
 				if (file.length() > 0) {
-					
+					//filename=charbook;
 					String string = OopsUtility.readJsonFile(filename);
-					listOfPersons = OopsUtility.userReadValue(string, AddressBook.class);
+//					listOfPersons = OopsUtility.userReadValue(string, AddressBook.class);
+					System.out.println(((Person) OopsUtility.userReadValue(string, Person.class).get(0)).getFirstName());
 					System.out.println("Address book is not empty");
 					// Function call to perform various operations on the opened address book
 					addressBook();
@@ -280,7 +281,7 @@ public class AddressBookManager {
 		public void addressUpdate(Address address) {
 			do {
 				System.out.println("Enter the details of address you want to change");
-				System.out.println("1:Street  2:City  3:State  4:Zipcode");
+				System.out.println("1:Street\n2:City\n3:State\n4:Zipcode");
 				int ch = sc.nextInt();
 				switch (ch) {
 				case 1:

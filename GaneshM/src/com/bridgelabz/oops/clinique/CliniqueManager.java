@@ -46,7 +46,7 @@ public class CliniqueManager {
 			System.out.println("File is empty!");
 		}
 		Doctor doctor = new Doctor();
-		System.out.println("Setting id");
+		System.out.println("Setting id   "+listOfDoctor.size());
 		doctor.setId(listOfDoctor.size() + 1);
 		System.out.println("Id set");
 		System.out.println("Enter the doctor's name");

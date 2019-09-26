@@ -14,46 +14,16 @@ import com.bridgelabz.utility.Utility;
 
 	
 public class Regex2
-{
-	private String firstName;
-	private String lastName;
-	private String fullName;
-	
-	//Creating getter setter
-	
-	public String getFirstName() {
-		return firstName;
-	}
-
-	public void setFirstName(String fName) {
-		this.firstName = fName;
-	}
-	
-	public String getLastName() {
-		return lastName;
-	}
-
-	public void setLastName(String lName) {
-		this.lastName = lName;
-	}
-
-	public String getFullName() {
-		return fullName;
-	}
-
-	public void setFullName(String fName) {
-		this.fullName = fName;
-	}
-		
+{	
 	//Main function for regular expressions
 	
 	public static void main(String[] args) 
 		{
 		//regex string
-		String str = "Hello <<name>>, We have your full name as <<full name>> in our system. \n"
-					+ " * your contact number is 91-xxxxxxxxxx. Please,let us know in case of any clearification"
-					+ " Thank you BridgeLabz \n"
-					+ " * 12/12/2019";
+		String str = "Hello <<name>>, We have your full name as <<full name>> in our system.\n"
+					+ "Your contact number is 91-xxxxxxxxxx. Please,let us know in case of any clearification"
+					+ "Thank you BridgeLabz \n"
+					+ "12/12/2019";
 
 		System.out.println("Enter your first name");
 		String fName = Utility.StringInput();
@@ -62,9 +32,9 @@ public class Regex2
 
 		String fullname = fName + " " + lName;
 
-		Pattern p = Pattern.compile("[a-zA-Z]+");
+		//Pattern p = Pattern.compile("[a-zA-Z]+");
 
-		if (p.matches("[a-zA-z]+", fName))
+		if (Pattern.matches("[a-zA-Z]+", fName))
 		{
 			str = str.replaceAll("<<name>>", fName);
 			str = str.replaceAll("<<full name>>", fullname);

@@ -13,7 +13,8 @@ import java.util.List;
 import java.util.Scanner;
 
 import com.bridgelabz.utility.*;
-public class InventoryManagement4 {
+
+ public class InventoryManagement4 {
 	
 	/*
 	* The main function is written to take input from the user and
@@ -63,31 +64,34 @@ public class InventoryManagement4 {
 					while (flag == 1) {
 						System.out.println("Enter the inventory name: ");
 						String inName =sc.nextLine();
-						if (!list.isEmpty()) {
-							for (InventoryList4 in : list) {
-						if (inName.equals(in.getInventoryName())) {
-							listin = in.getListofInventories();
+						if (!list.isEmpty())
+						{
+							for (InventoryList4 in : list)
+							{
+								if (inName.equals(in.getInventoryName()))
+								{
+									listin = in.getListofInventories();
 									
 						//Method 1- using non-static function of Utility class
 						//of com.bridgelabz.util package
-						inventory = OopsUtility.insertData();
+									inventory = insertData();
 									
-						listin.add(inventory);
-						flag1=1;
+									listin.add(inventory);
+									flag1=1;
+								}
+							}
 						}
-					}
-					}
-					if (list.isEmpty()||flag1==0) {
-						inventory = OopsUtility.insertData();
+						if (list.isEmpty()||flag1==0) {
+						inventory = insertData();
 						listin.add(inventory);
 					}
-					System.out.println("Do you want to add more? if yes press 1 else 0");
-					flag = Utility.integerInput();
+						System.out.println("Do you want to add more? if yes press 1 else 0");
+						flag = Utility.integerInput();
 					}
-					System.out.println("The entered element is added to the list");
-					String json = OopsUtility.userWriteValueAsString(list);
-					OopsUtility.writeFile(json, filename);
-					System.out.println("Inventory list has been written on to file");
+						System.out.println("The entered element is added to the list");
+						String json = OopsUtility.userWriteValueAsString(list);
+						OopsUtility.writeFile(json, filename);
+						System.out.println("Inventory list has been written on to file");
 				} 
 				
 				catch (Exception e) {
@@ -112,4 +116,18 @@ public class InventoryManagement4 {
 			count--;
 		} while (count != 0);
 	}
+ 	// Function to insert data in inventory 
+	
+	public static Inventory4 insertData() {
+		Scanner sc=new Scanner(System.in);
+		Inventory4 inventory = new Inventory4();
+		System.out.println("Enter the name:");
+		inventory.setName(sc.nextLine());
+		System.out.println("Enter the weight");
+		inventory.setWeight(sc.nextFloat());                  
+		System.out.println("Enter the price");
+		inventory.setPrice(sc.nextDouble());
+		return inventory;
+	}
+
 }

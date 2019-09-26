@@ -82,22 +82,22 @@ public class CustomLinkedList<T> {
 	 *            the element that is to be added
 	 */
 	public void add(T data) {
-		Node<T> nd = new Node<T>();
+		Node<T> n = new Node<T>();
 
 		// Function call to set the data present in Node class
 		// of com.bridgelabz.datastructureprograms
-		nd.setData(data);
+		n.setData(data);
 
 		System.out.println("Adding: " + data);
 		if (isEmpty()) {
-			head = nd;
-			tail = nd;
+			head = n;
+			tail = n;
 		} else {
 
 			// Function call to set the data present in Node class
 			// of com.bridgelabz.datastructureprograms
-			tail.setNext(nd);
-			tail = nd;
+			tail.setNext(n);
+			tail = n;
 		}
 	}
 

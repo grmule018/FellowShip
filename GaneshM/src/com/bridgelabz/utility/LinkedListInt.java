@@ -16,6 +16,7 @@ import java.io.PrintWriter;
 public class LinkedListInt {
 	public NodeInt head;
 	public int size;
+	
 	//for display the list
 	public void display() {
 		System.out.println("Link list");

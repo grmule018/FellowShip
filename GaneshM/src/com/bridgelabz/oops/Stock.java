@@ -19,7 +19,7 @@ public class Stock {
 		return stockName;
 	}
 	public void setStockName(String stockName) {
-		this.stockName = stockName;
+ 		this.stockName = stockName;
 	}
 	public int getNoOfShares() {
 		return noOfShares;

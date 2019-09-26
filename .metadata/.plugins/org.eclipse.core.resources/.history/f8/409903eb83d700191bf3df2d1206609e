@@ -1,8 +1,0 @@
-package com.bridglabz.oops1;
-
-public class StockPort{
-	static List<Stock>listOfStock=new ArrayList<>();
-	static final string stockFile="/home/user/Downloads/RELEASE/GaneshM/src/com/bridglabz/oops/Stock.json";
-	
-	public static void
-}

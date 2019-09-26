@@ -43,13 +43,12 @@ public class AddressBookApp {
 				break;
 			case 5:
 				
-
 				addBookMan.close();
 				
 				break;
 			case 6:
 				System.out.println("Quit");
-				//addBookMan = null;
+				addBookMan=null ;
 				break;
 
 			}
