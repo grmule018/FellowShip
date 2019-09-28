@@ -53,4 +53,6 @@
     <fullyQualifiedTypeName name="java.util.Observer"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.bidglabz.utility.OopsUtility"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.service.AddressBook"/>
 </qualifiedTypeNameHistroy>
