@@ -5,6 +5,7 @@
 
 package com.bridgelabz.service;
 
+import com.bridgelabz.controller.AddressBookApp;
 import com.bridgelabz.model.Person;
 import com.bridgelabz.utility.OopsUtility;
 
@@ -184,7 +185,7 @@ public class AddressBookManager {
 				break;
 			case 6:
 	
-		//		AddressBookApp.main(null);
+				AddressBookApp.main(null);
 
 			default:
 				System.out.println("Invalid choice");
