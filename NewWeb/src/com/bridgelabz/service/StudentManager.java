@@ -8,6 +8,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
 import java.util.Scanner;
 
 
@@ -17,9 +18,9 @@ public class StudentManager implements Student {
 	
 	public static Connection con;
 	
-	public static PreparedStatement ps;
-	
 	public static PreparedStatement stmt;
+	
+	public static PreparedStatement ps;
 	
 	public static PreparedStatement updts;
 	
@@ -43,14 +44,14 @@ public class StudentManager implements Student {
 		}
 		try {
 			
-			stmt=con.prepareStatement("delete from  Student where idStudent= ?");
+			stmt=con.prepareStatement("delete from  Student where ID= ?");
 		
 		}catch (SQLException e) {
 			e.printStackTrace();
 		}
 		try {
 		
-			updts=con.prepareStatement("update Student set nameStudent=?, ageStudent=?, address=? where idStudent=?");
+			updts=con.prepareStatement("update Student set Name=?, Age=?, Address=? where ID=?");
 
 		}catch(SQLException e) {
 			e.printStackTrace();
@@ -74,11 +75,11 @@ public void addStudent() throws IOException, SQLException {
 		System.out.println("Enter Student ID:");
 		int id = Integer.parseInt(br.readLine());
 			System.out.println("Enter name:");
-			String name = br.readLine();
+		String name = br.readLine();
 			System.out.println("Enter age:");
 		int age = Integer.parseInt(br.readLine());
 			System.out.println("Enter Address");
-			String address = br.readLine();
+		String address = br.readLine();
 		
 		ps.setInt(1, id);
 		ps.setString(2, name);

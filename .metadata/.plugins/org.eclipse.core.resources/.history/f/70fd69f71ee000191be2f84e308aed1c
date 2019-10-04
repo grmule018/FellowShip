@@ -1,6 +1,0 @@
-package com.bridgelabz.designpatterns.singleton;
-
-public class EagerInitialization {
-	
-
-}

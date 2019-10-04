@@ -1,10 +1,10 @@
-/**
+/*************************************************************
  * Purpose: Inventory management main 
  * 
- * @author Ganesh Mule
- * @version 1.0
- * @since 09-09-2019
- **/	
+ *  @author  Ganesh Mule
+ *  @version 1.0
+ *  @since   4-10-2019
+ ****************************************************************/	
 package com.bridgelabz.oops;
 
 import java.io.IOException;
@@ -15,7 +15,7 @@ import java.util.Scanner;
 import com.bridgelabz.utility.*;
 
  public class InventoryManagement4 {
-	
+	public static Scanner sc=new Scanner(System.in);
 	/*
 	* The main function is written to take input from the user and
 	* performs read and write operation from the json file 
@@ -23,7 +23,7 @@ import com.bridgelabz.utility.*;
 	
 	public static void main(String[] args) throws IOException {
 	
-		 Scanner sc=new Scanner(System.in);
+	
 		
 		List<InventoryList4> list = new ArrayList<InventoryList4>();
 		List<Inventory4> listin = new ArrayList<Inventory4>();
@@ -34,7 +34,7 @@ import com.bridgelabz.utility.*;
 		do {
 			System.out.println("Enter the choice");
 			System.out.println("1:Read and Display\n2:Add and Write\n3:Calculate the total price\n4:Quit");
-			int choice = Utility.integerInput();
+			int choice =sc.nextInt();
 			switch (choice) {
 			
 			case 1:
@@ -86,7 +86,7 @@ import com.bridgelabz.utility.*;
 						listin.add(inventory);
 					}
 						System.out.println("Do you want to add more? if yes press 1 else 0");
-						flag = Utility.integerInput();
+						flag = sc.nextInt();
 					}
 						System.out.println("The entered element is added to the list");
 						String json = OopsUtility.userWriteValueAsString(list);
@@ -119,7 +119,7 @@ import com.bridgelabz.utility.*;
  	// Function to insert data in inventory 
 	
 	public static Inventory4 insertData() {
-		Scanner sc=new Scanner(System.in);
+	
 		Inventory4 inventory = new Inventory4();
 		System.out.println("Enter the name:");
 		inventory.setName(sc.nextLine());

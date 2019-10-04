@@ -1,4 +1,0 @@
-package com.bridgelabz.designpatterns.behavioral.observer;
-
-public class MyTopic implements Subject {
-}

@@ -1,5 +1,9 @@
 /**
  * Purpose : creating getter setter for inventory
+ * 
+ *  @author  Ganesh Mule
+ *  @version 1.0
+ *  @since   4-10-2019
  */
 
 package com.bridgelabz.oops;

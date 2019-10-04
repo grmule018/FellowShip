@@ -3,18 +3,19 @@ package com.bridgelabz.oops.commercial;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
+import java.util.Scanner;
+
 import org.codehaus.jackson.JsonParseException;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.type.TypeReference;
 
 import com.bridgelabz.utility.OopsUtility;
-import com.bridgelabz.utility.Utility;
 
 public class CommercialApp {
 
 	public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException
-	{
+	{	Scanner sc =new Scanner(System.in);
 		Person1 person = new Person1();
 		Company company= new Company();
 		ObjectMapper mapper=new ObjectMapper();
@@ -29,24 +30,24 @@ public class CommercialApp {
 		{
 			
 			System.out.println("Press \n1.Buy Share\n2.Sell Share\n3.Print Report\n4.Exit");
-			choice=Utility.integerInput();
+			choice=sc.nextInt();
 			
 			
 			switch (choice)
 			{
 			case 1:
 				System.out.println("Enter index of person");
-				int indexPerson=Utility.integerInput();
+				int indexPerson=sc.nextInt();
 				person=personList.get(indexPerson);
 				System.out.println(person.toString());
 				
 				System.out.println("Enter index of company");
-				int indexCompany=Utility.integerInput();
+				int indexCompany=sc.nextInt();
 				company=companyList.get(indexCompany);
 				System.out.println(company.toString());
 				
 				System.out.println("Enter how many share to buy : ");
-				int numberOfShares=Utility.integerInput();	
+				int numberOfShares=sc.nextInt();	
 				
 				if(numberOfShares>company.getNumberOfShares())
 				{
@@ -69,17 +70,17 @@ public class CommercialApp {
 				break;
 			case 2:
 				System.out.println("Enter index of person");
-				int indexPerson2=Utility.integerInput();
+				int indexPerson2=sc.nextInt();
 				person=personList.get(indexPerson2);
 				System.out.println(person.toString());
 				
 				System.out.println("Enter index of company");
-				int indexCompany2=Utility.integerInput();
+				int indexCompany2=sc.nextInt();
 				company=companyList.get(indexCompany2);
 				System.out.println(company.toString());
 				
 				System.out.println("Enter how many share to sell : ");
-				int numberOfShares2=Utility.integerInput();	
+				int numberOfShares2=sc.nextInt();	
 				if(numberOfShares2>company.getNumberOfShares())
 				{
 					System.out.println("Sorry you cant buy shares");

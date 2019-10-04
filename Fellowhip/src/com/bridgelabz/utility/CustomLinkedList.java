@@ -1,9 +1,18 @@
+/**
+ * Purpose : To provide 
+ *  
+ *  
+ *  @author  Ganesh Mule
+ *  @version 1.0
+ *  @since   4/10/2019
+ * 
+ * 
+ */
 package com.bridgelabz.utility;
-
 
 import java.util.Scanner;
 
-import com.bridgelabz.utility.Node;
+import com.bridgelabz.datastructure.Node;
 
 public class CustomLinkedList<T> {
 
@@ -85,7 +94,7 @@ public class CustomLinkedList<T> {
 		Node<T> n = new Node<T>();
 
 		// Function call to set the data present in Node class
-		// of com.bridgelabz.datastructureprograms
+		// of com.bridgelabz.datastructure
 		n.setData(data);
 
 		System.out.println("Adding: " + data);
@@ -95,7 +104,7 @@ public class CustomLinkedList<T> {
 		} else {
 
 			// Function call to set the data present in Node class
-			// of com.bridgelabz.datastructureprograms
+			// of com.bridgelabz.datastructure
 			tail.setNext(n);
 			tail = n;
 		}
@@ -112,11 +121,11 @@ public class CustomLinkedList<T> {
 		Node<T> temp = head;
 
 		// Function call to get the link present in Node class
-		// of com.bridgelabz.datastructureprograms
+		// of com.bridgelabz.datastructure
 		while (temp.getNext() != null) {
 
 			// Function call to get the data present in Node class
-			// of com.bridgelabz.datastructureprograms
+			// of com.bridgelabz.datastructure
 			if (data.equals(temp.getData())) {
 				return true;
 			}
@@ -170,25 +179,9 @@ public class CustomLinkedList<T> {
 
 		temp.setNext(next);
 	}
-
-//	public T removeLink(int index) {
-//		if (isEmpty())
-//			return null;
-//		Node<T> temp = head;
-//		if (index == 0) {
-//			head = temp.getNext();
-//			return head.getData();
-//		}
-//		for (int i = 0; temp != null && i < index - 1; i++) {
-//			temp = temp.getNext();
-//		}
-//		if (temp == null || temp.getNext() == null)
-//			return null;
-//		Node<T> next = temp.getNext().getNext();
-//		temp.setNext(next);
-//		return temp.getData();
-//	}
-
+/**
+ * Functions that returns the 
+ */
     public void getLinkedList() {
         Node<T> tmp = head;
         while (true) {

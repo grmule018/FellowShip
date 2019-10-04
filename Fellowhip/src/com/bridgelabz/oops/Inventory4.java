@@ -1,8 +1,9 @@
 /**
  * Purpose : creating inventory management getter setter methods
- * @author Ganesh Mule
- * @version 1.0
- * @since 09-09-2019
+ *
+ *  @author  Ganesh Mule
+ *  @version 1.0
+ *  @since   4-10-2019
  **/
 package com.bridgelabz.oops;
 

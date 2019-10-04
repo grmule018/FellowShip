@@ -8,9 +8,8 @@
 package com.bridgelabz.oops;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
 import java.util.regex.Pattern;
-
-import com.bridgelabz.utility.Utility;
 
 	
 public class Regex2
@@ -24,11 +23,12 @@ public class Regex2
 					+ "Your contact number is 91-xxxxxxxxxx. Please,let us know in case of any clearification"
 					+ "Thank you BridgeLabz \n"
 					+ "12/12/2019";
-
+		Scanner sc=new Scanner(System.in);		
+		
 		System.out.println("Enter your first name");
-		String fName = Utility.StringInput();
+		String fName = sc.next();
 		System.out.println("Enter your last name");
-		String lName = Utility.StringInput();
+		String lName =sc.next();
 
 		String fullname = fName + " " + lName;
 
@@ -41,7 +41,7 @@ public class Regex2
 		}
 		//taking user input for mobile number
 		System.out.println("Enter 10 digit mobile number");
-		String MbNo = Utility.StringInput();
+		String MbNo = sc.next();
 		
 		if (Pattern.matches("[6789][0-9]{9}", MbNo))
 		{
@@ -53,5 +53,6 @@ public class Regex2
 		String formattedString = localDate.format(formatter);
 		str = str.replaceAll("12/12/2019", formattedString);
 		System.out.println(str);
+		sc.close();
 	}
 }

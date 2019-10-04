@@ -1,10 +1,10 @@
-/**
+/***********************************************************************
  * Purpose: Contains all the functions for the .java files in 
  * 
- * @author Ganesh Mule
- * @version 1.0
- * @since 07-09-2019
- **/
+ *  @author  Ganesh Mule
+ *  @version 1.0
+ *  @since   4/10/2019
+ ****************************************************************/
 package com.bridgelabz.utility;
 
 import java.io.BufferedReader;
@@ -23,7 +23,6 @@ import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.type.CollectionType;
 
-import com.bridgelabz.oops.Inventory4;
 import com.bridgelabz.oops.InventoryList4;
 
 public class OopsUtility {
@@ -97,7 +96,7 @@ public class OopsUtility {
 
 	 //function to write
 	
-	public static void writeObjectToJson(List list, String fileName)
+	public static void writeObjectToJson(List<?> list, String fileName)
 		{
 			Object[] arr = list.toArray();
 

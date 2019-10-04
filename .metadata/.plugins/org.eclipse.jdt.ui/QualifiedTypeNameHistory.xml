@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
-    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
-    <fullyQualifiedTypeName name="java.io.CharArrayWriter"/>
-    <fullyQualifiedTypeName name="com.bridglabz.utility.LinkedListInt"/>
-    <fullyQualifiedTypeName name="com.bridglabz.utility.LinkedList_Data_W"/>
-    <fullyQualifiedTypeName name="T"/>
-    <fullyQualifiedTypeName name="com.bridglabz.datastructures2.Node"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.task.UserDetails"/>
-    <fullyQualifiedTypeName name="com.bridglabz.oops.Utility"/>
-    <fullyQualifiedTypeName name="java.time.LocalDate"/>
-    <fullyQualifiedTypeName name="java.util.Stack"/>
-    <fullyQualifiedTypeName name="com.bridglabz.utility.JsonUtility"/>
-    <fullyQualifiedTypeName name="com.bridglabz.oops.JsonEmp"/>
-    <fullyQualifiedTypeName name="com.bridglabz.oops.Inventory"/>
     <fullyQualifiedTypeName name="com.bridglabz.oops.InventoryList"/>
     <fullyQualifiedTypeName name="com.bridglabz.utility.StackUtility"/>
     <fullyQualifiedTypeName name="com.bridglabz.utility.QueueUtility"/>
@@ -27,11 +13,9 @@
     <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
     <fullyQualifiedTypeName name="org.codehaus.jackson.JsonParseException"/>
     <fullyQualifiedTypeName name="org.codehaus.jackson.map.JsonMappingException"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="org.codehaus.jackson.map.type.CollectionType"/>
     <fullyQualifiedTypeName name="org.codehaus.jackson.JsonGenerationException"/>
     <fullyQualifiedTypeName name="java.io.FileReader"/>
-    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
     <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
     <fullyQualifiedTypeName name="com.bridglabz.oops.Stock1.Stock1"/>
@@ -57,5 +41,23 @@
     <fullyQualifiedTypeName name="com.phone.Android"/>
     <fullyQualifiedTypeName name="com.phone.OS"/>
     <fullyQualifiedTypeName name="com.phone.OperationFactory"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.Driver"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="sun.tools.java.ScannerInputReader"/>
+    <fullyQualifiedTypeName name="java.lang.StrictMath"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="com.bridglabz.service.Addressbook"/>
+    <fullyQualifiedTypeName name="com.bridglabz.service.AddressBookImpl"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.controller.AddressBookApp"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.utility.FunctionalUtility"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.statement.model.Collage"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.jdbc.CallableStatement"/>
 </qualifiedTypeNameHistroy>

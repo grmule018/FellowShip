@@ -8,19 +8,18 @@
 package com.bridgelabz.oops;
 
 import java.io.IOException;
-
-import com.bridgelabz.utility.*;;
-
+import java.util.Scanner;
 
 // The main function is written to take input from the user and
 // calls various methods that manages the stocks
 
 public class StockPortfolioApplication {
 	public static void main(String[] args) throws IOException {
+		Scanner sc =new Scanner(System.in);
 		int flag=0;
 		do {
 			System.out.println("Enter\n1:Add Stock\n2:Calculate each stock value\n3:Calculate value of total stocks\n4:Display");
-			int choice = Utility.integerInput();
+			int choice = sc.nextInt();
 			switch (choice) {
 			case 1:
 			
@@ -48,5 +47,6 @@ public class StockPortfolioApplication {
 				break;
 			}
 		}while(flag<1);
+		sc.close();
 	}
 }
