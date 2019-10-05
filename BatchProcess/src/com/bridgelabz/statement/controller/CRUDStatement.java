@@ -19,7 +19,7 @@ import com.bridgelabz.statement.service.ImplStatement;
 public class CRUDStatement {
 
 	public static void main(String[] args) throws Exception {
-		ImplStatement util = new ImplStatement();
+		ImplStatement table = new ImplStatement();
 		Scanner scanner = new Scanner(System.in);
 		Collage collage = new Collage();
 		boolean exit = true;
@@ -37,17 +37,17 @@ public class CRUDStatement {
 				collage.setName(scanner.next());
 				System.out.println("Enter Collage address  : ");
 				collage.setAddress(scanner.next());
-				util.createTable(collage);
+				table.createTable(collage);
 				System.out.println("value inserted created succesfully ");
 				break;
 
 			case 2:
 
-				util.showTable();
+				table.showTable();
 				break;
 
 			case 3:
-				util.showTable();
+				table.showTable();
 				System.out.println("Enter id which you want to perform updation ");
 				int id = scanner.nextInt();
 				System.out.println("Enter name to change: ");
@@ -55,17 +55,17 @@ public class CRUDStatement {
 				System.out.println("Enter address to change: ");
 				collage.setAddress(scanner.next());
 
-				util.update(id, collage);
+				table.update(id, collage);
 
-				util.showTable();
+				table.showTable();
 				break;
 
 			case 4:
-				util.showTable();
+				table.showTable();
 				System.out.println("Enter id which you want to delete ");
 				int deleteId = scanner.nextInt();
-				util.delete(deleteId);
-				util.showTable();
+				table.delete(deleteId);
+				table.showTable();
 
 				break;
 			case 5:

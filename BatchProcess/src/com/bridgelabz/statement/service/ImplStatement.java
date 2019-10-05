@@ -19,16 +19,16 @@ public class ImplStatement implements ICrudStatement {
 	@Override
 	public void createTable(Collage collage) throws Exception {
 
-//		String query = ("insert into Collage values('" + collage.getId() + "','" + collage.getName() + "','"
-//				+ collage.getAddress() + "')");// "insert into Collage values(?,?,?)";
-//		System.out.println(collage.getId() + " " + collage.getName() + " " + collage.getAddress());
-//		st = connection.createStatement();
-//		st.executeUpdate(query);
-		CallableStatement cs = (CallableStatement) connection.prepareCall("call insert_record(?,?,?)");
-		cs.setInt(1, collage.getId());
-		cs.setString(2, collage.getName());
-		cs.setString(3, collage.getAddress());
-		int rowAffected = cs.executeUpdate();
+		String query = ("insert into Collage values('" + collage.getId() + "','" + collage.getName() + "','"
+				+ collage.getAddress() + "')");// "insert into Collage values(?,?,?)";
+		System.out.println(collage.getId() + " " + collage.getName() + " " + collage.getAddress());
+		st = connection.createStatement();
+		st.executeUpdate(query);
+//		CallableStatement cs = (CallableStatement) connection.prepareCall("call insert_record(?,?,?)");
+//		cs.setInt(1, collage.getId());
+//		cs.setString(2, collage.getName());
+//		cs.setString(3, collage.getAddress());
+//		int rowAffected = cs.executeUpdate();
 
 	}
 
@@ -60,12 +60,12 @@ public class ImplStatement implements ICrudStatement {
 
 	@Override
 	public void showTable() throws Exception {
-		CallableStatement cs = (CallableStatement) connection.prepareCall("call show_records");
-//		String query = "select * from  Collage";
-//		st = connection.createStatement();
-//		ResultSet rs = st.executeQuery(query);
+	// cs = (CallableStatement) connection.prepareCall("call show_records");
+		String query = "select * from  Collage";
+		st = connection.createStatement();
+		ResultSet rs = st.executeQuery(query);
 
-		ResultSet rs = cs.executeQuery();
+//		ResultSet rs = cs.executeQuery();
 
 		while (rs.next()) {
 			System.out.println("Id: " + rs.getInt(1) + " Name: " + rs.getString(2) + " Address " + rs.getString(3));

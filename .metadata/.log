@@ -8463,3 +8463,255 @@ Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-04 19:44:02.837
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.CxusPico => OK
+!SESSION 2019-10-05 08:48:01.911 -----------------------------------------------
+eclipse.buildId=4.3.2.201908130627-RELEASE
+java.version=11.0.3
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.egit.core 1 0 2019-10-05 08:48:34.478
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-10-05 08:48:37.128
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-10-05 08:48:37.129
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@39a9becc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@177302d6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:46.160
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:46.166
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@33224703[org.springframework.tooling.boot.ls:1.10.0.201908130624(id=617)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:46.181
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:46.446
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:55.722
+!MESSAGE Boot LS startup time from start to initialized: 9458ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.031
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.kkzzvuWzisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.125
+!MESSAGE subscribing to classpath changes: sts4.classpath.kkzzvuWz isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.128
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.142
+!MESSAGE subsribers = {sts4.classpath.kkzzvuWz=Send Classpath Notifications(79)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.143
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.335
+!MESSAGE project BatchProcess ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.335
+!MESSAGE project NewWeb ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.336
+!MESSAGE project AddressBook ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.336
+!MESSAGE project Demo ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.336
+!MESSAGE project Factory ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.337
+!MESSAGE project Fellowhip ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.337
+!MESSAGE project Servers ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.337
+!MESSAGE project Servers SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.337
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.338
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.kkzzvuWz => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.341
+!MESSAGE Preparing classpath changed notification BatchProcess
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.342
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.346
+!MESSAGE classpath=4 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.347
+!MESSAGE buffering callback sts4.classpath.kkzzvuWz BatchProcess false 4
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.349
+!MESSAGE Preparing classpath changed notification NewWeb
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.350
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.350
+!MESSAGE classpath=34 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.351
+!MESSAGE buffering callback sts4.classpath.kkzzvuWz NewWeb false 34
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.351
+!MESSAGE Preparing classpath changed notification AddressBook
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.351
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.352
+!MESSAGE classpath=5 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.352
+!MESSAGE buffering callback sts4.classpath.kkzzvuWz AddressBook false 5
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.353
+!MESSAGE Preparing classpath changed notification Demo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.353
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.353
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.354
+!MESSAGE buffering callback sts4.classpath.kkzzvuWz Demo false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.354
+!MESSAGE Preparing classpath changed notification Factory
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.354
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.355
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.355
+!MESSAGE buffering callback sts4.classpath.kkzzvuWz Factory false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.355
+!MESSAGE Preparing classpath changed notification Fellowhip
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.356
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.362
+!MESSAGE classpath=5 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.363
+!MESSAGE buffering callback sts4.classpath.kkzzvuWz Fellowhip false 5
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.363
+!MESSAGE executing callback sts4.classpath.kkzzvuWz 6 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 08:48:56.559
+!MESSAGE executing callback sts4.classpath.kkzzvuWz SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2019-10-05 19:05:52.652
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.ltk.core.refactoring 4 10009 2019-10-05 19:06:16.094
+!MESSAGE Participant 'org.eclipse.jdt.debug.refactoring.breakpoint.projectRename' removed due to the following exception
+!STACK 1
+Java Model Exception: Java Model Status [stopWatch(boolean, int) [in FunctionalUtility [in FunctionalUtility.java [in com.bridgelabz.utility [in src [in Fellowship]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:573)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:607)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:326)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:312)
+	at org.eclipse.jdt.internal.core.Member.getNameRange(Member.java:355)
+	at org.eclipse.jdt.internal.debug.core.refactoring.BreakpointChange.getNewLineNumberAndRange(BreakpointChange.java:149)
+	at org.eclipse.jdt.internal.debug.core.refactoring.MethodBreakpointTypeChange.perform(MethodBreakpointTypeChange.java:82)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:260)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:308)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2019-10-05 19:06:16.095
+!MESSAGE stopWatch(boolean, int) [in FunctionalUtility [in FunctionalUtility.java [in com.bridgelabz.utility [in src [in Fellowship]]]]] does not exist
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 19:06:16.160
+!MESSAGE Preparing classpath changed notification Fellowhip
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 19:06:16.161
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 19:06:16.161
+!MESSAGE buffering callback sts4.classpath.kkzzvuWz Fellowhip true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 19:06:16.161
+!MESSAGE Preparing classpath changed notification Fellowship
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 19:06:16.161
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 19:06:16.168
+!MESSAGE classpath=5 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 19:06:16.169
+!MESSAGE buffering callback sts4.classpath.kkzzvuWz Fellowship false 5
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 19:06:16.169
+!MESSAGE executing callback sts4.classpath.kkzzvuWz 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-10-05 19:06:16.190
+!MESSAGE executing callback sts4.classpath.kkzzvuWz SUCCESS [done]
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2019-10-05 19:06:16.316
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [stopWatch(boolean, int) [in FunctionalUtility [in FunctionalUtility.java [in com.bridgelabz.utility [in src [in Fellowship]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:573)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:607)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:326)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:312)
+	at org.eclipse.jdt.internal.core.Member.getNameRange(Member.java:355)
+	at org.eclipse.jdt.internal.debug.core.refactoring.BreakpointChange.getNewLineNumberAndRange(BreakpointChange.java:149)
+	at org.eclipse.jdt.internal.debug.core.refactoring.MethodBreakpointTypeChange.perform(MethodBreakpointTypeChange.java:82)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:260)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:308)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2019-10-05 19:06:16.325
+!MESSAGE stopWatch(boolean, int) [in FunctionalUtility [in FunctionalUtility.java [in com.bridgelabz.utility [in src [in Fellowship]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2019-10-05 19:06:16.328
+!MESSAGE stopWatch(boolean, int) [in FunctionalUtility [in FunctionalUtility.java [in com.bridgelabz.utility [in src [in Fellowship]]]]] does not exist
