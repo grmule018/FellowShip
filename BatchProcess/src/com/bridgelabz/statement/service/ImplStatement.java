@@ -7,7 +7,7 @@ import java.sql.Statement;
 
 import com.bridgelabz.statement.model.Collage;
 import com.bridgelabz.statement.repository.Connectivity;
-import com.mysql.cj.jdbc.CallableStatement;
+//import com.mysql.cj.jdbc.CallableStatement;
 
 public class ImplStatement implements ICrudStatement {
 
