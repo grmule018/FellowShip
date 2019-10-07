@@ -13,31 +13,37 @@ public class LoginRegister extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	
-	public LoginRegister() {  }
+	public LoginRegister() {}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		CustomerDAO cd=new CustomerDAOImpl();
+		
+		UserDAO Ud=new UserDAOImpl();
+		
 		String userName=request.getParameter("username");
 		
 		String password=request.getParameter("password1");
 		
 		String submitType=request.getParameter("submit");
 		
-		Customer c =cd.getCustomer(userName, password);
 		
-		if(submitType.equals("login") && c!=null && c.getFirstname()!=null){
-			request.setAttribute("messgae",c.getFirstname());
+		User U =Ud.getUser(userName, password);
+		
+		if(submitType.equals("login") && U!=null && U.getFirstname()!=null){
+			
+			request.setAttribute("messgae",U.getFirstname());
 			request.getRequestDispatcher("welcome.jsp").forward(request, response);
 	
 		}else if(submitType.equals("register")) {
-			c.setUsername(userName);
-			c.setFirstname(request.getParameter("firstname"));
-			c.setLastname(request.getParameter("lastname"));
-			c.getPhonenumber();
-			c.setPassword(password);
 			
-			cd.InsertCustomer(c);
-			request.setAttribute("successMessage","Registration don , please to  login continue !!");
+			U.setUsername(userName);
+			U.setFirstname(request.getParameter("firstname"));
+			U.setLastname(request.getParameter("lastname"));
+			U.setPhonenumber(request.getParameter("phonenumber"));
+			U.setPassword(password);
+			
+			Ud.InsertUser(U);
+			
+			request.setAttribute("successMessage","Registration done , please to  login continue !!");
 			
 			request.getRequestDispatcher("login.jsp").forward(request, response);
 		}else {

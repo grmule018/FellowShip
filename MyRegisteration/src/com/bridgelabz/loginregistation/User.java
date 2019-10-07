@@ -1,11 +1,12 @@
 package com.bridgelabz.loginregistation;
 
-public class Customer {
+public class User {
 	
 	private String username;
 	private String firstname;
 	private String lastname;
 	private String phonenumber;
+	private String password;
 	
 	public String getUsername() {
 		return username;
@@ -37,8 +38,4 @@ public class Customer {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	private String password;
-	
-	
-
 }

@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body style = "color:yellow;">
+<body style = "color:skyblue;">
 <h1>Hi${message} !!! We welcome you !</h1>
 </body>
 </html>

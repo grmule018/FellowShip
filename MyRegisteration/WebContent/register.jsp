@@ -25,12 +25,12 @@
  		<td> <input type="text" name="username"> </td>
  	</tr>
  	<tr>
- 		<td> First Name : </td>
+ 		<td> FirstName : </td>
  		<td> <input type="text" name="firstname"> </td>
  	</tr>
  	
    	<tr>
- 		<td> Last Name : </td>
+ 		<td> LastName : </td>
  		<td> <input type="text" name="lastname"> </td>
  	</tr>
  	

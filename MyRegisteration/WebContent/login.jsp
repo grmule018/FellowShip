@@ -30,7 +30,7 @@
  	</tr>
  	
 	<tr>
-		<td> Password : </td> <td> <input type="password" name="password"> </td>  
+		<td> Password : </td> <td> <input type="password" name="password1"> </td>  
 	</tr>
 	<tr> 
 		<td> <input type ="submit" name="submit" value="login"> </td>
