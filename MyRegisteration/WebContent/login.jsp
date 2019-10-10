@@ -10,7 +10,7 @@
  	<form action ="loginRegister" method="post">
 	<table 
 	
-		style = "background-color:lightgreen;margin-left: 20px; margin-left: 20px; ">
+		style = "background-color:white;margin-left: 20px; margin-left: 20px; ">
 	<tr>
 	<td> <h3 style=color:red> ${message} </h3>  </td>
 	<td><h3 style=color:green>${successMessage}</h3></td>
@@ -19,7 +19,7 @@
 	<tr>
  	
  		<td><h3 style="color:black;">Login Page </h3></td>
- 	
+ 	  
  	</tr>
  
  	<tr>

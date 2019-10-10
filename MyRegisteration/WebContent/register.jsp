@@ -10,7 +10,7 @@
 	<form action ="loginRegister"method="post">
 		<table 
 	
-			style = "background-color:skyblue;margin-left: 20px; margin-left:20px; ">
+			style = "background-color:white;margin-left: 20px; margin-left:20px; ">
 	
 	<tr>
  	

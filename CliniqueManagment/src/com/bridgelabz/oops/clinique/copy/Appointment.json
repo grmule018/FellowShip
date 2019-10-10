@@ -1,0 +1,10 @@
+[{"docName":"Dipak","listOfPatients":
+[{"id":1,"name":"kishor","age":22,"phoneNo":8974561239},
+{"id":2,"name":"maya","age":25,"phoneNo":9653241569},
+{"id":3,"name":"varsha","age":22,"phoneNo":9874563210},
+{"id":4,"name":"sachin","age":12,"phoneNo":9568567898},
+{"id":5,"name":"nobita","age":13,"phoneNo":7894561236}]},
+{"docName":"Radha","listOfPatients":
+[{"id":1,"name":"raghu","age":22,"phoneNo":9512345678},
+{"id":1,"name":"varsha","age":22,"phoneNo":7896541236}]
+}]

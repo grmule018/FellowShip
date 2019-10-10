@@ -1,4 +1,4 @@
-package com.bridgelabz.loginregistation;
+package com.bridgelabz.loginregistration;
 
 import java.io.IOException;
 import javax.servlet.ServletException;

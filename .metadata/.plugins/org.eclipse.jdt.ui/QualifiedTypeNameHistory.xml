@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.bridglabz.oops.InventoryList"/>
-    <fullyQualifiedTypeName name="com.bridglabz.utility.StackUtility"/>
     <fullyQualifiedTypeName name="com.bridglabz.utility.QueueUtility"/>
     <fullyQualifiedTypeName name="java.util.Queue"/>
     <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
@@ -41,12 +39,10 @@
     <fullyQualifiedTypeName name="com.phone.Android"/>
     <fullyQualifiedTypeName name="com.phone.OS"/>
     <fullyQualifiedTypeName name="com.phone.OperationFactory"/>
-    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.Driver"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="sun.tools.java.ScannerInputReader"/>
     <fullyQualifiedTypeName name="java.lang.StrictMath"/>
@@ -58,6 +54,10 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.bridgelabz.utility.FunctionalUtility"/>
     <fullyQualifiedTypeName name="com.bridgelabz.statement.model.Collage"/>
-    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="com.mysql.cj.jdbc.CallableStatement"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.loginregistation.MyConnectionProvider"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="org.apache.catalina.User"/>
 </qualifiedTypeNameHistroy>

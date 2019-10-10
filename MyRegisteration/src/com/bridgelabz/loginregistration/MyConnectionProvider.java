@@ -1,4 +1,4 @@
-package com.bridgelabz.loginregistation;
+package com.bridgelabz.loginregistration;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -75,22 +75,29 @@ public class AlgorithmUtility<T>{
 		char[] array2=str2.toCharArray();
 		int len1=str1.length();
 		int len2=str2.length();
-		if(len1!=len2) {
+		if(len1!=len2) 
+		{
 			return false;
 		}
 		else{
-			for(int i=0;i<len1;i++){
-				for(int j=0;j<len1-1;j++){
-					if(array1[j]>array1[j+1]){
+			for(int i=0;i<len1;i++)
+			{
+				for(int j=0;j<len1-1;j++)
+				{
+					if(array1[j]>array1[j+1])
+					{
 						temp1=array1[j];
 						array1[j]=array1[j+1];
 						array1[j+1]=temp1;
 					}
 				}
 			}
-			for(int i=0;i<len2;i++){
-				for(int j=0;j<len2-1;j++){
-					if(array2[j]>array2[j+1]){
+			for(int i=0;i<len2;i++)
+			{
+				for(int j=0;j<len2-1;j++)
+				{
+					if(array2[j]>array2[j+1])
+					{
 						temp2=array2[j];
 						array2[j]=array2[j+1];
 						array2[j+1]=temp2;
@@ -116,7 +123,9 @@ public class AlgorithmUtility<T>{
 	public static List<Integer> primeNumbers(int start,int end) {
 		List<Integer> list=new ArrayList<Integer>();
 		int flag=1;
-		for(int i=start+2;i<end;i++){
+		
+		for(int i=start+2;i<end;i++)
+		{
 			for(int j=2;j<i;j++){
 				if(i%j==0)
 				{
@@ -183,7 +192,8 @@ public class AlgorithmUtility<T>{
 	 * @param amt the amount that you need change for
 	 * @return integer the minimum changes needed for the amount entered
 	 */
-	public static int vendingMachine(int[] notes,int amt) {
+	public static int vendingMachine(int[] notes,int amt)
+	{
 		int cash=amt;
 		int temp=0;
 		for(int i=0;i<notes.length;i++)
@@ -212,9 +222,11 @@ public class AlgorithmUtility<T>{
 	 * @param temp the temperature to be converted
 	 * @return temperature that is converted
 	 */
-	public static double temperatureConversion(int choice,double temp) {
+	public static double temperatureConversion(int choice,double temp) 
+	{
 		double f_temp,c_temp;
-		switch(choice){
+		switch(choice)
+		{
 			case 1: System.out.println("Your input is in celcius so your fahrenheit temp is:");
 			 		f_temp=(temp*(9/5))+32;
 			 		return f_temp;
@@ -235,7 +247,8 @@ public class AlgorithmUtility<T>{
 	 * @param rate the interest rate 
 	 * @return monthly payment 
 	 */
-	public static double monthlyPayment(int principle,int year,double rate) {
+	public static double monthlyPayment(int principle,int year,double rate) 
+	{
 		int num=12*year;
 		double rt=(rate)/(12*100);
 		return (principle*rt)/(1-Math.pow(1+rt, -num));
@@ -247,13 +260,16 @@ public class AlgorithmUtility<T>{
 	 * 
 	 * @param num the number whose square root is to be found
 	 */
-	public static double squareRoot(double num) {
+	public static double squareRoot(double num) 
+	{
 		double temp=num;
 		double epsilon=1e-15;
-		if(num>0) {
-			while(Math.abs(temp-num/temp)> epsilon*temp) {
+		if(num>0) 
+		{
+			while(Math.abs(temp-num/temp)> epsilon*temp) 
+		{
 			temp=(num/temp+temp)/2;
-			}
+		}
 		}
 		return temp;
 	}
@@ -264,7 +280,8 @@ public class AlgorithmUtility<T>{
 	 * @param num the number that is to be converted to binary
 	 * @return array the array of integers that contains binary bits of the number
 	 */
-	public static int[] toBinary(int num){
+	public static int[] toBinary(int num)
+	{
 		int[] bin=new int[1];
 		int i=0;
 		do{
@@ -491,12 +508,15 @@ public class AlgorithmUtility<T>{
 	 * @param set the set of prime numbers that are anagram
 	 * @return set the set of prime numbers that are anagram and palindrom
 	 */
-	public static Set<String> palindromPrime(List<String> new_lst){
+	public static Set<String> palindromPrime(List<String> new_lst)
+	{
 		Set<String> pal_set=new HashSet<>();
 		Iterator<String> itr=new_lst.iterator();
-		while(itr.hasNext()){
+		while(itr.hasNext())
+		{
 			String str=itr.next();
-			if(isPalindrom(str)){
+			if(isPalindrom(str))
+			{
 				pal_set.add(str);
 			}
 		}

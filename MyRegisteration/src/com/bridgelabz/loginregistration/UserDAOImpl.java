@@ -1,4 +1,4 @@
-package com.bridgelabz.loginregistation;
+package com.bridgelabz.loginregistration;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,18 +10,18 @@ public class UserDAOImpl implements UserDAO {
 	static PreparedStatement ps;
 	
 	@Override
-	public int InsertUser(User c) {
+	public int InsertUser(User u) {
 		int status=0;
 		try {
 			con=MyConnectionProvider.getCon();
 			
 			ps=con.prepareStatement("insert into User values(?,?,?,?,?)");
 	
-			ps.setString(1, c.getUsername());
-			ps.setString(2, c.getFirstname());
-			ps.setString(3, c.getLastname());
-			ps.setString(4, c.getPhonenumber());	
-			ps.setString(5, c.getPassword());
+			ps.setString(1, u.getUsername());
+			ps.setString(2, u.getFirstname());
+			ps.setString(3, u.getLastname());
+			ps.setString(4, u.getPhonenumber());	
+			ps.setString(5, u.getPassword());
 			
 			status=ps.executeUpdate();
 			
@@ -39,7 +39,7 @@ public class UserDAOImpl implements UserDAO {
 	@Override
 	public User getUser(String username, String password) {
 		
-			User U =new User();
+			User u =new User();
 		
 		try {
 			con=MyConnectionProvider.getCon();
@@ -54,15 +54,15 @@ public class UserDAOImpl implements UserDAO {
 			
 			while(rs.next())
 			{
-				U.setUsername(rs.getString(1));
+				u.setUsername(rs.getString(1));
 				
-				U.setFirstname(rs.getString(2));
+				u.setFirstname(rs.getString(2));
 				
-				U.setLastname(rs.getString(3));
+				u.setLastname(rs.getString(3));
 				
-				U.setPhonenumber(rs.getString(4));
+				u.setPhonenumber(rs.getString(4));
 				
-				U.setPassword(rs.getString(5));
+				u.setPassword(rs.getString(5));
 				
 			}
 		
@@ -70,7 +70,7 @@ public class UserDAOImpl implements UserDAO {
 			System.out.println(e);
 		}
 		
-		return U;
+		return u;
 	}
 
 
