@@ -1,4 +1,4 @@
-package com.bridgelabz.loginregistration;
+package com.bridgelabz.loginregistration.model;
 
 public class User {
 	

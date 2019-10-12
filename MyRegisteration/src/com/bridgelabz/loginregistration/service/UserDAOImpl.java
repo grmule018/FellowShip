@@ -1,8 +1,10 @@
-package com.bridgelabz.loginregistration;
+package com.bridgelabz.loginregistration.service;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+
+import com.bridgelabz.loginregistration.model.User;
 
 public class UserDAOImpl implements UserDAO {
 	

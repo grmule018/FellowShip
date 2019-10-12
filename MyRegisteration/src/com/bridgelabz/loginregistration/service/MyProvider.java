@@ -1,4 +1,4 @@
-package com.bridgelabz.loginregistration;
+package com.bridgelabz.loginregistration.service;
 
 public interface MyProvider {
 	String username="root";

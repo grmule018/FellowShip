@@ -1,4 +1,6 @@
-package com.bridgelabz.loginregistration;
+package com.bridgelabz.loginregistration.service;
+
+import com.bridgelabz.loginregistration.model.User;
 
 public interface UserDAO {
 
