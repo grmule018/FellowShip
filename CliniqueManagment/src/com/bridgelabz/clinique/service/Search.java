@@ -1,6 +1,7 @@
 
-package com.bridgelabz.oops.clinique.copy;
+package com.bridgelabz.clinique.service;
 
+import com.bridgelabz.clinique.model.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;

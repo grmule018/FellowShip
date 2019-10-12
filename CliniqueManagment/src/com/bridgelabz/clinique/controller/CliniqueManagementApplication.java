@@ -1,11 +1,13 @@
 
-package com.bridgelabz.oops.clinique.copy;
+package com.bridgelabz.clinique.controller;
 
 import java.io.IOException;
 import java.util.Scanner;
 
 import org.codehaus.jackson.JsonParseException;
 import org.codehaus.jackson.map.JsonMappingException;
+
+import com.bridgelabz.clinique.service.CliniqueManager;
 
 public class CliniqueManagementApplication {
 	
@@ -42,7 +44,7 @@ public class CliniqueManagementApplication {
 				
 				break;
 			default:
-				System.out.println("Invalid choice");
+				System.out.println("Exited successfully");
 				System.exit(0);
 			}
 		}while(n<1);

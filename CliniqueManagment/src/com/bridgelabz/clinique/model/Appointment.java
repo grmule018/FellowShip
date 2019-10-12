@@ -1,5 +1,5 @@
 
-package com.bridgelabz.oops.clinique.copy;
+package com.bridgelabz.clinique.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +17,6 @@ public class Appointment {
 		this.docName = docName;
 	}
 
-	
 	public List<Patient> getListOfPatients() {
 		return listOfPatients;
 	}

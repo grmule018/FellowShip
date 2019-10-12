@@ -1,5 +1,5 @@
 
- package com.bridgelabz.oops.clinique.copy;
+ package com.bridgelabz.clinique.model;
 
 public class Doctor {
 

@@ -5,7 +5,7 @@
  *  @version 1.0
  *  @since   4/10/2019
  ****************************************************************/
-package com.bridgelabz.oops.clinique.copy;
+package com.bridgelabz.clinique.service;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

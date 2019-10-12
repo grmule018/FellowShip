@@ -1,6 +1,7 @@
 
-package com.bridgelabz.oops.clinique.copy;
+package com.bridgelabz.clinique.service;
 
+import com.bridgelabz.clinique.model.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -18,11 +19,11 @@ import org.codehaus.jackson.map.JsonMappingException;
 
 public class CliniqueManager {
 	static List<Doctor> listOfDoctor = new ArrayList<Doctor>();
-	static final String DOCTOR_FILE = "/home/user/Downloads/RELEASE/GaneshM/src/com/bridgelabz/oops/clinique/Doctor.json";
+	static final String DOCTOR_FILE = "/home/user/Downloads/RELEASE/CliniqueManagment/src/com/bridgelabz/clinique/repository/Doctor.json";
 	static List<Patient> listOfPatients = new ArrayList<Patient>();
-	static final String PATIENT_FILE = "/home/user/Downloads/RELEASE/GaneshM/src/com/bridgelabz/oops/clinique/Patient.json";
+	static final String PATIENT_FILE = "/home/user/Downloads/RELEASE/CliniqueManagment/src/com/bridgelabz/clinique/repository/Patient.json";
 	static List<Appointment> listOfAppointments = new ArrayList<>();
-	static final String APPOINTMENT_FILE = "/home/user/Downloads/RELEASE/GaneshM/src/com/bridgelabz/oops/clinique/Appointment.json";
+	static final String APPOINTMENT_FILE = "/home/user/Downloads/RELEASE/CliniqueManagment/src/com/bridgelabz/clinique/repository/Appointment.json";
 	static Scanner sc=new Scanner(System.in);
 	public static void add() throws IOException {
 		System.out.println("Enter choice-\n1:To Add Doctor\n2:To Add Patient");
