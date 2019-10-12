@@ -8,9 +8,8 @@
 </head>
 <body>
  	<form action ="loginRegister" method="post">
-	<table 
 	
-		style = "background-color:white;margin-left: 20px; margin-left: 20px; ">
+	<table style = "background-color:white;margin-left: 20px; margin-left: 20px; ">
 	<tr>
 	<td> <h3 style=color:red> ${message} </h3>  </td>
 	<td><h3 style=color:green>${successMessage}</h3></td>
@@ -30,8 +29,10 @@
  	</tr>
  	
 	<tr>
-		<td> Password : </td> <td> <input type="password" name="password1"> </td>  
+		<td> Password : </td> 
+		<td> <input type="password" name="password1"> </td>  
 	</tr>
+	
 	<tr> 
 		<td> <input type ="submit" name="submit" value="login"> </td>
 	
