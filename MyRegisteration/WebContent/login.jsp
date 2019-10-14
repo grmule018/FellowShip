@@ -4,13 +4,18 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Insert title here</title>
+<!--<link rel="stylesheet" href="home.css" type="text/css">-->
 </head>
 <body>
+	<img src="./check.jpeg" alt="issue">
+	<h1> hello</h1>
  	<form action ="loginRegister" method="post">
-	
+
 	<table style = "background-color:white;margin-left: 20px; margin-left: 20px; ">
 	<tr>
+	
 	<td> <h3 style=color:red> ${message} </h3>  </td>
 	<td><h3 style=color:green>${successMessage}</h3></td>
 	<td>    </td>
